@@ -19,6 +19,9 @@ import Layout from '@/components/layout/Layout';
 import heroBanner from '@/assets/hero-banner.jpg';
 import benefitsConcept from '@/assets/benefits-concept.jpg';
 import vipExperience from '@/assets/vip-experience.jpg';
+import artigo1Img from '@/assets/artigo1.jpg';
+import artigo2Img from '@/assets/artigo2.jpg';
+import artigo3Img from '@/assets/artigo3.jpg';
 
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -355,6 +358,95 @@ const Index = () => {
                 <strong className="text-primary">Registro:</strong> 24789156 | 
                 <strong className="text-primary ml-2">Transparência e conformidade:</strong> Operação privada sem vínculo com órgãos reguladores financeiros
               </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Published Articles Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="section-title">Artigos Publicados</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              {/* Article 1 */}
+              <a 
+                href="/artigo1.php" 
+                className="group block bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={artigo1Img} 
+                    alt="Navegando pelo Mundo dos Benefícios Premium" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
+                    Navegando pelo Mundo dos Benefícios Premium
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Descubra como uma bússola estratégica pode guiar você através do universo de vantagens exclusivas e programas diferenciados.
+                  </p>
+                  <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
+                    Ler mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Article 2 */}
+              <a 
+                href="/artigo2.php" 
+                className="group block bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={artigo2Img} 
+                    alt="Mapeando Destinos de Experiências VIP" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
+                    Mapeando Destinos de Experiências VIP
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Aprenda a identificar e marcar os melhores pontos de acesso a experiências exclusivas que transformam seu estilo de vida.
+                  </p>
+                  <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
+                    Ler mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Article 3 */}
+              <a 
+                href="/artigo3.php" 
+                className="group block bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={artigo3Img} 
+                    alt="Análise Estratégica de Programas de Vantagens" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
+                    Análise Estratégica de Programas de Vantagens
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Entenda como especialistas avaliam e maximizam o potencial dos programas premium para resultados extraordinários.
+                  </p>
+                  <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
+                    Ler mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
             </div>
           </motion.div>
         </div>
