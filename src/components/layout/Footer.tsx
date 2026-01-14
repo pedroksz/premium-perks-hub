@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
-import artigo1Img from '@/assets/artigo1.jpg';
-import artigo2Img from '@/assets/artigo2.jpg';
-import artigo3Img from '@/assets/artigo3.jpg';
+import { Shield, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -119,86 +116,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Published Articles Section */}
-        <div className="border-t border-white/10 mt-8 pt-8">
-          <h4 className="text-xl font-serif font-semibold text-gold mb-8 text-center">Artigos Publicados</h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Article 1 */}
-            <a 
-              href="/artigo1.php" 
-              className="group block bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img 
-                  src={artigo1Img} 
-                  alt="Navegando pelo Mundo dos Benefícios Premium" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4">
-                <h5 className="font-serif font-semibold text-white group-hover:text-gold transition-colors mb-2">
-                  Navegando pelo Mundo dos Benefícios Premium
-                </h5>
-                <p className="text-sm text-white/60 mb-3">
-                  Descubra como uma bússola estratégica pode guiar você através do universo de vantagens exclusivas e programas diferenciados.
-                </p>
-                <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Ler mais <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </a>
-
-            {/* Article 2 */}
-            <a 
-              href="/artigo2.php" 
-              className="group block bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img 
-                  src={artigo2Img} 
-                  alt="Mapeando Destinos de Experiências VIP" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4">
-                <h5 className="font-serif font-semibold text-white group-hover:text-gold transition-colors mb-2">
-                  Mapeando Destinos de Experiências VIP
-                </h5>
-                <p className="text-sm text-white/60 mb-3">
-                  Aprenda a identificar e marcar os melhores pontos de acesso a experiências exclusivas que transformam seu estilo de vida.
-                </p>
-                <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Ler mais <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </a>
-
-            {/* Article 3 */}
-            <a 
-              href="/artigo3.php" 
-              className="group block bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img 
-                  src={artigo3Img} 
-                  alt="Análise Estratégica de Programas de Vantagens" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4">
-                <h5 className="font-serif font-semibold text-white group-hover:text-gold transition-colors mb-2">
-                  Análise Estratégica de Programas de Vantagens
-                </h5>
-                <p className="text-sm text-white/60 mb-3">
-                  Entenda como especialistas avaliam e maximizam o potencial dos programas premium para resultados extraordinários.
-                </p>
-                <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Ler mais <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </footer>
   );
