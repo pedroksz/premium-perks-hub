@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Cookie, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 
@@ -37,11 +37,6 @@ const CookieBanner = () => {
           <div className="container mx-auto max-w-4xl">
             <div className="bg-card rounded-2xl shadow-2xl p-6 border border-border">
               <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center">
-                    <Cookie className="w-6 h-6 text-gold" />
-                  </div>
-                </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-serif font-semibold text-foreground mb-2">
                     Este site utiliza cookies
