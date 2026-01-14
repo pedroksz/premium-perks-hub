@@ -46,7 +46,7 @@ const Header = () => {
                 <Shield className="w-7 h-7 text-gold" />
               </div>
               <div>
-                <h1 className="text-xl font-serif font-bold text-primary">Consultoria Elite</h1>
+                <h1 className="text-xl font-serif font-bold text-primary">Orientação Premium Elite</h1>
                 <p className="text-xs text-muted-foreground">Benefícios Premium</p>
               </div>
             </Link>
