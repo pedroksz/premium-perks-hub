@@ -59,7 +59,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-serif font-bold mb-4"
           >
-            Sobre a <span className="text-gradient">Consultoria Elite</span>
+            Sobre a <span className="text-gradient">Orientação Premium Elite</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ const About = () => {
             >
               <img 
                 src={teamPhoto} 
-                alt="Equipe Consultoria Elite" 
+                alt="Equipe Orientação Premium Elite" 
                 className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
@@ -97,7 +97,7 @@ const About = () => {
                 Quem Somos
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                A Consultoria Elite é uma empresa especializada em orientação consultiva 
+                A Orientação Premium Elite é uma empresa especializada em orientação consultiva 
                 sobre benefícios premium, programas de vantagens e experiências exclusivas. 
                 Nossa atuação é estritamente educativa e informativa.
               </p>
@@ -163,7 +163,7 @@ const About = () => {
             className="max-w-4xl mx-auto text-center text-white"
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gold">
-              Por que Escolher a Consultoria Elite?
+              Por que Escolher a Orientação Premium Elite?
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-12">
               Oferecemos uma abordagem transparente e educativa, focada em ajudar você 
