@@ -15,7 +15,7 @@ const Footer = () => {
                 <Shield className="w-7 h-7 text-gold" />
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold">Consultoria Elite</h3>
+                <h3 className="text-xl font-serif font-bold">Orientação Premium Elite</h3>
                 <p className="text-sm text-white/60">Benefícios Premium</p>
               </div>
             </div>
@@ -91,8 +91,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="mailto:contato@consultoriaelite.com.br" className="text-sm footer-link">
-                  contato@consultoriaelite.com.br
+                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-sm footer-link">
+                  contato@orientacaopremiumelite.com.br
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/60 text-center md:text-left">
-              © {currentYear} Consultoria Elite. Todos os direitos reservados.
+              © {currentYear} Orientação Premium Elite. Todos os direitos reservados.
             </p>
             <p className="text-xs text-white/50 text-center md:text-right max-w-xl">
               Serviço privado e consultivo. Não somos instituição financeira. 

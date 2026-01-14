@@ -94,9 +94,9 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Consultoria Elite",
+          "name": "Orientação Premium Elite",
           "description": "Orientação consultiva especializada em benefícios premium, programas de vantagens exclusivas e experiências diferenciadas.",
-          "url": "https://consultoriaelite.com.br/",
+          "url": "https://orientacaopremiumelite.com.br/",
           "telephone": "+5511999999999",
           "address": {
             "@type": "PostalAddress",
@@ -395,8 +395,8 @@ const Index = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:contato@consultoriaelite.com.br" className="text-white/70 text-sm hover:text-gold transition-colors">
-                  contato@consultoriaelite.com.br
+                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-white/70 text-sm hover:text-gold transition-colors">
+                  contato@orientacaopremiumelite.com.br
                 </a>
               </div>
             </div>
