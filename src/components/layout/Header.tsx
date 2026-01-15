@@ -23,7 +23,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <a href="tel:+5522602271506" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Phone className="w-4 h-4 text-gold" />
-              <span>+55 (226) 0227-1506</span>
+              <span>+22602271506</span>
             </a>
             <span className="hidden md:flex items-center gap-2">
               <MapPin className="w-4 h-4 text-gold" />
