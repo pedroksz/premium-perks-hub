@@ -99,14 +99,14 @@ const Index = () => {
           "@type": "ProfessionalService",
           "name": "Orientação Premium Elite",
           "description": "Orientação consultiva especializada em benefícios premium, programas de vantagens exclusivas e experiências diferenciadas.",
-          "url": "https://orientacaopremiumelite.com.br/",
-          "telephone": "+5511999999999",
+          "url": "https://beneficioselitedigital.com/",
+          "telephone": "+5522602271506",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Av. Paulista, 1000 - Bela Vista",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
-            "postalCode": "01310-100",
+            "streetAddress": "Rua Batista Leite, 11",
+            "addressLocality": "Sousa",
+            "addressRegion": "PB",
+            "postalCode": "58804-230",
             "addressCountry": "BR"
           },
           "priceRange": "$$",
@@ -355,7 +355,7 @@ const Index = () => {
                 ))}
               </ul>
               <p className="mt-6 text-sm text-muted-foreground">
-                <strong className="text-primary">Registro:</strong> 24789156 | 
+                <strong className="text-primary">Registro:</strong> 24179342 | 
                 <strong className="text-primary ml-2">Transparência e conformidade:</strong> Operação privada sem vínculo com órgãos reguladores financeiros
               </p>
             </div>
@@ -473,21 +473,21 @@ const Index = () => {
                 <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Endereço</h3>
                 <p className="text-white/70 text-sm">
-                  Av. Paulista, 1000<br />
-                  São Paulo, SP - 01310-100
+                  Rua Batista Leite, 11<br />
+                  Sousa, PB - 58804-230
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Phone className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Telefone</h3>
-                <a href="tel:+5511999999999" className="text-white/70 text-sm hover:text-gold transition-colors">
-                  +55 11 99999-9999
+                <a href="tel:+5522602271506" className="text-white/70 text-sm hover:text-gold transition-colors">
+                  +55 (226) 0227-1506
                 </a>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-white/70 text-sm hover:text-gold transition-colors">
+                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-white/70 text-xs break-all hover:text-gold transition-colors">
                   contato@orientacaopremiumelite.com.br
                 </a>
               </div>
