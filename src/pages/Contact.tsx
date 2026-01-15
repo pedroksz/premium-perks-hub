@@ -50,7 +50,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      content: '+55 (226) 0227-1506',
+      content: '+22602271506',
       link: 'tel:+5522602271506'
     },
     {

@@ -158,7 +158,7 @@ const RefundPolicy = () => {
               </p>
               <div className="info-box">
                 <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
-                <p><strong>Telefone:</strong> +55 (226) 0227-1506</p>
+                <p><strong>Telefone:</strong> +22602271506</p>
                 <p><strong>Horário:</strong> Segunda a Sexta, 9h às 18h</p>
               </div>
             </div>
