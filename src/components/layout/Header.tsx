@@ -21,13 +21,13 @@ const Header = () => {
       <div className="gradient-navy text-white py-2 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center flex-wrap gap-2">
           <div className="flex items-center gap-6">
-            <a href="tel:+5511999999999" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="tel:+5522602271506" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Phone className="w-4 h-4 text-gold" />
-              <span>+55 11 99999-9999</span>
+              <span>+55 (226) 0227-1506</span>
             </a>
             <span className="hidden md:flex items-center gap-2">
               <MapPin className="w-4 h-4 text-gold" />
-              <span>São Paulo, SP - Brasil</span>
+              <span>Sousa, PB - Brasil</span>
             </span>
           </div>
           <div className="flex items-center gap-2 text-xs opacity-80">

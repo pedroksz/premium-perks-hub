@@ -45,19 +45,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Endereço',
-      content: 'Av. Paulista, 1000 - Bela Vista\nSão Paulo, SP - CEP: 01310-100'
+      content: 'Rua Batista Leite, 11\nSousa, PB - CEP: 58804-230'
     },
     {
       icon: Phone,
       title: 'Telefone',
-      content: '+55 11 99999-9999',
-      link: 'tel:+5511999999999'
+      content: '+55 (226) 0227-1506',
+      link: 'tel:+5522602271506'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'contato@consultoriaelite.com.br',
-      link: 'mailto:contato@consultoriaelite.com.br'
+      content: 'contato@orientacaopremiumelite.com.br',
+      link: 'mailto:contato@orientacaopremiumelite.com.br'
     },
     {
       icon: Clock,

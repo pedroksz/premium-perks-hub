@@ -24,7 +24,7 @@ const Footer = () => {
               experiências exclusivas e programas de vantagens.
             </p>
             <p className="mt-4 text-sm text-gold">
-              <strong>Registro:</strong> 24789156
+              <strong>Registro:</strong> 24179342
             </p>
           </div>
 
@@ -79,19 +79,19 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-white/80">
-                  Av. Paulista, 1000 - Bela Vista<br />
-                  São Paulo, SP - CEP: 01310-100
+                  Rua Batista Leite, 11<br />
+                  Sousa, PB - CEP: 58804-230
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="tel:+5511999999999" className="text-sm footer-link">
-                  +55 11 99999-9999
+                <a href="tel:+5522602271506" className="text-sm footer-link">
+                  +55 (226) 0227-1506
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-sm footer-link">
+                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-sm footer-link break-all">
                   contato@orientacaopremiumelite.com.br
                 </a>
               </li>

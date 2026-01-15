@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
             <div className="highlight-box mb-8">
               <p><strong>Data de Vigência:</strong> 01 de Janeiro de 2025</p>
               <p><strong>Última Atualização:</strong> 13/01/2026</p>
-              <p><strong>Registro:</strong> 24789156</p>
+              <p><strong>Registro:</strong> 24179342</p>
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -128,9 +128,9 @@ const PrivacyPolicy = () => {
                 Para exercer seus direitos ou esclarecer dúvidas sobre esta política, entre em contato:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> privacidade@consultoriaelite.com.br</p>
-                <p><strong>Telefone:</strong> +55 11 99999-9999</p>
-                <p><strong>Endereço:</strong> Av. Paulista, 1000 - Bela Vista, São Paulo, SP - CEP: 01310-100</p>
+                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
+                <p><strong>Telefone:</strong> +55 (226) 0227-1506</p>
+                <p><strong>Endereço:</strong> Rua Batista Leite, 11 - Sousa, PB - CEP: 58804-230</p>
               </div>
             </div>
 

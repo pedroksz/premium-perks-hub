@@ -43,7 +43,7 @@ const RefundPolicy = () => {
             <div className="highlight-box mb-8">
               <p><strong>Data de Vigência:</strong> 01 de Janeiro de 2025</p>
               <p><strong>Última Atualização:</strong> 13/01/2026</p>
-              <p><strong>Registro:</strong> 24789156</p>
+              <p><strong>Registro:</strong> 24179342</p>
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -157,8 +157,8 @@ const RefundPolicy = () => {
                 Para solicitações de reembolso ou dúvidas sobre esta política:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> reembolso@consultoriaelite.com.br</p>
-                <p><strong>Telefone:</strong> +55 11 99999-9999</p>
+                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
+                <p><strong>Telefone:</strong> +55 (226) 0227-1506</p>
                 <p><strong>Horário:</strong> Segunda a Sexta, 9h às 18h</p>
               </div>
             </div>
