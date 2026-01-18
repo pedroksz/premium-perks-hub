@@ -42,52 +42,52 @@ const Index = () => {
   const services = [
     {
       icon: GraduationCap,
-      title: 'Orientação Educativa',
-      description: 'Conteúdo informativo organizado sobre benefícios premium, programas de recompensas e experiências exclusivas. Apoio consultivo para compreensão de vantagens e critérios gerais de elegibilidade.'
+      title: 'Consultoria Educacional',
+      description: 'Material informativo estruturado sobre vantagens exclusivas, programas de pontos e benefícios diferenciados. Suporte consultivo para entendimento de critérios e elegibilidade.'
     },
     {
       icon: Gem,
-      title: 'Curadoria de Benefícios',
-      description: 'Informações estruturadas sobre programas premium, clubes de benefícios, parcerias comerciais e experiências diferenciadas. Orientação sobre categorias, vantagens e formas de acesso.'
+      title: 'Seleção de Benefícios',
+      description: 'Conteúdo organizado sobre programas de recompensas, clubes de vantagens, acordos comerciais e experiências especiais. Direcionamento sobre categorias e formas de participação.'
     },
     {
       icon: Handshake,
-      title: 'Suporte Consultivo',
-      description: 'Atendimento informativo para esclarecimento de dúvidas sobre programas de vantagens, descontos exclusivos e serviços diferenciados. Comunicação transparente e profissional.'
+      title: 'Assessoria Informativa',
+      description: 'Atendimento dedicado para esclarecimentos sobre programas de descontos, vantagens especiais e serviços diferenciados. Comunicação objetiva e profissional.'
     },
     {
       icon: Star,
-      title: 'Experiências Exclusivas',
-      description: 'Informações sobre acesso a eventos premium, lounges VIP, experiências gastronômicas, viagens diferenciadas e programas de fidelidade com benefícios especiais.'
+      title: 'Vivências Exclusivas',
+      description: 'Orientações sobre acesso a eventos diferenciados, salas VIP, experiências gastronômicas, viagens especiais e programas de fidelização com vantagens únicas.'
     },
     {
       icon: ShieldCheck,
-      title: 'Transparência Total',
-      description: 'Atuação estritamente privada, consultiva e informativa. Sem intermediação financeira, análise de crédito ou oferta de produtos bancários. Comunicação clara e ética.'
+      title: 'Clareza Absoluta',
+      description: 'Atuação exclusivamente privada, consultiva e informativa. Sem mediação financeira, análise creditícia ou comercialização de produtos bancários. Comunicação ética e transparente.'
     },
     {
       icon: Users,
-      title: 'Atendimento Organizado',
-      description: 'Suporte informativo estruturado com foco em educação e orientação. Direcionamento aos canais oficiais dos emissores quando necessário para processos contratuais.'
+      title: 'Suporte Estruturado',
+      description: 'Atendimento informativo organizado com ênfase em educação e orientação. Encaminhamento aos canais oficiais das empresas quando necessário para processos formais.'
     }
   ];
 
   const stats = [
-    { icon: Award, number: '500+', label: 'Programas Mapeados' },
-    { icon: Handshake, number: '1000+', label: 'Parcerias Informadas' },
-    { icon: ShieldCheck, number: '100%', label: 'Transparência' },
-    { icon: Clock, number: '24/7', label: 'Conteúdo Disponível' }
+    { icon: Award, number: '600+', label: 'Programas Analisados' },
+    { icon: Handshake, number: '1200+', label: 'Parcerias Catalogadas' },
+    { icon: ShieldCheck, number: '100%', label: 'Clareza Total' },
+    { icon: Clock, number: '24/7', label: 'Material Disponível' }
   ];
 
   const transparencyItems = [
-    'Serviço estritamente privado, consultivo e informativo',
-    'Não somos instituição financeira, banco, emissor de cartões ou operadora',
-    'Não realizamos intermediação financeira, análise de crédito ou concessão de produtos bancários',
-    'Não emitimos cartões, não contratamos produtos financeiros e não representamos bandeiras ou instituições reguladas',
-    'Atuação limitada à orientação educativa, curadoria informativa e suporte consultivo',
-    'Não há garantias de aprovação, promessas de liberação imediata ou vinculação com processos creditícios',
-    'Usuários podem ser direcionados aos canais oficiais dos emissores para processos contratuais quando necessário',
-    'Todas as decisões e contratações são realizadas diretamente entre usuário e instituições competentes'
+    'Serviço exclusivamente privado, consultivo e de orientação',
+    'Não representamos instituição financeira, banco, emissor de cartões ou operadora',
+    'Não efetuamos mediação financeira, análise creditícia ou concessão de produtos bancários',
+    'Não emitimos cartões, não comercializamos produtos financeiros e não representamos bandeiras ou instituições reguladas',
+    'Atuação restrita à orientação educacional, seleção informativa e assessoria consultiva',
+    'Não existem garantias de aprovação, promessas de liberação imediata ou vínculo com processos de crédito',
+    'Clientes podem ser encaminhados aos canais oficiais das empresas para processos formais quando necessário',
+    'Todas as decisões e contratações são realizadas diretamente entre cliente e instituições competentes'
   ];
 
   return (
@@ -97,16 +97,16 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Orientação Premium Elite",
-          "description": "Orientação consultiva especializada em benefícios premium, programas de vantagens exclusivas e experiências diferenciadas.",
-          "url": "https://beneficioselitedigital.com/",
-          "telephone": "+5522602271506",
+          "name": "Benefícios Premix",
+          "description": "Consultoria especializada em orientação de benefícios premium, programas de recompensas e experiências diferenciadas.",
+          "url": "https://beneficiospremix.com/",
+          "telephone": "(62) 9152-9613",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Rua Batista Leite, 11",
-            "addressLocality": "Sousa",
-            "addressRegion": "PB",
-            "postalCode": "58804-230",
+            "streetAddress": "Av General Couto Magalhaes 485 Quadra26 Lote 04",
+            "addressLocality": "VI Maua",
+            "addressRegion": "GO",
+            "postalCode": "74.323-240",
             "addressCountry": "BR"
           },
           "priceRange": "$$",
@@ -134,8 +134,8 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight"
             >
-              Orientação Especializada em{' '}
-              <span className="text-gradient">Benefícios Premium</span>
+              Consultoria Especializada em{' '}
+              <span className="text-gradient">Vantagens Premium</span>
             </motion.h1>
             
             <motion.p 
@@ -143,9 +143,9 @@ const Index = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
             >
-              Suporte informativo especializado para compreender e navegar por programas de 
+              Assessoria informativa especializada para compreender e navegar por programas de 
               benefícios exclusivos, experiências diferenciadas e vantagens premium. 
-              Atendimento consultivo transparente e conteúdo educativo organizado.
+              Atendimento consultivo transparente e conteúdo educacional estruturado.
             </motion.p>
             
             <motion.div
@@ -182,7 +182,7 @@ const Index = () => {
             variants={staggerContainer}
           >
             <motion.h2 variants={fadeUpVariants} className="section-title">
-              Nossos Serviços de Orientação
+              Nossos Serviços de Consultoria
             </motion.h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -251,7 +251,7 @@ const Index = () => {
             >
               <img 
                 src={benefitsConcept} 
-                alt="Benefícios Premium" 
+                alt="Vantagens Premium" 
                 className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
@@ -262,15 +262,15 @@ const Index = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-                Expertise em Benefícios Exclusivos
+                Especialização em Vantagens Exclusivas
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Nossa equipe é especializada em curadoria e orientação sobre os mais diversos 
-                programas de benefícios premium disponíveis no mercado. Oferecemos suporte 
-                consultivo completo para que você compreenda todas as vantagens e oportunidades.
+                programas de vantagens premium disponíveis no mercado. Oferecemos assessoria 
+                consultiva completa para que você compreenda todas as oportunidades e benefícios.
               </p>
               <ul className="space-y-3 mb-8">
-                {['Análise de programas de benefícios', 'Orientação personalizada', 'Informações atualizadas', 'Suporte contínuo'].map((item) => (
+                {['Análise de programas de vantagens', 'Orientação personalizada', 'Informações atualizadas', 'Assessoria contínua'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0" />
                     <span className="text-foreground">{item}</span>
@@ -298,7 +298,7 @@ const Index = () => {
               className="order-2 lg:order-1"
             >
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-                Experiências VIP ao Seu Alcance
+                Vivências VIP ao Seu Alcance
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Descubra como acessar experiências exclusivas, lounges premium, eventos 
@@ -319,7 +319,7 @@ const Index = () => {
             >
               <img 
                 src={vipExperience} 
-                alt="Experiências VIP" 
+                alt="Vivências VIP" 
                 className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
@@ -355,7 +355,7 @@ const Index = () => {
                 ))}
               </ul>
               <p className="mt-6 text-sm text-muted-foreground">
-                <strong className="text-primary">Registro:</strong> 24179342 | 
+                <strong className="text-primary">Registro:</strong> 38291045 | 
                 <strong className="text-primary ml-2">Transparência e conformidade:</strong> Operação privada sem vínculo com órgãos reguladores financeiros
               </p>
             </div>
@@ -381,16 +381,16 @@ const Index = () => {
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={artigo1Img} 
-                    alt="Navegando pelo Mundo dos Benefícios Premium" 
+                    alt="Explorando o Universo das Vantagens Premium" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
-                    Navegando pelo Mundo dos Benefícios Premium
+                    Explorando o Universo das Vantagens Premium
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4">
-                    Descubra como uma bússola estratégica pode guiar você através do universo de vantagens exclusivas e programas diferenciados.
+                    Descubra como uma orientação estratégica pode guiar você através do universo de benefícios exclusivos e programas diferenciados.
                   </p>
                   <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
                     Ler mais <ArrowRight className="w-4 h-4" />
@@ -406,16 +406,16 @@ const Index = () => {
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={artigo2Img} 
-                    alt="Mapeando Destinos de Experiências VIP" 
+                    alt="Roteiro de Experiências VIP" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
-                    Mapeando Destinos de Experiências VIP
+                    Roteiro de Experiências VIP
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4">
-                    Aprenda a identificar e marcar os melhores pontos de acesso a experiências exclusivas que transformam seu estilo de vida.
+                    Aprenda a identificar e acessar os melhores pontos de experiências exclusivas que elevam seu padrão de vida.
                   </p>
                   <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
                     Ler mais <ArrowRight className="w-4 h-4" />
@@ -431,13 +431,13 @@ const Index = () => {
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={artigo3Img} 
-                    alt="Análise Estratégica de Programas de Vantagens" 
+                    alt="Avaliação Estratégica de Programas de Benefícios" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
-                    Análise Estratégica de Programas de Vantagens
+                    Avaliação Estratégica de Programas de Benefícios
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4">
                     Entenda como especialistas avaliam e maximizam o potencial dos programas premium para resultados extraordinários.
@@ -465,7 +465,7 @@ const Index = () => {
               Entre em <span className="text-gold">Contato</span>
             </h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto mb-12">
-              Estamos prontos para ajudá-lo a compreender melhor o universo dos benefícios premium.
+              Estamos prontos para ajudá-lo a compreender melhor o universo das vantagens premium.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -473,22 +473,23 @@ const Index = () => {
                 <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Endereço</h3>
                 <p className="text-white/70 text-sm">
-                  Rua Batista Leite, 11<br />
-                  Sousa, PB - 58804-230
+                  Av General Couto Magalhaes 485<br />
+                  Quadra26 Lote 04<br />
+                  VI Maua, GO - 74.323-240
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Phone className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Telefone</h3>
-                <a href="tel:+5522602271506" className="text-white/70 text-sm hover:text-gold transition-colors">
-                  +22602271506
+                <a href="tel:+5562915296613" className="text-white/70 text-sm hover:text-gold transition-colors">
+                  (62) 9152-9613
                 </a>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-white/70 text-xs break-all hover:text-gold transition-colors">
-                  contato@orientacaopremiumelite.com.br
+                <a href="mailto:contato@beneficiospremix.com" className="text-white/70 text-xs break-all hover:text-gold transition-colors">
+                  contato@beneficiospremix.com
                 </a>
               </div>
             </div>

@@ -42,8 +42,8 @@ const RefundPolicy = () => {
 
             <div className="highlight-box mb-8">
               <p><strong>Data de Vigência:</strong> 01 de Janeiro de 2025</p>
-              <p><strong>Última Atualização:</strong> 13/01/2026</p>
-              <p><strong>Registro:</strong> 24179342</p>
+              <p><strong>Última Atualização:</strong> 18/01/2026</p>
+              <p><strong>Registro:</strong> 38291045</p>
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -51,8 +51,8 @@ const RefundPolicy = () => {
                 1. Natureza dos Serviços
               </h2>
               <p className="text-muted-foreground mb-6">
-                A Consultoria Elite oferece serviços de orientação consultiva, curadoria informativa 
-                e suporte educativo sobre benefícios premium. Nossos serviços são de natureza 
+                A Benefícios Premix oferece serviços de consultoria orientativa, curadoria informativa 
+                e assessoria educativa sobre vantagens premium. Nossos serviços são de natureza 
                 informativa e não envolvem intermediação financeira.
               </p>
 
@@ -86,7 +86,7 @@ const RefundPolicy = () => {
                 Para solicitar reembolso, siga os passos:
               </p>
               <ol className="list-decimal pl-6 text-muted-foreground space-y-3 mb-6">
-                <li>Entre em contato através do email: reembolso@consultoriaelite.com.br</li>
+                <li>Entre em contato através do email: reembolso@beneficiospremix.com</li>
                 <li>Informe seus dados cadastrais e número do pedido</li>
                 <li>Descreva o motivo da solicitação</li>
                 <li>Aguarde a análise em até 5 dias úteis</li>
@@ -142,7 +142,7 @@ const RefundPolicy = () => {
                     <h3 className="font-semibold text-amber-800 mb-2">Atenção</h3>
                     <p className="text-amber-700 text-sm">
                       Esta política de reembolso aplica-se exclusivamente aos serviços de consultoria 
-                      oferecidos pela Consultoria Elite. Produtos ou serviços contratados diretamente 
+                      oferecidos pela Benefícios Premix. Produtos ou serviços contratados diretamente 
                       com terceiros (instituições financeiras, emissores, etc.) estão sujeitos às 
                       políticas dessas respectivas empresas.
                     </p>
@@ -157,14 +157,14 @@ const RefundPolicy = () => {
                 Para solicitações de reembolso ou dúvidas sobre esta política:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
-                <p><strong>Telefone:</strong> +22602271506</p>
+                <p><strong>Email:</strong> contato@beneficiospremix.com</p>
+                <p><strong>Telefone:</strong> (62) 9152-9613</p>
                 <p><strong>Horário:</strong> Segunda a Sexta, 9h às 18h</p>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-              <p>Última atualização: 13 de Janeiro de 2026</p>
+              <p>Última atualização: 18 de Janeiro de 2026</p>
             </div>
           </div>
         </div>

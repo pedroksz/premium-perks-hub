@@ -45,19 +45,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Endereço',
-      content: 'Rua Batista Leite, 11\nSousa, PB - CEP: 58804-230'
+      content: 'Av General Couto Magalhaes 485\nQuadra26 Lote 04 - VI Maua, GO\nCEP: 74.323-240'
     },
     {
       icon: Phone,
       title: 'Telefone',
-      content: '+22602271506',
-      link: 'tel:+5522602271506'
+      content: '(62) 9152-9613',
+      link: 'tel:+5562915296613'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'contato@orientacaopremiumelite.com.br',
-      link: 'mailto:contato@orientacaopremiumelite.com.br'
+      content: 'contato@beneficiospremix.com',
+      link: 'mailto:contato@beneficiospremix.com'
     },
     {
       icon: Clock,
@@ -84,7 +84,7 @@ const Contact = () => {
             transition={{ delay: 0.1 }}
             className="text-lg text-white/80 max-w-2xl mx-auto"
           >
-            Estamos prontos para ajudá-lo com suas dúvidas sobre benefícios premium 
+            Estamos prontos para ajudá-lo com suas dúvidas sobre vantagens premium 
             e experiências exclusivas.
           </motion.p>
         </div>
@@ -241,7 +241,7 @@ const Contact = () => {
                 <p className="text-sm text-muted-foreground">
                   Somos uma empresa de consultoria educativa e informativa. 
                   Não realizamos intermediação financeira ou oferta de produtos bancários. 
-                  Nossa atuação é limitada à orientação sobre benefícios premium.
+                  Nossa atuação é limitada à orientação sobre vantagens premium.
                 </p>
               </div>
             </motion.div>

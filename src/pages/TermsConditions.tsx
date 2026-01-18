@@ -42,8 +42,8 @@ const TermsConditions = () => {
 
             <div className="highlight-box mb-8">
               <p><strong>Data de Vigência:</strong> 01 de Janeiro de 2025</p>
-              <p><strong>Última Atualização:</strong> 13/01/2026</p>
-              <p><strong>Registro:</strong> 24179342</p>
+              <p><strong>Última Atualização:</strong> 18/01/2026</p>
+              <p><strong>Registro:</strong> 38291045</p>
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -51,7 +51,7 @@ const TermsConditions = () => {
                 1. Aceitação dos Termos
               </h2>
               <p className="text-muted-foreground mb-6">
-                Ao acessar e utilizar os serviços da Consultoria Elite, você concorda integralmente com 
+                Ao acessar e utilizar os serviços da Benefícios Premix, você concorda integralmente com 
                 estes Termos e Condições. Se você não concordar com qualquer parte destes termos, 
                 solicitamos que não utilize nossos serviços.
               </p>
@@ -62,8 +62,8 @@ const TermsConditions = () => {
               <div className="warning-box mb-6">
                 <p className="font-semibold text-foreground mb-2">AVISO IMPORTANTE:</p>
                 <p className="text-muted-foreground">
-                  A Consultoria Elite oferece exclusivamente serviços de orientação consultiva, curadoria 
-                  informativa e suporte educativo. NÃO somos instituição financeira, banco, emissor de 
+                  A Benefícios Premix oferece exclusivamente serviços de consultoria orientativa, curadoria 
+                  informativa e assessoria educativa. NÃO somos instituição financeira, banco, emissor de 
                   cartões ou qualquer entidade regulada por órgãos financeiros.
                 </p>
               </div>
@@ -82,10 +82,10 @@ const TermsConditions = () => {
                 Nossa atuação é limitada a:
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
-                <li>Orientação educativa sobre benefícios premium disponíveis no mercado</li>
-                <li>Curadoria informativa sobre programas de vantagens e experiências exclusivas</li>
-                <li>Suporte consultivo para compreensão de requisitos e critérios de elegibilidade</li>
-                <li>Direcionamento aos canais oficiais dos emissores quando necessário</li>
+                <li>Orientação educativa sobre vantagens premium disponíveis no mercado</li>
+                <li>Curadoria informativa sobre programas de recompensas e experiências exclusivas</li>
+                <li>Assessoria consultiva para compreensão de requisitos e critérios de elegibilidade</li>
+                <li>Direcionamento aos canais oficiais das empresas quando necessário</li>
               </ul>
 
               <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
@@ -105,7 +105,7 @@ const TermsConditions = () => {
                 5. Limitação de Responsabilidade
               </h2>
               <p className="text-muted-foreground mb-6">
-                A Consultoria Elite não se responsabiliza por decisões tomadas com base nas informações 
+                A Benefícios Premix não se responsabiliza por decisões tomadas com base nas informações 
                 fornecidas. Todas as contratações de produtos e serviços devem ser realizadas diretamente 
                 com as instituições competentes, cabendo ao usuário verificar os requisitos específicos.
               </p>
@@ -115,7 +115,7 @@ const TermsConditions = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 Todo o conteúdo deste site, incluindo textos, imagens, logotipos e materiais educativos, 
-                é de propriedade da Consultoria Elite e está protegido por leis de direitos autorais. 
+                é de propriedade da Benefícios Premix e está protegido por leis de direitos autorais. 
                 É proibida a reprodução sem autorização prévia.
               </p>
 
@@ -133,7 +133,7 @@ const TermsConditions = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 Estes termos são regidos pelas leis da República Federativa do Brasil. Qualquer 
-                controvérsia será dirimida no Foro da Comarca de São Paulo, SP.
+                controvérsia será dirimida no Foro da Comarca de Goiânia, GO.
               </p>
 
               <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
@@ -143,14 +143,14 @@ const TermsConditions = () => {
                 Para dúvidas sobre estes termos, entre em contato:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
-                <p><strong>Telefone:</strong> +22602271506</p>
-                <p><strong>Endereço:</strong> Rua Batista Leite, 11 - Sousa, PB - CEP: 58804-230</p>
+                <p><strong>Email:</strong> contato@beneficiospremix.com</p>
+                <p><strong>Telefone:</strong> (62) 9152-9613</p>
+                <p><strong>Endereço:</strong> Av General Couto Magalhaes 485, Quadra26 Lote 04 - VI Maua, GO - CEP: 74.323-240</p>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-              <p>Última atualização: 13 de Janeiro de 2026</p>
+              <p>Última atualização: 18 de Janeiro de 2026</p>
             </div>
           </div>
         </div>

@@ -21,13 +21,13 @@ const Header = () => {
       <div className="gradient-navy text-white py-2 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center flex-wrap gap-2">
           <div className="flex items-center gap-6">
-            <a href="tel:+5522602271506" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="tel:+5562915296613" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Phone className="w-4 h-4 text-gold" />
-              <span>+22602271506</span>
+              <span>(62) 9152-9613</span>
             </a>
             <span className="hidden md:flex items-center gap-2">
               <MapPin className="w-4 h-4 text-gold" />
-              <span>Sousa, PB - Brasil</span>
+              <span>VI Maua, GO - Brasil</span>
             </span>
           </div>
           <div className="flex items-center gap-2 text-xs opacity-80">
@@ -46,8 +46,8 @@ const Header = () => {
                 <Shield className="w-7 h-7 text-gold" />
               </div>
               <div>
-                <h1 className="text-xl font-serif font-bold text-primary">Orientação Premium Elite</h1>
-                <p className="text-xs text-muted-foreground">Benefícios Premium</p>
+                <h1 className="text-xl font-serif font-bold text-primary">Benefícios Premix</h1>
+                <p className="text-xs text-muted-foreground">Vantagens Premium</p>
               </div>
             </Link>
 
