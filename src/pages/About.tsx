@@ -4,148 +4,130 @@ import {
   Target, 
   Eye, 
   Heart, 
-  Award, 
+  Trophy, 
   Users, 
   TrendingUp,
-  ArrowRight 
+  ChevronRight 
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import teamPhoto from '@/assets/team-photo.jpg';
+import teamBusiness from '@/assets/team-business.jpg';
 
 const About = () => {
-  const values = [
+  const pilares = [
     {
       icon: Target,
-      title: 'Missão',
-      description: 'Orientar e educar nossos clientes sobre vantagens premium, proporcionando informações claras e transparentes para decisões conscientes.'
+      titulo: 'Propósito',
+      texto: 'Guiar e instruir nossos clientes sobre programas de vantagens, oferecendo orientações claras para escolhas conscientes e informadas.'
     },
     {
       icon: Eye,
-      title: 'Visão',
-      description: 'Ser referência em consultoria educativa sobre programas de benefícios, reconhecidos pela transparência e qualidade do atendimento.'
+      titulo: 'Perspectiva',
+      texto: 'Consolidar-se como referência em consultoria educacional sobre benefícios, sendo reconhecidos pela transparência e excelência.'
     },
     {
       icon: Heart,
-      title: 'Valores',
-      description: 'Transparência, ética, comprometimento com o cliente, educação financeira e respeito às normas regulatórias.'
-    }
-  ];
-
-  const team = [
-    {
-      name: 'Fernanda Almeida',
-      role: 'Diretora de Consultoria',
-      description: 'Especialista em programas de vantagens premium com mais de 10 anos de experiência no mercado.'
-    },
-    {
-      name: 'Carlos Eduardo',
-      role: 'Gerente de Atendimento',
-      description: 'Profissional dedicado à excelência no atendimento e satisfação dos clientes.'
-    },
-    {
-      name: 'Juliana Mendes',
-      role: 'Consultora Sênior',
-      description: 'Expert em curadoria de experiências exclusivas e programas de fidelização.'
+      titulo: 'Princípios',
+      texto: 'Integridade, comprometimento total com o cliente, educação continuada e respeito irrestrito às normas regulatórias vigentes.'
     }
   ];
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="gradient-hero py-20 text-white">
+      {/* Seção de Abertura */}
+      <section className="gradient-hero-bg py-24 text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-serif font-bold mb-4"
+            className="text-5xl md:text-6xl font-bold mb-6"
           >
-            Sobre a <span className="text-gradient">Benefícios Premix</span>
+            Conheça a <span className="text-shimmer">Benefícios Premix</span>
           </motion.h1>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-white/80 max-w-2xl mx-auto"
+            transition={{ delay: 0.15 }}
+            className="text-xl text-white/80 max-w-3xl mx-auto font-light"
           >
-            Conheça nossa equipe de especialistas dedicados a orientar você sobre 
-            vantagens premium e experiências exclusivas.
+            Saiba mais sobre nosso time de especialistas focados em direcionar você 
+            para as melhores vantagens e experiências disponíveis.
           </motion.p>
         </div>
       </section>
 
-      {/* About Intro */}
-      <section className="py-20 bg-background">
+      {/* Apresentação Institucional */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
               <img 
-                src={teamPhoto} 
+                src={teamBusiness} 
                 alt="Equipe Benefícios Premix" 
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-3xl shadow-2xl w-full"
               />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-                Quem Somos
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8">
+                Nossa História
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                A Benefícios Premix é uma empresa especializada em consultoria orientativa 
-                sobre vantagens premium, programas de recompensas e experiências exclusivas. 
-                Nossa atuação é estritamente educativa e informativa.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                A Benefícios Premix nasceu com o objetivo de democratizar o acesso à 
+                informação sobre programas de vantagens e benefícios exclusivos. 
+                Nossa atuação é puramente educacional e informativa.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                Não somos uma instituição financeira e não realizamos intermediação de 
-                produtos bancários. Nossa missão é ajudar nossos clientes a compreenderem 
-                melhor o universo das vantagens premium disponíveis no mercado.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Não operamos como instituição financeira nem realizamos qualquer tipo 
+                de intermediação bancária. Nosso foco é auxiliar clientes a 
+                compreenderem melhor as oportunidades do mercado de benefícios.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Com anos de experiência e uma equipe qualificada, oferecemos assessoria 
-                personalizada para que você possa tomar decisões informadas sobre 
-                programas de benefícios e experiências exclusivas.
+                Com profissionais experientes e metodologia estruturada, oferecemos 
+                assessoria personalizada para que você tome decisões embasadas sobre 
+                programas de recompensas e experiências diferenciadas.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Mission, Vision, Values */}
-      <section className="py-20 bg-muted">
+      {/* Pilares Institucionais */}
+      <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="section-title"
+            className="heading-decorated"
           >
             Nossos Pilares
           </motion.h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {values.map((value, index) => (
+          <div className="grid md:grid-cols-3 gap-10 mt-16">
+            {pilares.map((pilar, idx) => (
               <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 30 }}
+                key={pilar.titulo}
+                initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                transition={{ delay: idx * 0.12 }}
+                className="bg-card rounded-2xl p-10 text-center shadow-md hover:shadow-xl transition-shadow"
               >
-                <div className="w-20 h-20 mx-auto mb-6 rounded-full gradient-gold flex items-center justify-center">
-                  <value.icon className="w-10 h-10 text-primary" />
+                <div className="w-24 h-24 mx-auto mb-8 rounded-2xl gradient-silver flex items-center justify-center">
+                  <pilar.icon className="w-12 h-12 text-primary" />
                 </div>
-                <h3 className="text-2xl font-serif font-semibold text-primary mb-4">
-                  {value.title}
+                <h3 className="text-3xl font-bold text-primary mb-5">
+                  {pilar.titulo}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  {value.description}
+                  {pilar.texto}
                 </p>
               </motion.div>
             ))}
@@ -153,43 +135,43 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 gradient-navy">
+      {/* Diferenciais */}
+      <section className="py-24 gradient-main">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center text-white"
+            className="max-w-5xl mx-auto text-center text-white"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gold">
-              Por que Escolher a Benefícios Premix?
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              Por que a Benefícios Premix?
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-12">
-              Oferecemos uma abordagem transparente e educativa, focada em ajudar você 
-              a entender e aproveitar as melhores vantagens premium disponíveis.
+            <p className="text-white/80 text-lg leading-relaxed mb-14">
+              Proporcionamos uma abordagem honesta e educacional, concentrada em 
+              ajudá-lo a identificar e aproveitar os melhores programas de vantagens.
             </p>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-10">
               <div className="text-center">
-                <Award className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Expertise</h3>
+                <Trophy className="w-14 h-14 mx-auto mb-5" />
+                <h3 className="font-bold text-xl mb-3">Especialização</h3>
                 <p className="text-white/70 text-sm">
-                  Anos de experiência em curadoria de vantagens premium
+                  Anos de vivência em curadoria de benefícios e programas premium
                 </p>
               </div>
               <div className="text-center">
-                <Users className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Atendimento</h3>
+                <Users className="w-14 h-14 mx-auto mb-5" />
+                <h3 className="font-bold text-xl mb-3">Proximidade</h3>
                 <p className="text-white/70 text-sm">
-                  Suporte personalizado e humanizado
+                  Atendimento humanizado e adaptado às suas necessidades
                 </p>
               </div>
               <div className="text-center">
-                <TrendingUp className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Atualização</h3>
+                <TrendingUp className="w-14 h-14 mx-auto mb-5" />
+                <h3 className="font-bold text-xl mb-3">Atualidade</h3>
                 <p className="text-white/70 text-sm">
-                  Informações sempre atualizadas sobre o mercado
+                  Conteúdo constantemente revisado e alinhado ao mercado
                 </p>
               </div>
             </div>
@@ -197,24 +179,24 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-background">
+      {/* Chamada Final */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-              Pronto para Conhecer suas Vantagens?
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8">
+              Preparado para Explorar suas Vantagens?
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-              Entre em contato conosco e descubra como podemos ajudá-lo a 
-              compreender o universo das vantagens premium.
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-10">
+              Conecte-se conosco e descubra como podemos orientá-lo 
+              no universo dos benefícios exclusivos.
             </p>
-            <Link to="/contato" className="btn-gold text-lg">
-              Fale com Nossa Equipe
-              <ArrowRight className="w-5 h-5 ml-2 inline" />
+            <Link to="/contato" className="btn-main text-lg">
+              Conversar com a Equipe
+              <ChevronRight className="w-5 h-5 ml-2" />
             </Link>
           </motion.div>
         </div>

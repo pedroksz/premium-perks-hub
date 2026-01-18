@@ -1,170 +1,168 @@
 import { motion } from 'framer-motion';
-import { RotateCcw, ArrowLeft, CheckCircle2, XCircle, AlertCircle } from 'lucide-react';
+import { RotateCcw, ArrowLeft, CheckCircle2, XCircle, AlertTriangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 
 const RefundPolicy = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="gradient-hero py-16 text-white">
+      {/* Cabeçalho */}
+      <section className="gradient-hero-bg py-20 text-white">
         <div className="container mx-auto px-4 text-center">
-          <RotateCcw className="w-16 h-16 mx-auto mb-4 text-gold" />
+          <RotateCcw className="w-18 h-18 mx-auto mb-5 opacity-90" />
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-serif font-bold mb-4"
+            className="text-5xl md:text-6xl font-bold mb-5"
           >
-            Política de Reembolso
+            Cancelamento e Reembolso
           </motion.h1>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-white/80"
+            transition={{ delay: 0.12 }}
+            className="text-xl text-white/80 font-light"
           >
-            Termos claros e transparentes sobre reembolsos e cancelamentos
+            Regras claras sobre devoluções e cancelamentos
           </motion.p>
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-16 bg-background">
+      {/* Conteúdo */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-card rounded-2xl shadow-xl p-8 md:p-12 -mt-8 relative">
+          <div className="max-w-5xl mx-auto bg-card rounded-3xl shadow-xl p-10 md:p-14 -mt-10 relative">
             <Link 
               to="/" 
-              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
+              className="inline-flex items-center gap-3 text-primary hover:text-primary/80 transition-colors mb-10 font-medium"
             >
-              <ArrowLeft className="w-4 h-4" />
-              Voltar ao Início
+              <ArrowLeft className="w-5 h-5" />
+              Retornar ao Início
             </Link>
 
-            <div className="highlight-box mb-8">
-              <p><strong>Data de Vigência:</strong> 01 de Janeiro de 2025</p>
-              <p><strong>Última Atualização:</strong> 18/01/2026</p>
-              <p><strong>Registro:</strong> 38291045</p>
+            <div className="notice-box mb-10">
+              <p><strong>Vigência:</strong> 01 de Janeiro de 2025</p>
+              <p><strong>Revisão:</strong> 18/01/2026</p>
+              <p><strong>Cadastro:</strong> 38291045</p>
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6">
-                1. Natureza dos Serviços
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8">
+                1. Caracterização dos Serviços
               </h2>
-              <p className="text-muted-foreground mb-6">
-                A Benefícios Premix oferece serviços de consultoria orientativa, curadoria informativa 
-                e assessoria educativa sobre vantagens premium. Nossos serviços são de natureza 
-                informativa e não envolvem intermediação financeira.
+              <p className="text-muted-foreground mb-8">
+                A Benefícios Premix disponibiliza assessoria consultiva, curadoria informativa 
+                e orientação educacional sobre programas de vantagens. Nossos serviços têm 
+                natureza informativa, sem envolvimento em operações financeiras.
               </p>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
-                2. Direito de Arrependimento
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
+                2. Garantia de Arrependimento
               </h2>
-              <p className="text-muted-foreground mb-6">
-                De acordo com o Código de Defesa do Consumidor (Lei nº 8.078/1990), o cliente tem 
-                direito ao arrependimento no prazo de 7 (sete) dias corridos a partir da contratação 
-                do serviço, quando realizada fora do estabelecimento comercial.
+              <p className="text-muted-foreground mb-8">
+                Em conformidade com o Código de Defesa do Consumidor (Lei 8.078/90), o cliente 
+                possui direito de desistência no prazo de 7 dias corridos após a contratação, 
+                quando realizada remotamente.
               </p>
 
-              <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-6">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+              <div className="bg-green-50 border-l-4 border-green-500 p-8 rounded-2xl mb-8">
+                <div className="flex items-start gap-4">
+                  <CheckCircle2 className="w-7 h-7 text-green-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-green-800 mb-2">Quando o Reembolso é Aplicável</h3>
-                    <ul className="text-green-700 space-y-1 text-sm">
-                      <li>• Solicitação dentro do prazo de 7 dias</li>
-                      <li>• Serviço não iniciado ou parcialmente executado</li>
-                      <li>• Cancelamento por motivo justificado</li>
+                    <h3 className="font-bold text-green-800 mb-3 text-lg">Situações que Admitem Reembolso</h3>
+                    <ul className="text-green-700 space-y-2 text-sm">
+                      <li>• Pedido realizado dentro do prazo de 7 dias</li>
+                      <li>• Serviço não iniciado ou parcialmente prestado</li>
+                      <li>• Cancelamento com justificativa procedente</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
-                3. Procedimento de Solicitação
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
+                3. Como Solicitar
               </h2>
-              <p className="text-muted-foreground mb-4">
-                Para solicitar reembolso, siga os passos:
+              <p className="text-muted-foreground mb-5">
+                Para requerer reembolso:
               </p>
-              <ol className="list-decimal pl-6 text-muted-foreground space-y-3 mb-6">
-                <li>Entre em contato através do email: reembolso@beneficiospremix.com</li>
-                <li>Informe seus dados cadastrais e número do pedido</li>
-                <li>Descreva o motivo da solicitação</li>
-                <li>Aguarde a análise em até 5 dias úteis</li>
-                <li>Caso aprovado, o reembolso será processado em até 10 dias úteis</li>
+              <ol className="list-decimal pl-8 text-muted-foreground space-y-4 mb-8">
+                <li>Encaminhe solicitação para: reembolso@beneficiospremix.com</li>
+                <li>Indique seus dados cadastrais e identificação do pedido</li>
+                <li>Explique o motivo do pedido</li>
+                <li>Aguarde análise em até 5 dias úteis</li>
+                <li>Em caso de aprovação, processamento em até 10 dias úteis</li>
               </ol>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
-                4. Formas de Reembolso
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
+                4. Modalidades de Devolução
               </h2>
-              <p className="text-muted-foreground mb-4">
-                O reembolso será realizado através do mesmo meio de pagamento utilizado na contratação:
+              <p className="text-muted-foreground mb-5">
+                O reembolso ocorre pelo mesmo meio utilizado no pagamento:
               </p>
-              <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
-                <li><strong>Cartão de Crédito:</strong> Estorno em até 2 faturas subsequentes</li>
-                <li><strong>Boleto/PIX:</strong> Depósito em conta indicada pelo cliente</li>
-                <li><strong>Transferência:</strong> Devolução na mesma conta de origem</li>
+              <ul className="list-disc pl-8 text-muted-foreground space-y-3 mb-8">
+                <li><strong>Cartão de Crédito:</strong> Estorno em até 2 faturas seguintes</li>
+                <li><strong>Boleto/PIX:</strong> Depósito em conta informada pelo cliente</li>
+                <li><strong>Transferência:</strong> Devolução para conta de origem</li>
               </ul>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
-                5. Casos de Não Aplicabilidade
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
+                5. Situações que Não Admitem Reembolso
               </h2>
-              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-6">
-                <div className="flex items-start gap-3">
-                  <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+              <div className="bg-red-50 border-l-4 border-red-500 p-8 rounded-2xl mb-8">
+                <div className="flex items-start gap-4">
+                  <XCircle className="w-7 h-7 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-red-800 mb-2">Quando o Reembolso NÃO é Aplicável</h3>
-                    <ul className="text-red-700 space-y-1 text-sm">
-                      <li>• Solicitação após o prazo de 7 dias</li>
-                      <li>• Serviço totalmente executado e entregue</li>
-                      <li>• Uso indevido ou violação dos termos de serviço</li>
-                      <li>• Informações falsas fornecidas pelo cliente</li>
+                    <h3 className="font-bold text-red-800 mb-3 text-lg">Reembolso Não Aplicável</h3>
+                    <ul className="text-red-700 space-y-2 text-sm">
+                      <li>• Pedido após o prazo de 7 dias</li>
+                      <li>• Serviço integralmente prestado</li>
+                      <li>• Uso indevido ou violação dos termos</li>
+                      <li>• Informações inverídicas fornecidas</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
                 6. Cancelamento de Serviços
               </h2>
-              <p className="text-muted-foreground mb-6">
-                O cancelamento de serviços pode ser solicitado a qualquer momento. No caso de 
-                cancelamento após o início da prestação, será cobrado proporcionalmente pelo 
-                serviço já executado.
+              <p className="text-muted-foreground mb-8">
+                O cancelamento pode ser requerido a qualquer tempo. Havendo início da prestação, 
+                será cobrado proporcionalmente pelo serviço já executado.
               </p>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
-                7. Importantes Considerações
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
+                7. Observações Relevantes
               </h2>
-              <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-6">
-                <div className="flex items-start gap-3">
-                  <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-8 rounded-2xl mb-8">
+                <div className="flex items-start gap-4">
+                  <AlertTriangle className="w-7 h-7 text-amber-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-amber-800 mb-2">Atenção</h3>
-                    <p className="text-amber-700 text-sm">
-                      Esta política de reembolso aplica-se exclusivamente aos serviços de consultoria 
-                      oferecidos pela Benefícios Premix. Produtos ou serviços contratados diretamente 
-                      com terceiros (instituições financeiras, emissores, etc.) estão sujeitos às 
-                      políticas dessas respectivas empresas.
+                    <h3 className="font-bold text-amber-800 mb-3 text-lg">Atenção</h3>
+                    <p className="text-amber-700 text-sm leading-relaxed">
+                      Esta política abrange exclusivamente os serviços de assessoria da 
+                      Benefícios Premix. Produtos contratados diretamente com terceiros 
+                      (bancos, emissores, etc.) estão sujeitos às políticas dessas empresas.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <h2 className="text-2xl font-serif font-bold text-primary border-b-2 border-gold pb-2 mb-6 mt-10">
-                8. Contato
+              <h2 className="text-3xl font-bold text-primary border-b-2 border-primary/30 pb-3 mb-8 mt-12">
+                8. Canal de Contato
               </h2>
-              <p className="text-muted-foreground mb-6">
-                Para solicitações de reembolso ou dúvidas sobre esta política:
+              <p className="text-muted-foreground mb-8">
+                Para pedidos de reembolso ou esclarecimentos:
               </p>
-              <div className="info-box">
+              <div className="data-box">
                 <p><strong>Email:</strong> contato@beneficiospremix.com</p>
                 <p><strong>Telefone:</strong> (62) 9152-9613</p>
-                <p><strong>Horário:</strong> Segunda a Sexta, 9h às 18h</p>
+                <p><strong>Expediente:</strong> Segunda a Sexta, 09h às 18h</p>
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-              <p>Última atualização: 18 de Janeiro de 2026</p>
+            <div className="mt-10 pt-10 border-t text-center text-sm text-muted-foreground">
+              <p>Documento revisado em 18 de Janeiro de 2026</p>
             </div>
           </div>
         </div>

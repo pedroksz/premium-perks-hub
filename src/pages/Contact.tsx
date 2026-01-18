@@ -6,7 +6,7 @@ import {
   MapPin, 
   Clock, 
   Send,
-  CheckCircle2 
+  BadgeCheck 
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -16,176 +16,175 @@ import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
+  const [enviando, setEnviando] = useState(false);
+  const [dados, setDados] = useState({
+    nome: '',
     email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    telefone: '',
+    assunto: '',
+    mensagem: ''
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const processarEnvio = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    setEnviando(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise(resolve => setTimeout(resolve, 1800));
     
     toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
+      title: "Mensagem recebida!",
+      description: "Retornaremos em breve.",
     });
     
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    setIsSubmitting(false);
+    setDados({ nome: '', email: '', telefone: '', assunto: '', mensagem: '' });
+    setEnviando(false);
   };
 
-  const contactInfo = [
+  const dadosContato = [
     {
       icon: MapPin,
-      title: 'Endereço',
-      content: 'Av General Couto Magalhaes 485\nQuadra26 Lote 04 - VI Maua, GO\nCEP: 74.323-240'
+      label: 'Localização',
+      valor: 'Av General Couto Magalhaes 485\nQuadra26 Lote 04 - VI Maua, GO\nCEP: 74.323-240'
     },
     {
       icon: Phone,
-      title: 'Telefone',
-      content: '(62) 9152-9613',
-      link: 'tel:+5562915296613'
+      label: 'Telefone',
+      valor: '(62) 9152-9613',
+      url: 'tel:+5562915296613'
     },
     {
       icon: Mail,
-      title: 'Email',
-      content: 'contato@beneficiospremix.com',
-      link: 'mailto:contato@beneficiospremix.com'
+      label: 'Email',
+      valor: 'contato@beneficiospremix.com',
+      url: 'mailto:contato@beneficiospremix.com'
     },
     {
       icon: Clock,
-      title: 'Horário',
-      content: 'Segunda a Sexta: 9h às 18h'
+      label: 'Expediente',
+      valor: 'Segunda a Sexta: 09h às 18h'
     }
   ];
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="gradient-hero py-20 text-white">
+      {/* Cabeçalho */}
+      <section className="gradient-hero-bg py-24 text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-serif font-bold mb-4"
+            className="text-5xl md:text-6xl font-bold mb-6"
           >
-            Entre em <span className="text-gradient">Contato</span>
+            Fale <span className="text-shimmer">Conosco</span>
           </motion.h1>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-white/80 max-w-2xl mx-auto"
+            transition={{ delay: 0.15 }}
+            className="text-xl text-white/80 max-w-3xl mx-auto font-light"
           >
-            Estamos prontos para ajudá-lo com suas dúvidas sobre vantagens premium 
-            e experiências exclusivas.
+            Estamos prontos para esclarecer suas dúvidas sobre programas de vantagens 
+            e experiências diferenciadas.
           </motion.p>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-20 bg-background">
+      {/* Área Principal */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Formulário */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="bg-card rounded-2xl shadow-xl p-8">
-                <h2 className="text-2xl font-serif font-bold text-primary mb-6">
-                  Envie sua Mensagem
+              <div className="bg-card rounded-3xl shadow-xl p-10">
+                <h2 className="text-3xl font-bold text-primary mb-8">
+                  Envie sua Solicitação
                 </h2>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
+                <form onSubmit={processarEnvio} className="space-y-7">
+                  <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        Nome Completo *
+                      <label className="block text-sm font-semibold text-foreground mb-3">
+                        Seu Nome *
                       </label>
                       <Input
                         required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Seu nome"
-                        className="w-full"
+                        value={dados.nome}
+                        onChange={(e) => setDados({ ...dados, nome: e.target.value })}
+                        placeholder="Como podemos chamá-lo?"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        Email *
+                      <label className="block text-sm font-semibold text-foreground mb-3">
+                        Seu Email *
                       </label>
                       <Input
                         required
                         type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="seu@email.com"
-                        className="w-full"
+                        value={dados.email}
+                        onChange={(e) => setDados({ ...dados, email: e.target.value })}
+                        placeholder="email@exemplo.com"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                   </div>
                   
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
+                      <label className="block text-sm font-semibold text-foreground mb-3">
                         Telefone
                       </label>
                       <Input
                         type="tel"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="(11) 99999-9999"
-                        className="w-full"
+                        value={dados.telefone}
+                        onChange={(e) => setDados({ ...dados, telefone: e.target.value })}
+                        placeholder="(00) 00000-0000"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
+                      <label className="block text-sm font-semibold text-foreground mb-3">
                         Assunto *
                       </label>
                       <Input
                         required
-                        value={formData.subject}
-                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        placeholder="Assunto da mensagem"
-                        className="w-full"
+                        value={dados.assunto}
+                        onChange={(e) => setDados({ ...dados, assunto: e.target.value })}
+                        placeholder="Do que se trata?"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Mensagem *
+                    <label className="block text-sm font-semibold text-foreground mb-3">
+                      Sua Mensagem *
                     </label>
                     <Textarea
                       required
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Como podemos ajudá-lo?"
-                      rows={5}
-                      className="w-full resize-none"
+                      value={dados.mensagem}
+                      onChange={(e) => setDados({ ...dados, mensagem: e.target.value })}
+                      placeholder="Descreva como podemos ajudar..."
+                      rows={6}
+                      className="w-full resize-none rounded-xl"
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
-                    className="w-full btn-gold"
-                    disabled={isSubmitting}
+                    className="w-full btn-main h-14 text-base"
+                    disabled={enviando}
                   >
-                    {isSubmitting ? (
-                      'Enviando...'
+                    {enviando ? (
+                      'Processando...'
                     ) : (
                       <>
-                        Enviar Mensagem
-                        <Send className="w-5 h-5 ml-2" />
+                        Enviar Solicitação
+                        <Send className="w-5 h-5 ml-3" />
                       </>
                     )}
                   </Button>
@@ -193,55 +192,55 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            {/* Contact Info */}
+            {/* Informações de Contato */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-7"
             >
-              <h2 className="text-2xl font-serif font-bold text-primary mb-6">
-                Informações de Contato
+              <h2 className="text-3xl font-bold text-primary mb-8">
+                Canais de Atendimento
               </h2>
               
-              {contactInfo.map((info, index) => (
+              {dadosContato.map((item) => (
                 <div 
-                  key={info.title}
-                  className="bg-card rounded-xl p-6 shadow-lg flex items-start gap-4"
+                  key={item.label}
+                  className="bg-card rounded-2xl p-8 shadow-md flex items-start gap-5"
                 >
-                  <div className="w-12 h-12 rounded-lg gradient-navy flex items-center justify-center flex-shrink-0">
-                    <info.icon className="w-6 h-6 text-gold" />
+                  <div className="w-14 h-14 rounded-2xl gradient-main flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-7 h-7 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">
-                      {info.title}
+                    <h3 className="font-bold text-foreground mb-2 text-lg">
+                      {item.label}
                     </h3>
-                    {info.link ? (
+                    {item.url ? (
                       <a 
-                        href={info.link} 
+                        href={item.url} 
                         className="text-muted-foreground hover:text-primary transition-colors whitespace-pre-line"
                       >
-                        {info.content}
+                        {item.valor}
                       </a>
                     ) : (
                       <p className="text-muted-foreground whitespace-pre-line">
-                        {info.content}
+                        {item.valor}
                       </p>
                     )}
                   </div>
                 </div>
               ))}
 
-              {/* Important Notice */}
-              <div className="info-box mt-8">
-                <h3 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5" />
-                  Importante
+              {/* Aviso */}
+              <div className="data-box mt-10">
+                <h3 className="font-bold text-primary mb-3 flex items-center gap-3 text-lg">
+                  <BadgeCheck className="w-6 h-6" />
+                  Informação Relevante
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                  Somos uma empresa de consultoria educativa e informativa. 
-                  Não realizamos intermediação financeira ou oferta de produtos bancários. 
-                  Nossa atuação é limitada à orientação sobre vantagens premium.
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Somos uma empresa de assessoria educacional e informativa. 
+                  Não operamos intermediação financeira ou comercialização de produtos bancários. 
+                  Nosso escopo restringe-se à orientação sobre programas de vantagens.
                 </p>
               </div>
             </motion.div>

@@ -1,117 +1,117 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Shield, Phone, MapPin } from 'lucide-react';
+import { Menu, X, Sparkles, Phone, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
   const location = useLocation();
 
-  const navLinks = [
-    { path: '/', label: 'Início' },
-    { path: '/sobre', label: 'Sobre Nós' },
-    { path: '/contato', label: 'Contato' },
+  const menuLinks = [
+    { href: '/', text: 'Home' },
+    { href: '/sobre', text: 'Quem Somos' },
+    { href: '/contato', text: 'Fale Conosco' },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const checkActive = (href: string) => location.pathname === href;
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="gradient-navy text-white py-2 text-sm">
+      {/* Barra Superior */}
+      <div className="gradient-main text-white py-2.5 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center flex-wrap gap-2">
-          <div className="flex items-center gap-6">
-            <a href="tel:+5562915296613" className="flex items-center gap-2 hover:text-gold transition-colors">
-              <Phone className="w-4 h-4 text-gold" />
-              <span>(62) 9152-9613</span>
+          <div className="flex items-center gap-8">
+            <a href="tel:+5562915296613" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <Phone className="w-4 h-4" />
+              <span className="font-medium">(62) 9152-9613</span>
             </a>
-            <span className="hidden md:flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-gold" />
-              <span>VI Maua, GO - Brasil</span>
+            <span className="hidden md:flex items-center gap-2 opacity-90">
+              <MapPin className="w-4 h-4" />
+              <span>VI Maua, Goiás</span>
             </span>
           </div>
-          <div className="flex items-center gap-2 text-xs opacity-80">
-            <span>Atendimento: Seg-Sex 9h-18h</span>
+          <div className="text-xs opacity-75 font-light">
+            Horário Comercial: Segunda à Sexta
           </div>
         </div>
       </div>
 
-      {/* Main Header */}
-      <header className="bg-card shadow-lg sticky top-0 z-50">
-        <nav className="container mx-auto px-4 py-4">
+      {/* Cabeçalho Principal */}
+      <header className="bg-card/95 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-border/50">
+        <nav className="container mx-auto px-4 py-5">
           <div className="flex justify-between items-center">
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-lg gradient-navy flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Shield className="w-7 h-7 text-gold" />
+            {/* Logotipo */}
+            <Link to="/" className="flex items-center gap-4 group">
+              <div className="w-14 h-14 rounded-2xl gradient-main flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
+                <Sparkles className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-serif font-bold text-primary">Benefícios Premix</h1>
-                <p className="text-xs text-muted-foreground">Vantagens Premium</p>
+                <h1 className="text-2xl font-bold text-primary tracking-tight">Benefícios Premix</h1>
+                <p className="text-xs text-muted-foreground font-medium tracking-widest uppercase">Programa de Vantagens</p>
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
-            <ul className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <li key={link.path}>
+            {/* Menu Desktop */}
+            <ul className="hidden md:flex items-center gap-10">
+              {menuLinks.map((item) => (
+                <li key={item.href}>
                   <Link
-                    to={link.path}
-                    className={`nav-link py-2 ${isActive(link.path) ? 'text-primary font-semibold' : ''}`}
+                    to={item.href}
+                    className={`menu-item py-2 text-[15px] ${checkActive(item.href) ? 'text-primary font-semibold' : ''}`}
                   >
-                    {link.label}
+                    {item.text}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link to="/contato" className="btn-gold text-sm px-6 py-2">
-                  Fale Conosco
+                <Link to="/contato" className="btn-main text-sm px-8 py-3">
+                  Iniciar Atendimento
                 </Link>
               </li>
             </ul>
 
-            {/* Mobile Menu Button */}
+            {/* Botão Menu Mobile */}
             <button
-              className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Menu"
+              className="md:hidden p-3 rounded-xl hover:bg-muted transition-colors"
+              onClick={() => setMenuVisible(!menuVisible)}
+              aria-label="Abrir menu"
             >
-              {isMenuOpen ? <X className="w-6 h-6 text-primary" /> : <Menu className="w-6 h-6 text-primary" />}
+              {menuVisible ? <X className="w-6 h-6 text-primary" /> : <Menu className="w-6 h-6 text-primary" />}
             </button>
           </div>
 
-          {/* Mobile Navigation */}
+          {/* Menu Mobile */}
           <AnimatePresence>
-            {isMenuOpen && (
+            {menuVisible && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
                 className="md:hidden overflow-hidden"
               >
-                <ul className="flex flex-col gap-2 py-4 border-t mt-4">
-                  {navLinks.map((link) => (
-                    <li key={link.path}>
+                <ul className="flex flex-col gap-3 py-6 border-t mt-5">
+                  {menuLinks.map((item) => (
+                    <li key={item.href}>
                       <Link
-                        to={link.path}
-                        onClick={() => setIsMenuOpen(false)}
-                        className={`block py-3 px-4 rounded-lg transition-colors ${
-                          isActive(link.path)
+                        to={item.href}
+                        onClick={() => setMenuVisible(false)}
+                        className={`block py-4 px-5 rounded-xl transition-colors font-medium ${
+                          checkActive(item.href)
                             ? 'bg-primary text-primary-foreground'
                             : 'hover:bg-muted'
                         }`}
                       >
-                        {link.label}
+                        {item.text}
                       </Link>
                     </li>
                   ))}
-                  <li className="pt-2">
+                  <li className="pt-3">
                     <Link
                       to="/contato"
-                      onClick={() => setIsMenuOpen(false)}
-                      className="btn-gold w-full text-center"
+                      onClick={() => setMenuVisible(false)}
+                      className="btn-main w-full text-center"
                     >
-                      Fale Conosco
+                      Iniciar Atendimento
                     </Link>
                   </li>
                 </ul>
