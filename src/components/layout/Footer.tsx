@@ -15,16 +15,16 @@ const Footer = () => {
                 <Shield className="w-7 h-7 text-gold" />
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold">Orientação Premium Elite</h3>
-                <p className="text-sm text-white/60">Benefícios Premium</p>
+                <h3 className="text-xl font-serif font-bold">Benefícios Premix</h3>
+                <p className="text-sm text-white/60">Vantagens Premium</p>
               </div>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Serviço privado de orientação consultiva sobre benefícios premium, 
-              experiências exclusivas e programas de vantagens.
+              Serviço de consultoria especializada em benefícios premium, 
+              experiências exclusivas e programas de recompensas diferenciados.
             </p>
             <p className="mt-4 text-sm text-gold">
-              <strong>Registro:</strong> 24179342
+              <strong>Registro:</strong> 38291045
             </p>
           </div>
 
@@ -79,20 +79,21 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-white/80">
-                  Rua Batista Leite, 11<br />
-                  Sousa, PB - CEP: 58804-230
+                  Av General Couto Magalhaes 485<br />
+                  Quadra26 Lote 04 - VI Maua, GO<br />
+                  CEP: 74.323-240
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="tel:+5522602271506" className="text-sm footer-link">
-                  +22602271506
+                <a href="tel:+5562915296613" className="text-sm footer-link">
+                  (62) 9152-9613
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-sm footer-link break-all">
-                  contato@orientacaopremiumelite.com.br
+                <a href="mailto:contato@beneficiospremix.com" className="text-sm footer-link break-all">
+                  contato@beneficiospremix.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -107,10 +108,10 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/60 text-center md:text-left">
-              © {currentYear} Orientação Premium Elite. Todos os direitos reservados.
+              © {currentYear} Benefícios Premix. Todos os direitos reservados.
             </p>
             <p className="text-xs text-white/50 text-center md:text-right max-w-xl">
-              Serviço privado e consultivo. Não somos instituição financeira. 
+              Serviço consultivo e informativo. Não somos instituição financeira. 
               Sem intermediação creditícia ou oferta de produtos bancários.
             </p>
           </div>

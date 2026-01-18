@@ -17,7 +17,7 @@ const About = () => {
     {
       icon: Target,
       title: 'Missão',
-      description: 'Orientar e educar nossos clientes sobre benefícios premium, proporcionando informações claras e transparentes para decisões conscientes.'
+      description: 'Orientar e educar nossos clientes sobre vantagens premium, proporcionando informações claras e transparentes para decisões conscientes.'
     },
     {
       icon: Eye,
@@ -33,19 +33,19 @@ const About = () => {
 
   const team = [
     {
-      name: 'Marina Santos',
+      name: 'Fernanda Almeida',
       role: 'Diretora de Consultoria',
-      description: 'Especialista em programas de benefícios premium com mais de 10 anos de experiência no mercado.'
+      description: 'Especialista em programas de vantagens premium com mais de 10 anos de experiência no mercado.'
     },
     {
-      name: 'Ricardo Oliveira',
+      name: 'Carlos Eduardo',
       role: 'Gerente de Atendimento',
       description: 'Profissional dedicado à excelência no atendimento e satisfação dos clientes.'
     },
     {
-      name: 'Ana Paula Costa',
+      name: 'Juliana Mendes',
       role: 'Consultora Sênior',
-      description: 'Expert em curadoria de experiências exclusivas e programas de fidelidade.'
+      description: 'Expert em curadoria de experiências exclusivas e programas de fidelização.'
     }
   ];
 
@@ -59,7 +59,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-serif font-bold mb-4"
           >
-            Sobre a <span className="text-gradient">Orientação Premium Elite</span>
+            Sobre a <span className="text-gradient">Benefícios Premix</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ const About = () => {
             className="text-lg text-white/80 max-w-2xl mx-auto"
           >
             Conheça nossa equipe de especialistas dedicados a orientar você sobre 
-            benefícios premium e experiências exclusivas.
+            vantagens premium e experiências exclusivas.
           </motion.p>
         </div>
       </section>
@@ -84,7 +84,7 @@ const About = () => {
             >
               <img 
                 src={teamPhoto} 
-                alt="Equipe Orientação Premium Elite" 
+                alt="Equipe Benefícios Premix" 
                 className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
@@ -97,18 +97,18 @@ const About = () => {
                 Quem Somos
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                A Orientação Premium Elite é uma empresa especializada em orientação consultiva 
-                sobre benefícios premium, programas de vantagens e experiências exclusivas. 
+                A Benefícios Premix é uma empresa especializada em consultoria orientativa 
+                sobre vantagens premium, programas de recompensas e experiências exclusivas. 
                 Nossa atuação é estritamente educativa e informativa.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                 Não somos uma instituição financeira e não realizamos intermediação de 
                 produtos bancários. Nossa missão é ajudar nossos clientes a compreenderem 
-                melhor o universo dos benefícios premium disponíveis no mercado.
+                melhor o universo das vantagens premium disponíveis no mercado.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Com anos de experiência e uma equipe qualificada, oferecemos suporte 
-                personalizado para que você possa tomar decisões informadas sobre 
+                Com anos de experiência e uma equipe qualificada, oferecemos assessoria 
+                personalizada para que você possa tomar decisões informadas sobre 
                 programas de benefícios e experiências exclusivas.
               </p>
             </motion.div>
@@ -163,11 +163,11 @@ const About = () => {
             className="max-w-4xl mx-auto text-center text-white"
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gold">
-              Por que Escolher a Orientação Premium Elite?
+              Por que Escolher a Benefícios Premix?
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-12">
               Oferecemos uma abordagem transparente e educativa, focada em ajudar você 
-              a entender e aproveitar os melhores benefícios premium disponíveis.
+              a entender e aproveitar as melhores vantagens premium disponíveis.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -175,7 +175,7 @@ const About = () => {
                 <Award className="w-12 h-12 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Expertise</h3>
                 <p className="text-white/70 text-sm">
-                  Anos de experiência em curadoria de benefícios premium
+                  Anos de experiência em curadoria de vantagens premium
                 </p>
               </div>
               <div className="text-center">
@@ -206,11 +206,11 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-              Pronto para Conhecer seus Benefícios?
+              Pronto para Conhecer suas Vantagens?
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
               Entre em contato conosco e descubra como podemos ajudá-lo a 
-              compreender o universo dos benefícios premium.
+              compreender o universo das vantagens premium.
             </p>
             <Link to="/contato" className="btn-gold text-lg">
               Fale com Nossa Equipe

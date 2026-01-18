@@ -42,8 +42,8 @@ const PrivacyPolicy = () => {
 
             <div className="highlight-box mb-8">
               <p><strong>Data de Vigência:</strong> 01 de Janeiro de 2025</p>
-              <p><strong>Última Atualização:</strong> 13/01/2026</p>
-              <p><strong>Registro:</strong> 24179342</p>
+              <p><strong>Última Atualização:</strong> 18/01/2026</p>
+              <p><strong>Registro:</strong> 38291045</p>
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -51,8 +51,8 @@ const PrivacyPolicy = () => {
                 1. Introdução e Natureza dos Serviços
               </h2>
               <p className="text-muted-foreground mb-6">
-                A Consultoria Elite é uma empresa privada que oferece serviços de orientação consultiva, 
-                curadoria informativa e suporte educativo sobre benefícios premium, programas de vantagens 
+                A Benefícios Premix é uma empresa privada que oferece serviços de consultoria orientativa, 
+                curadoria informativa e assessoria educativa sobre vantagens premium, programas de recompensas 
                 e experiências exclusivas.
               </p>
               <p className="text-muted-foreground mb-6">
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
                 2. Dados Coletados
               </h2>
               <p className="text-muted-foreground mb-4">
-                Coletamos as seguintes informações para prestar nossos serviços de orientação consultiva:
+                Coletamos as seguintes informações para prestar nossos serviços de consultoria orientativa:
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
                 <li>Nome completo para identificação e atendimento personalizado</li>
@@ -82,8 +82,8 @@ const PrivacyPolicy = () => {
                 Utilizamos suas informações exclusivamente para:
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
-                <li>Fornecer orientação consultiva sobre benefícios premium</li>
-                <li>Enviar conteúdo educativo e informativo sobre programas de vantagens</li>
+                <li>Fornecer consultoria orientativa sobre vantagens premium</li>
+                <li>Enviar conteúdo educativo e informativo sobre programas de recompensas</li>
                 <li>Responder a solicitações e dúvidas</li>
                 <li>Melhorar nossos serviços de curadoria informativa</li>
                 <li>Cumprir obrigações legais aplicáveis</li>
@@ -128,14 +128,14 @@ const PrivacyPolicy = () => {
                 Para exercer seus direitos ou esclarecer dúvidas sobre esta política, entre em contato:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
-                <p><strong>Telefone:</strong> +22602271506</p>
-                <p><strong>Endereço:</strong> Rua Batista Leite, 11 - Sousa, PB - CEP: 58804-230</p>
+                <p><strong>Email:</strong> contato@beneficiospremix.com</p>
+                <p><strong>Telefone:</strong> (62) 9152-9613</p>
+                <p><strong>Endereço:</strong> Av General Couto Magalhaes 485, Quadra26 Lote 04 - VI Maua, GO - CEP: 74.323-240</p>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-              <p>Última atualização: 13 de Janeiro de 2026</p>
+              <p>Última atualização: 18 de Janeiro de 2026</p>
             </div>
           </div>
         </div>
