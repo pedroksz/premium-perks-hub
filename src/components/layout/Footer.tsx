@@ -1,118 +1,118 @@
 import { Link } from 'react-router-dom';
-import { Sparkles, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Award, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
-  const anoAtual = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="gradient-main text-white">
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
-          {/* Seção Institucional */}
+    <footer className="gradient-navy text-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Institucional */}
           <div>
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center backdrop-blur-sm">
-                <Sparkles className="w-8 h-8 text-white" />
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center backdrop-blur-sm">
+                <Award className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold tracking-tight">Benefícios Premix</h3>
-                <p className="text-sm text-white/60 tracking-widest uppercase">Programa de Vantagens</p>
+                <h3 className="text-xl font-bold tracking-tight">Benefícios AMX</h3>
+                <p className="text-xs text-white/50 tracking-widest uppercase">Assessoria em Vantagens</p>
               </div>
             </div>
-            <p className="text-white/80 text-sm leading-relaxed">
-              Assessoria completa em programas de recompensas, 
-              benefícios diferenciados e experiências exclusivas para você.
+            <p className="text-white/75 text-sm leading-relaxed">
+              Orientação profissional em programas de recompensas, 
+              benefícios diferenciados e oportunidades exclusivas.
             </p>
-            <p className="mt-6 text-sm opacity-90">
-              <strong>Cadastro:</strong> 38291045
+            <p className="mt-5 text-sm opacity-85">
+              <strong>Registro:</strong> 47829156
             </p>
           </div>
 
-          {/* Links Rápidos */}
+          {/* Navegação */}
           <div>
-            <h4 className="text-lg font-bold mb-8 tracking-wide">Acesso Rápido</h4>
-            <ul className="space-y-4">
+            <h4 className="text-base font-bold mb-6 tracking-wide">Navegação</h4>
+            <ul className="space-y-3">
               <li>
-                <Link to="/" className="footer-item text-sm block">
+                <Link to="/" className="footer-link text-sm block">
                   Página Inicial
                 </Link>
               </li>
               <li>
-                <Link to="/sobre" className="footer-item text-sm block">
-                  Quem Somos
+                <Link to="/sobre" className="footer-link text-sm block">
+                  Sobre Nós
                 </Link>
               </li>
               <li>
-                <Link to="/contato" className="footer-item text-sm block">
-                  Fale Conosco
+                <Link to="/contato" className="footer-link text-sm block">
+                  Contato
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Links Jurídicos */}
+          {/* Legal */}
           <div>
-            <h4 className="text-lg font-bold mb-8 tracking-wide">Informações Legais</h4>
+            <h4 className="text-base font-bold mb-6 tracking-wide">Documentos</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/politica-privacidade" className="footer-link text-sm block">
+                  Política de Privacidade
+                </Link>
+              </li>
+              <li>
+                <Link to="/termos-condicoes" className="footer-link text-sm block">
+                  Termos e Condições
+                </Link>
+              </li>
+              <li>
+                <Link to="/politica-reembolso" className="footer-link text-sm block">
+                  Política de Reembolso
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contato */}
+          <div>
+            <h4 className="text-base font-bold mb-6 tracking-wide">Localização</h4>
             <ul className="space-y-4">
-              <li>
-                <Link to="/politica-privacidade" className="footer-item text-sm block">
-                  Privacidade e Dados
-                </Link>
-              </li>
-              <li>
-                <Link to="/termos-condicoes" className="footer-item text-sm block">
-                  Termos de Uso
-                </Link>
-              </li>
-              <li>
-                <Link to="/politica-reembolso" className="footer-item text-sm block">
-                  Cancelamento e Reembolso
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Dados de Contato */}
-          <div>
-            <h4 className="text-lg font-bold mb-8 tracking-wide">Onde Estamos</h4>
-            <ul className="space-y-5">
-              <li className="flex items-start gap-4">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-1 opacity-80" />
-                <span className="text-sm text-white/80 leading-relaxed">
-                  Av General Couto Magalhaes 485<br />
-                  Quadra26 Lote 04<br />
-                  VI Maua, GO - 74.323-240
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 opacity-75" />
+                <span className="text-sm text-white/75 leading-relaxed">
+                  Av Prfa Izoraida Marques Peres, 401<br />
+                  Quiosq Esp 37 QM0T<br />
+                  Sorocaba, SP - 18.047-900
                 </span>
               </li>
-              <li className="flex items-center gap-4">
-                <Phone className="w-5 h-5 flex-shrink-0 opacity-80" />
-                <a href="tel:+5562915296613" className="text-sm footer-item">
-                  (62) 9152-9613
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 flex-shrink-0 opacity-75" />
+                <a href="tel:+5519810200844" className="text-sm footer-link">
+                  (19) 8102-0844
                 </a>
               </li>
-              <li className="flex items-center gap-4">
-                <Mail className="w-5 h-5 flex-shrink-0 opacity-80" />
-                <a href="mailto:contato@beneficiospremix.com" className="text-sm footer-item break-all">
-                  contato@beneficiospremix.com
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 flex-shrink-0 opacity-75" />
+                <a href="mailto:contato@beneficiosamx.com" className="text-sm footer-link break-all">
+                  contato@beneficiosamx.com
                 </a>
               </li>
-              <li className="flex items-center gap-4">
-                <Clock className="w-5 h-5 flex-shrink-0 opacity-80" />
-                <span className="text-sm text-white/80">Seg-Sex: 09h às 18h</span>
+              <li className="flex items-center gap-3">
+                <Clock className="w-5 h-5 flex-shrink-0 opacity-75" />
+                <span className="text-sm text-white/75">Seg-Sex: 09h às 18h</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Rodapé Final */}
-        <div className="border-t border-white/15 mt-16 pt-10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-sm text-white/60 text-center md:text-left">
-              © {anoAtual} Benefícios Premix. Direitos reservados.
+        {/* Bottom */}
+        <div className="border-t border-white/15 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-white/55 text-center md:text-left">
+              © {currentYear} Benefícios AMX. Todos os direitos reservados.
             </p>
-            <p className="text-xs text-white/50 text-center md:text-right max-w-lg">
-              Empresa de consultoria e orientação. Não operamos como instituição financeira. 
-              Nenhum serviço de intermediação creditícia ou bancária.
+            <p className="text-xs text-white/45 text-center md:text-right max-w-md">
+              Empresa de assessoria e orientação. Não atuamos como instituição financeira 
+              nem realizamos intermediação bancária.
             </p>
           </div>
         </div>
