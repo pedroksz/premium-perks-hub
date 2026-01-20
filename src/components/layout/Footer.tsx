@@ -25,7 +25,7 @@ const Footer = () => {
               recompensas e vantagens exclusivas. Orientação ética e transparente.
             </p>
             <p className="text-sm text-white/50">
-              Cadastro: <span className="text-white/70">38291045</span>
+              Cadastro: <span className="text-white/70">72849163</span>
             </p>
           </div>
 
@@ -85,9 +85,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:contato@beneficiosamx.com" className="flex items-center gap-3 footer-link-modern break-all">
+                <a href="mailto:contato@beneficiospremix.com" className="flex items-center gap-3 footer-link-modern break-all">
                   <Mail className="w-4 h-4 flex-shrink-0 text-white/50" />
-                  contato@beneficiosamx.com
+                  contato@beneficiospremix.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-white/60 text-sm">
