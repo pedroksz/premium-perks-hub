@@ -13,7 +13,10 @@ import {
   ArrowRight,
   Phone,
   Mail,
-  Check
+  Check,
+  Building2,
+  FileText,
+  MapPin
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import loungePremium from '@/assets/lounge-premium.jpg';
@@ -360,8 +363,119 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Disclaimer */}
+      {/* Company Info */}
       <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="section-heading">Dados da Empresa</h2>
+            <div className="divider-elegant mt-6" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto bg-card rounded-3xl p-8 md:p-12 shadow-lg border border-border"
+          >
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Building2 className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Razão Social</span>
+                  <p className="text-foreground font-medium text-sm mt-1">IMPERIO DA TOYOTA LTDA</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">CNPJ</span>
+                  <p className="text-foreground font-medium text-sm mt-1">47.951.436/0001-20</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Nome Fantasia</span>
+                  <p className="text-foreground font-medium text-sm mt-1">Benefícios Premix</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Data de Abertura</span>
+                  <p className="text-foreground font-medium text-sm mt-1">14/09/2022</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 md:col-span-2">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Endereço</span>
+                  <p className="text-foreground font-medium text-sm mt-1">Av. General Couto Magalhães, 485, Quadra 26 Lote 04, Vila Mauá, Goiânia-GO, CEP 74.323-240</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Telefone Comercial</span>
+                  <p className="text-foreground font-medium text-sm mt-1">(62) 9152-9613</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Telefone Fixo</span>
+                  <p className="text-foreground font-medium text-sm mt-1">(11) 1413-9784</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 md:col-span-2">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">E-mail Institucional</span>
+                  <p className="text-foreground font-medium text-sm mt-1">contato@beneficiosamx.com</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 pt-8 border-t border-border">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                  <Target className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Natureza do Negócio</span>
+                  <p className="text-foreground font-medium text-sm mt-1">
+                    Empresa privada de consultoria informativa. Atuamos exclusivamente com orientação e curadoria de programas de benefícios. 
+                    Não realizamos intermediação financeira, análise de crédito ou venda de produtos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -390,6 +504,9 @@ const Index = () => {
                 ))}
               </div>
               <div className="mt-8 pt-6 border-t border-border/50 flex flex-wrap gap-6 text-sm">
+                <span className="text-muted-foreground">
+                  <strong className="text-primary">CNPJ:</strong> 47.951.436/0001-20
+                </span>
                 <span className="text-muted-foreground">
                   <strong className="text-primary">Cadastro:</strong> 38291045
                 </span>
