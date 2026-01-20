@@ -30,7 +30,7 @@ const RefundPolicy = () => {
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Contato</h2>
               <div className="highlight-panel">
                 <p><strong>Email:</strong> contato@exclusivebeneficiosmix.com</p>
-                <p><strong>Telefone:</strong> (19) 8102-0844</p>
+                <p><strong>Telefone:</strong> (11) 1413-9784</p>
                 <p><strong>Horário:</strong> Segunda a Sexta, 09h às 18h</p>
               </div>
             </div>
