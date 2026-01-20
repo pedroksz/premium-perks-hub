@@ -22,11 +22,11 @@ const PrivacyPolicy = () => {
             </Link>
             <div className="info-panel mb-8">
               <p><strong>Vigência:</strong> 14 de Janeiro de 2025</p>
-              <p><strong>Registro:</strong> 73492816</p>
+              <p><strong>Cadastro:</strong> 38291045</p>
             </div>
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6">1. Sobre a Empresa</h2>
-              <p className="text-muted-foreground mb-6">A Exclusive Benefícios Mix é uma organização privada de curadoria consultiva sobre programas de vantagens e benefícios. Não operamos como instituição financeira.</p>
+              <p className="text-muted-foreground mb-6">A Benefícios Premix é uma organização privada de consultoria informativa sobre programas de vantagens e benefícios. Não operamos como instituição financeira.</p>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Dados Coletados</h2>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
                 <li>Nome e email para comunicação</li>
@@ -35,9 +35,9 @@ const PrivacyPolicy = () => {
               </ul>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">3. Contato</h2>
               <div className="highlight-panel">
-                <p><strong>Email:</strong> contato@exclusivebeneficiosmix.com</p>
-                <p><strong>Telefone:</strong> (11) 1413-9784</p>
-                <p><strong>Endereço:</strong> R Cabreuva 210 - Sorocaba, SP - 18.085-340</p>
+                <p><strong>Email:</strong> contato@beneficiosamx.com</p>
+                <p><strong>Telefone:</strong> (62) 9152-9613</p>
+                <p><strong>Endereço:</strong> Av General Couto Magalhaes, 485 - Vila Mauá, Goiânia - GO, 74.323-240</p>
               </div>
             </div>
           </div>

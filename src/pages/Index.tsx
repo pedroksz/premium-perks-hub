@@ -20,8 +20,11 @@ import loungePremium from '@/assets/lounge-premium.jpg';
 import businessWork from '@/assets/business-work.jpg';
 import loungeElegant from '@/assets/lounge-elegant.jpg';
 import executiveTravel from '@/assets/executive-travel.jpg';
-import teamMeeting from '@/assets/team-meeting.jpg';
-import teamCollaboration from '@/assets/team-collaboration.jpg';
+import travelExperience from '@/assets/travel-experience.jpg';
+import loungeVip from '@/assets/lounge-vip.jpg';
+import artigo1 from '@/assets/artigo1.jpg';
+import artigo2 from '@/assets/artigo2.jpg';
+import artigo3 from '@/assets/artigo3.jpg';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 25 },
@@ -40,50 +43,52 @@ const Index = () => {
   const services = [
     {
       icon: Sparkles,
-      title: 'Curadoria de Benefícios',
-      description: 'Seleção criteriosa das melhores oportunidades de vantagens e recompensas disponíveis no mercado atual.'
+      title: 'Orientação Didática',
+      description: 'Materiais explicativos detalhados sobre vantagens especiais, acúmulo de pontos e programas diferenciados. Apoio na interpretação de regras e condições de participação.'
     },
     {
       icon: Target,
-      title: 'Análise Personalizada',
-      description: 'Avaliação completa do seu perfil para identificar os programas mais adequados às suas necessidades.'
+      title: 'Curadoria Especializada',
+      description: 'Seleção criteriosa de oportunidades premium, parcerias estratégicas e acessos privilegiados. Direcionamento sobre categorias e requisitos de adesão.'
     },
     {
       icon: Users2,
-      title: 'Atendimento Exclusivo',
-      description: 'Suporte individual com consultores dedicados que entendem suas preferências e objetivos.'
+      title: 'Atendimento Dedicado',
+      description: 'Suporte individualizado para esclarecer dúvidas sobre programas de recompensas, promoções e serviços diferenciados. Comunicação direta e profissional.'
     },
     {
       icon: Compass,
-      title: 'Orientação Estratégica',
-      description: 'Direcionamento sobre como maximizar experiências em viagens, gastronomia e entretenimento.'
+      title: 'Roteiros Exclusivos',
+      description: 'Informações sobre acesso a eventos especiais, salas VIP em aeroportos, experiências gastronômicas e viagens personalizadas com benefícios únicos.'
     },
     {
       icon: ShieldCheck,
-      title: 'Ética e Transparência',
-      description: 'Compromisso absoluto com informações claras. Sem intermediação financeira ou vendas.'
+      title: 'Compromisso Ético',
+      description: 'Atuação puramente consultiva e informativa. Nenhuma intermediação bancária, análise de perfil creditício ou comercialização de produtos financeiros.'
     },
     {
       icon: Headphones,
-      title: 'Suporte Contínuo',
-      description: 'Acompanhamento permanente para atualização sobre novas oportunidades e programas.'
+      title: 'Acompanhamento Contínuo',
+      description: 'Assistência permanente com foco em educação sobre vantagens. Encaminhamento para canais oficiais quando processos formais são necessários.'
     }
   ];
 
   const stats = [
-    { icon: TrendingUp, value: '480+', label: 'Programas Mapeados' },
-    { icon: Users2, value: '850+', label: 'Parcerias Ativas' },
-    { icon: Award, value: '100%', label: 'Transparência' },
-    { icon: Clock, value: 'Real-time', label: 'Atualizações' }
+    { icon: TrendingUp, value: '750+', label: 'Programas Catalogados' },
+    { icon: Users2, value: '1.500+', label: 'Acordos Mapeados' },
+    { icon: Award, value: '100%', label: 'Ética Garantida' },
+    { icon: Clock, value: '24h', label: 'Conteúdo Online' }
   ];
 
   const disclaimers = [
-    'Atuação exclusivamente consultiva e educacional',
-    'Não representamos bancos ou instituições financeiras',
-    'Não realizamos análise de crédito ou intermediação bancária',
-    'Não comercializamos produtos financeiros ou cartões',
-    'Orientação e curadoria sem promessas de aprovação',
-    'Contratações feitas diretamente com empresas responsáveis'
+    'Atividade exclusivamente privada, consultiva e de orientação ao consumidor',
+    'Não representamos bancos, emissores de cartões, financeiras ou qualquer instituição regulamentada',
+    'Não efetuamos análises creditícias, concessão de crédito ou intermediação de produtos bancários',
+    'Não emitimos, vendemos ou distribuímos cartões de crédito ou produtos financeiros',
+    'Nosso papel limita-se à educação, curadoria de informações e assessoria consultiva',
+    'Nenhuma garantia de aprovação, promessa de liberação ou vinculação com processos de crédito',
+    'Quando necessário, direcionamos clientes aos canais oficiais das empresas parceiras',
+    'Decisões de contratação são tomadas diretamente entre o cliente e as instituições responsáveis'
   ];
 
   return (
@@ -93,16 +98,16 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Exclusive Benefícios Mix",
-          "description": "Curadoria especializada em experiências premium e programas de vantagens exclusivas.",
-          "url": "https://exclusivebeneficiosmix.com/",
-          "telephone": "(11) 1413-9784",
+          "name": "Benefícios Premix",
+          "description": "Assessoria personalizada para você compreender e aproveitar programas de recompensas, experiências diferenciadas e vantagens exclusivas.",
+          "url": "https://beneficiosamx.com/",
+          "telephone": "(62) 9152-9613",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "R Cabreuva 210",
-            "addressLocality": "Sorocaba",
-            "addressRegion": "SP",
-            "postalCode": "18.085-340",
+            "streetAddress": "Av General Couto Magalhaes, 485, Quadra 26 Lote 04",
+            "addressLocality": "Goiania",
+            "addressRegion": "GO",
+            "postalCode": "74.323-240",
             "addressCountry": "BR"
           },
           "priceRange": "$$",
@@ -110,7 +115,7 @@ const Index = () => {
         })
       }} />
 
-      {/* Hero - Layout Assimétrico */}
+      {/* Hero */}
       <section className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <div 
@@ -133,24 +138,24 @@ const Index = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-8"
               >
                 <Sparkles className="w-4 h-4" />
-                Experiências Premium
+                Seu guia para vantagens exclusivas
               </motion.div>
               
               <motion.h1 
                 variants={fadeIn}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1]"
               >
-                Descubra um Novo<br />
-                Padrão de{' '}
-                <span className="text-accent-shine">Vantagens</span>
+                Descubra o Mundo dos{' '}
+                <span className="text-accent-shine">Benefícios Premium</span>
               </motion.h1>
               
               <motion.p 
                 variants={fadeIn}
                 className="text-lg text-white/75 mb-10 max-w-lg leading-relaxed"
               >
-                Curadoria especializada para você acessar os melhores programas 
-                de benefícios, experiências diferenciadas e oportunidades exclusivas.
+                Assessoria personalizada para você compreender e aproveitar programas de 
+                recompensas, experiências diferenciadas e vantagens exclusivas. Orientação 
+                clara, ética e completamente transparente.
               </motion.p>
               
               <motion.div
@@ -158,7 +163,7 @@ const Index = () => {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Link to="/contato" className="btn-accent">
-                  Agendar Consultoria
+                  Solicitar Atendimento
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
                 <Link to="/sobre" className="btn-primary bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20">
@@ -179,24 +184,13 @@ const Index = () => {
                   alt="Experiência Premium" 
                   className="rounded-3xl shadow-2xl w-full"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl gradient-accent-warm flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Registro Ativo</p>
-                      <p className="font-bold text-primary">73492816</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Services - Grid Moderno */}
+      {/* Services */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
@@ -210,9 +204,6 @@ const Index = () => {
               O Que Oferecemos
             </motion.h2>
             <motion.div variants={fadeIn} className="divider-elegant mt-6 mb-6" />
-            <motion.p variants={fadeIn} className="section-subheading">
-              Serviços de curadoria desenvolvidos para quem busca excelência em benefícios
-            </motion.p>
           </motion.div>
           
           <motion.div 
@@ -244,7 +235,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats - Horizontal com Fundo */}
+      {/* Stats */}
       <section className="py-20 gradient-emerald">
         <div className="container mx-auto px-4">
           <motion.div
@@ -274,7 +265,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Preview - Imagem à Direita */}
+      {/* About Preview */}
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -283,20 +274,33 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
+              className="relative"
+            >
+              <img 
+                src={travelExperience} 
+                alt="Viagens e Experiências" 
+                className="rounded-3xl shadow-xl w-full"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 35 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
             >
               <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
                 Quem Somos
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                Especialistas em Curadoria de Benefícios
+                Conhecimento que Transforma Oportunidades
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Nossa equipe combina conhecimento profundo do mercado de vantagens com 
-                atendimento humanizado. Identificamos as melhores oportunidades para 
-                cada perfil, sempre com total transparência e ética profissional.
+                Nossa equipe é capacitada para orientar você sobre os diversos programas de 
+                vantagens disponíveis no mercado. Fornecemos suporte completo para que você 
+                entenda todas as possibilidades e benefícios.
               </p>
               <ul className="space-y-4 mb-8">
-                {['Análise detalhada de programas', 'Orientação sem conflito de interesses', 'Atualização constante de oportunidades', 'Acompanhamento personalizado'].map((item) => (
+                {['Mapeamento de programas de recompensas', 'Assessoria individualizada', 'Conteúdo sempre atualizado', 'Suporte permanente'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full gradient-accent-warm flex items-center justify-center flex-shrink-0">
                       <Check className="w-3.5 h-3.5 text-white" />
@@ -306,33 +310,15 @@ const Index = () => {
                 ))}
               </ul>
               <Link to="/sobre" className="btn-primary">
-                Saiba Mais
+                Conhecer a Equipe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 35 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="relative"
-            >
-              <img 
-                src={teamMeeting} 
-                alt="Equipe Especializada" 
-                className="rounded-3xl shadow-xl w-full"
-              />
-              <img 
-                src={businessWork} 
-                alt="Trabalho Profissional" 
-                className="absolute -bottom-8 -left-8 w-48 rounded-2xl shadow-lg border-4 border-background hidden md:block"
-              />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Experiences - Layout Invertido */}
+      {/* Experiences */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -341,36 +327,34 @@ const Index = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="order-2 lg:order-1"
             >
-              <img 
-                src={loungeElegant} 
-                alt="Lounge Elegante" 
-                className="rounded-3xl shadow-xl w-full"
-              />
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
+                Experiências
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+                Acesso a Experiências Diferenciadas
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Saiba como aproveitar lounges exclusivos, eventos especiais e muito mais. 
+                Nosso direcionamento auxilia você a entender o caminho para vivenciar 
+                benefícios realmente diferenciados.
+              </p>
+              <Link to="/contato" className="btn-accent">
+                Conversar com Especialista
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="order-1 lg:order-2"
             >
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
-                Experiências
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                Acesso a Ambientes Exclusivos
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Orientamos você sobre como aproveitar lounges VIP, eventos premium 
-                e experiências diferenciadas que fazem parte dos melhores programas 
-                de benefícios disponíveis.
-              </p>
-              <Link to="/contato" className="btn-accent">
-                Explorar Possibilidades
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
+              <img 
+                src={loungeVip} 
+                alt="Lounge Exclusivo" 
+                className="rounded-3xl shadow-xl w-full"
+              />
             </motion.div>
           </div>
         </div>
@@ -392,12 +376,12 @@ const Index = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-primary">
-                    Aviso Importante
+                    Declaração de Conformidade
                   </h2>
-                  <p className="text-muted-foreground text-sm">Transparência em nossa atuação</p>
+                  <p className="text-muted-foreground text-sm">Sobre nossos serviços</p>
                 </div>
               </div>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="space-y-3">
                 {disclaimers.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -407,10 +391,10 @@ const Index = () => {
               </div>
               <div className="mt-8 pt-6 border-t border-border/50 flex flex-wrap gap-6 text-sm">
                 <span className="text-muted-foreground">
-                  <strong className="text-primary">Registro:</strong> 73492816
+                  <strong className="text-primary">Cadastro:</strong> 38291045
                 </span>
                 <span className="text-muted-foreground">
-                  <strong className="text-primary">Natureza:</strong> Empresa privada de curadoria consultiva
+                  <strong className="text-primary">Conformidade:</strong> Operação privada sem relação com órgãos reguladores do sistema financeiro
                 </span>
               </div>
             </div>
@@ -418,7 +402,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Articles - Cards Modernos */}
+      {/* Articles */}
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <motion.div
@@ -427,11 +411,8 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="section-heading">Conteúdos Exclusivos</h2>
+            <h2 className="section-heading">Conteúdo Publicado</h2>
             <div className="divider-elegant mt-6 mb-6" />
-            <p className="section-subheading">
-              Artigos e guias para você entender melhor o universo dos benefícios
-            </p>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -446,18 +427,17 @@ const Index = () => {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={loungePremium} 
-                  alt="Guia de Lounges" 
+                  src={artigo1} 
+                  alt="Guia de Benefícios Premium" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <span className="text-xs font-semibold text-accent uppercase tracking-wider">Guia</span>
                 <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Desvendando o Acesso a Lounges Premium
+                  Guia Completo de Vantagens Exclusivas
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Entenda como funcionam os programas que dão acesso a espaços VIP em aeroportos.
+                  Entenda como uma orientação adequada pode direcionar você pelo universo de benefícios diferenciados.
                 </p>
                 <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
                   Continuar lendo <ArrowRight className="w-4 h-4" />
@@ -476,18 +456,17 @@ const Index = () => {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={loungeElegant} 
-                  alt="Experiências Exclusivas" 
+                  src={artigo2} 
+                  alt="Mapa de Experiências VIP" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <span className="text-xs font-semibold text-accent uppercase tracking-wider">Experiências</span>
                 <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Experiências que Transformam Viagens
+                  Mapa de Experiências Diferenciadas
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Descubra como elevar suas experiências de viagem com benefícios diferenciados.
+                  Descubra como localizar e acessar os melhores benefícios que elevam sua qualidade de vida.
                 </p>
                 <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
                   Continuar lendo <ArrowRight className="w-4 h-4" />
@@ -506,18 +485,17 @@ const Index = () => {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={businessWork} 
-                  alt="Organização de Benefícios" 
+                  src={artigo3} 
+                  alt="Análise de Programas" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <span className="text-xs font-semibold text-accent uppercase tracking-wider">Estratégia</span>
                 <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Organizando Seus Programas de Vantagens
+                  Análise de Programas de Recompensas
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Dicas práticas para gerenciar e maximizar seus benefícios de forma inteligente.
+                  Compreenda como especialistas avaliam e otimizam programas premium para melhores resultados.
                 </p>
                 <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
                   Continuar lendo <ArrowRight className="w-4 h-4" />
@@ -541,21 +519,21 @@ const Index = () => {
               Pronto para Começar?
             </h2>
             <p className="text-white/75 text-lg mb-10 leading-relaxed">
-              Entre em contato e descubra como nossa curadoria pode transformar 
+              Entre em contato e descubra como nossa assessoria pode transformar 
               a forma como você aproveita benefícios exclusivos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
               <Link to="/contato" className="btn-accent">
-                Iniciar Consultoria
+                Solicitar Atendimento
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-white/60 text-sm">
-              <a href="tel:+5511141397844" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="tel:+5562915296613" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                (11) 1413-9784
+                (62) 9152-9613
               </a>
-              <a href="mailto:contato@exclusivebeneficiosmix.com" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="mailto:contato@beneficiosamx.com" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
                 Email
               </a>

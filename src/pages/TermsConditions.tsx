@@ -22,19 +22,19 @@ const TermsConditions = () => {
             </Link>
             <div className="info-panel mb-8">
               <p><strong>Vigência:</strong> 14 de Janeiro de 2025</p>
-              <p><strong>Registro:</strong> 73492816</p>
+              <p><strong>Cadastro:</strong> 38291045</p>
             </div>
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6">1. Natureza dos Serviços</h2>
               <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-5 mb-6">
                 <p className="font-bold text-foreground mb-2">ATENÇÃO:</p>
-                <p className="text-muted-foreground text-sm">A Exclusive Benefícios Mix presta exclusivamente curadoria consultiva. NÃO somos banco, financeira ou entidade regulada.</p>
+                <p className="text-muted-foreground text-sm">A Benefícios Premix presta exclusivamente consultoria informativa. NÃO somos banco, financeira ou entidade regulada.</p>
               </div>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Contato</h2>
               <div className="highlight-panel">
-                <p><strong>Email:</strong> contato@exclusivebeneficiosmix.com</p>
-                <p><strong>Telefone:</strong> (11) 1413-9784</p>
-                <p><strong>Endereço:</strong> R Cabreuva 210 - Sorocaba, SP - 18.085-340</p>
+                <p><strong>Email:</strong> contato@beneficiosamx.com</p>
+                <p><strong>Telefone:</strong> (62) 9152-9613</p>
+                <p><strong>Endereço:</strong> Av General Couto Magalhaes, 485 - Vila Mauá, Goiânia - GO, 74.323-240</p>
               </div>
             </div>
           </div>

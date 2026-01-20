@@ -14,7 +14,6 @@ import {
   MapPin,
   Phone,
   Mail,
-  User,
   Briefcase,
   Clock,
   CreditCard
@@ -28,12 +27,12 @@ const About = () => {
     {
       icon: Target,
       name: 'Missão',
-      content: 'Oferecer consultoria profissional em programas de benefícios, auxiliando nossos clientes com informações claras e orientação especializada.'
+      content: 'Oferecer assessoria personalizada em programas de benefícios, auxiliando nossos clientes com informações claras e orientação especializada.'
     },
     {
       icon: Eye,
       name: 'Visão',
-      content: 'Ser reconhecida como empresa de referência em consultoria informativa sobre programas de vantagens corporativas e pessoais.'
+      content: 'Ser reconhecida como empresa de referência em consultoria informativa sobre programas de vantagens e recompensas.'
     },
     {
       icon: Heart,
@@ -45,11 +44,11 @@ const About = () => {
   const companyInfo = [
     { icon: Building2, label: 'Razão Social', value: 'IMPERIO DA TOYOTA LTDA' },
     { icon: FileText, label: 'CNPJ', value: '47.951.436/0001-20' },
-    { icon: Briefcase, label: 'Nome Fantasia', value: 'Exclusive Benefícios Mix' },
+    { icon: Briefcase, label: 'Nome Fantasia', value: 'Benefícios Premix' },
     { icon: MapPin, label: 'Endereço', value: 'Av. General Couto Magalhães, 485, Quadra 26 Lote 04, Vila Mauá, Goiânia-GO, CEP 74.323-240' },
     { icon: Phone, label: 'Telefone Comercial', value: '(62) 9152-9613' },
     { icon: Phone, label: 'Telefone Fixo', value: '(11) 1413-9784' },
-    { icon: Mail, label: 'E-mail Institucional', value: 'contato@exclusivebeneficiosmix.com' },
+    { icon: Mail, label: 'E-mail Institucional', value: 'contato@beneficiosamx.com' },
     { icon: Clock, label: 'Data de Abertura', value: '14/09/2022' },
   ];
 
@@ -62,7 +61,7 @@ const About = () => {
     {
       step: '02',
       title: 'Análise de Perfil',
-      description: 'Realizamos uma análise detalhada do seu perfil para identificar os programas de benefícios mais adequados para você ou sua empresa.'
+      description: 'Realizamos uma análise detalhada do seu perfil para identificar os programas de benefícios mais adequados para você.'
     },
     {
       step: '03',
@@ -94,7 +93,7 @@ const About = () => {
             transition={{ delay: 0.05 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
           >
-            Exclusive <span className="text-accent-shine">Benefícios Mix</span>
+            Benefícios <span className="text-accent-shine">Premix</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -103,7 +102,7 @@ const About = () => {
             className="text-lg text-white/70 max-w-2xl mx-auto"
           >
             Empresa privada de consultoria informativa especializada em 
-            programas de benefícios e vantagens corporativas.
+            programas de benefícios e vantagens.
           </motion.p>
         </div>
       </section>
@@ -191,7 +190,7 @@ const About = () => {
                 O Que Oferecemos
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-5">
-                <strong>Consultoria profissional em programas de benefícios.</strong> Nossa equipe analisa 
+                <strong>Assessoria profissional em programas de benefícios.</strong> Nossa equipe analisa 
                 seu perfil e identifica as melhores opções de programas de vantagens disponíveis no mercado.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-5">
@@ -234,7 +233,7 @@ const About = () => {
           >
             <h2 className="section-heading">Como Funciona</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
-              Processo simples e transparente para você receber nossa consultoria
+              Processo simples e transparente para você receber nossa assessoria
             </p>
             <div className="divider-elegant mt-6" />
           </motion.div>
@@ -320,7 +319,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-2">Como Funciona a Contratação</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Nossa consultoria é oferecida mediante análise do seu perfil. O orçamento é personalizado 
+                    Nossa assessoria é oferecida mediante análise do seu perfil. O orçamento é personalizado 
                     de acordo com a complexidade da orientação necessária e os programas de benefícios envolvidos.
                   </p>
                 </div>
@@ -375,7 +374,7 @@ const About = () => {
             className="max-w-4xl mx-auto text-center text-white"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Por que Escolher Nossa Consultoria?
+              Por que Escolher Nossa Assessoria?
             </h2>
             <p className="text-white/70 leading-relaxed mb-12 max-w-2xl mx-auto">
               Profissionalismo e transparência em cada etapa do atendimento
@@ -397,7 +396,7 @@ const About = () => {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Atendimento</h3>
                 <p className="text-white/60 text-sm">
-                  Consultoria personalizada adaptada às suas necessidades específicas
+                  Assessoria personalizada adaptada às suas necessidades específicas
                 </p>
               </div>
               <div className="text-center">
@@ -418,20 +417,19 @@ const About = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-2xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
-              Solicite um Orçamento
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Entre em Contato
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-              Entre em contato para receber uma análise personalizada e 
-              orçamento para nossa consultoria em programas de benefícios.
+            <p className="text-muted-foreground mb-10 leading-relaxed">
+              Estamos prontos para ajudar você a entender as melhores opções de programas de benefícios.
             </p>
             <Link to="/contato" className="btn-accent">
-              Contato Comercial
+              Solicitar Atendimento
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </motion.div>
