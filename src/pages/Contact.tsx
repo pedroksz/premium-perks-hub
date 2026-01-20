@@ -6,7 +6,8 @@ import {
   MapPin, 
   Clock, 
   Send,
-  Shield 
+  ShieldCheck,
+  ArrowRight
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -32,8 +33,8 @@ const Contact = () => {
     await new Promise(resolve => setTimeout(resolve, 1500));
     
     toast({
-      title: "Mensagem enviada!",
-      description: "Retornaremos em breve.",
+      title: "Mensagem recebida!",
+      description: "Entraremos em contato em breve.",
     });
     
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
@@ -43,8 +44,8 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Endereço',
-      content: 'Av Prfa Izoraida Marques Peres, 401\nQuiosq Esp 37 QM0T - Sorocaba, SP\nCEP: 18.047-900'
+      title: 'Localização',
+      content: 'R Cabreuva 210\nSorocaba, SP\nCEP: 18.085-340'
     },
     {
       icon: Phone,
@@ -55,12 +56,12 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'contato@beneficiosamx.com',
-      href: 'mailto:contato@beneficiosamx.com'
+      content: 'contato@exclusivebeneficiosmix.com',
+      href: 'mailto:contato@exclusivebeneficiosmix.com'
     },
     {
       icon: Clock,
-      title: 'Horário',
+      title: 'Atendimento',
       content: 'Segunda a Sexta: 09h às 18h'
     }
   ];
@@ -68,58 +69,70 @@ const Contact = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="gradient-hero-section py-20 text-white">
+      <section className="gradient-hero-section py-24 pt-40 text-white">
         <div className="container mx-auto px-4 text-center">
+          <motion.span 
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="inline-block text-sm font-semibold uppercase tracking-widest mb-4 text-white/70"
+          >
+            Contato
+          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-5"
+            transition={{ delay: 0.05 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
           >
-            Entre em <span className="text-gold-shine">Contato</span>
+            Fale <span className="text-accent-shine">Conosco</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-white/75 max-w-2xl mx-auto font-light"
+            className="text-lg text-white/70 max-w-2xl mx-auto"
           >
-            Estamos disponíveis para esclarecer suas dúvidas sobre 
-            programas de vantagens e experiências exclusivas.
+            Estamos prontos para orientá-lo sobre programas de 
+            benefícios e experiências exclusivas.
           </motion.p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-20 bg-background">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-5 gap-12">
             {/* Form */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="lg:col-span-3"
             >
-              <div className="bg-card rounded-2xl shadow-xl p-8">
-                <h2 className="text-2xl font-bold text-primary mb-6">
+              <div className="bg-card rounded-3xl shadow-lg p-8 md:p-10 border border-border/30">
+                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   Envie sua Mensagem
                 </h2>
+                <p className="text-muted-foreground mb-8">
+                  Preencha o formulário e retornaremos em breve
+                </p>
                 
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Nome *
+                      <label className="block text-sm font-semibold text-foreground mb-2.5">
+                        Nome completo *
                       </label>
                       <Input
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Seu nome completo"
-                        className="w-full h-11 rounded-lg"
+                        placeholder="Seu nome"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
+                      <label className="block text-sm font-semibold text-foreground mb-2.5">
                         Email *
                       </label>
                       <Input
@@ -128,14 +141,14 @@ const Contact = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="seu@email.com"
-                        className="w-full h-11 rounded-lg"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                   </div>
                   
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
+                      <label className="block text-sm font-semibold text-foreground mb-2.5">
                         Telefone
                       </label>
                       <Input
@@ -143,25 +156,25 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="(00) 00000-0000"
-                        className="w-full h-11 rounded-lg"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
+                      <label className="block text-sm font-semibold text-foreground mb-2.5">
                         Assunto *
                       </label>
                       <Input
                         required
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        placeholder="Qual o assunto?"
-                        className="w-full h-11 rounded-lg"
+                        placeholder="Sobre o que deseja falar?"
+                        className="w-full h-12 rounded-xl"
                       />
                     </div>
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">
+                    <label className="block text-sm font-semibold text-foreground mb-2.5">
                       Mensagem *
                     </label>
                     <Textarea
@@ -170,13 +183,13 @@ const Contact = () => {
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Como podemos ajudá-lo?"
                       rows={5}
-                      className="w-full resize-none rounded-lg"
+                      className="w-full resize-none rounded-xl"
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
-                    className="w-full btn-gold h-12 text-base"
+                    className="w-full btn-accent h-13 text-base rounded-xl"
                     disabled={submitting}
                   >
                     {submitting ? (
@@ -184,7 +197,7 @@ const Contact = () => {
                     ) : (
                       <>
                         Enviar Mensagem
-                        <Send className="w-5 h-5 ml-2" />
+                        <Send className="w-4 h-4 ml-2" />
                       </>
                     )}
                   </Button>
@@ -197,22 +210,22 @@ const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-5"
+              className="lg:col-span-2 space-y-5"
             >
               <h2 className="text-2xl font-bold text-primary mb-6">
-                Informações de Contato
+                Informações
               </h2>
               
               {contactInfo.map((item) => (
                 <div 
                   key={item.title}
-                  className="bg-card rounded-xl p-6 shadow-md flex items-start gap-4"
+                  className="bg-card rounded-2xl p-5 shadow-sm flex items-start gap-4 border border-border/30"
                 >
-                  <div className="w-12 h-12 rounded-lg gradient-navy flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-xl gradient-emerald flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1 text-base">
+                    <h3 className="font-bold text-foreground mb-1">
                       {item.title}
                     </h3>
                     {item.href ? (
@@ -232,15 +245,15 @@ const Contact = () => {
               ))}
 
               {/* Notice */}
-              <div className="highlight-box mt-8">
-                <h3 className="font-bold text-primary mb-2 flex items-center gap-2 text-base">
-                  <Shield className="w-5 h-5" />
-                  Aviso Importante
+              <div className="highlight-panel mt-6">
+                <h3 className="font-bold text-primary mb-3 flex items-center gap-2">
+                  <ShieldCheck className="w-5 h-5" />
+                  Importante
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Somos uma empresa de assessoria educacional e consultiva. 
+                  A Exclusive Benefícios Mix é uma empresa de curadoria consultiva. 
                   Não realizamos intermediação financeira ou comercialização de produtos bancários. 
-                  Nossa atuação limita-se à orientação sobre programas de vantagens.
+                  Nossa atuação é exclusivamente educacional e orientativa.
                 </p>
               </div>
             </motion.div>

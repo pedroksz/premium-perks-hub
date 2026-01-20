@@ -1,91 +1,89 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
-  Lightbulb, 
-  Crown, 
-  Users, 
-  Map, 
-  Lock, 
-  MessageCircle,
-  Star,
-  Timer,
-  Shield,
+  Sparkles, 
+  Target, 
+  Users2, 
+  Compass, 
+  ShieldCheck, 
+  Headphones,
+  TrendingUp,
+  Clock,
+  Award,
   ArrowRight,
   Phone,
   Mail,
-  MapPin
+  Check
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import heroBusiness from '@/assets/hero-business.jpg';
-import teamUnity from '@/assets/team-unity.jpg';
-import loungeBar from '@/assets/lounge-bar.jpg';
-import benefitsHome from '@/assets/benefits-home.jpg';
-import loungeSpace from '@/assets/lounge-space.jpg';
-import professionalWork from '@/assets/professional-work.jpg';
+import loungePremium from '@/assets/lounge-premium.jpg';
+import businessWork from '@/assets/business-work.jpg';
+import loungeElegant from '@/assets/lounge-elegant.jpg';
+import executiveTravel from '@/assets/executive-travel.jpg';
+import teamMeeting from '@/assets/team-meeting.jpg';
+import teamCollaboration from '@/assets/team-collaboration.jpg';
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
+const fadeIn = {
+  hidden: { opacity: 0, y: 25 },
   visible: { opacity: 1, y: 0 }
 };
 
-const staggerContainer = {
+const stagger = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.1 }
+    transition: { staggerChildren: 0.08 }
   }
 };
 
 const Index = () => {
-  const servicesInfo = [
+  const services = [
     {
-      icon: Lightbulb,
-      title: 'Consultoria Educativa',
-      description: 'Explicações detalhadas sobre programas de vantagens, sistemas de pontos e bonificações disponíveis. Orientação clara sobre regras e critérios.'
+      icon: Sparkles,
+      title: 'Curadoria de Benefícios',
+      description: 'Seleção criteriosa das melhores oportunidades de vantagens e recompensas disponíveis no mercado atual.'
     },
     {
-      icon: Crown,
-      title: 'Seleção de Oportunidades',
-      description: 'Identificação criteriosa das melhores opções de benefícios, parcerias comerciais e acessos diferenciados para seu perfil.'
+      icon: Target,
+      title: 'Análise Personalizada',
+      description: 'Avaliação completa do seu perfil para identificar os programas mais adequados às suas necessidades.'
     },
     {
-      icon: Users,
-      title: 'Suporte Personalizado',
-      description: 'Acompanhamento individual para esclarecer questões sobre recompensas, ofertas especiais e programas de fidelidade.'
+      icon: Users2,
+      title: 'Atendimento Exclusivo',
+      description: 'Suporte individual com consultores dedicados que entendem suas preferências e objetivos.'
     },
     {
-      icon: Map,
-      title: 'Acesso a Experiências',
-      description: 'Informações sobre eventos exclusivos, espaços VIP, gastronomia diferenciada e viagens com benefícios especiais.'
+      icon: Compass,
+      title: 'Orientação Estratégica',
+      description: 'Direcionamento sobre como maximizar experiências em viagens, gastronomia e entretenimento.'
     },
     {
-      icon: Lock,
-      title: 'Transparência Total',
-      description: 'Atuação estritamente informativa. Nenhuma intermediação financeira, análise de crédito ou venda de produtos bancários.'
+      icon: ShieldCheck,
+      title: 'Ética e Transparência',
+      description: 'Compromisso absoluto com informações claras. Sem intermediação financeira ou vendas.'
     },
     {
-      icon: MessageCircle,
-      title: 'Suporte Permanente',
-      description: 'Assistência contínua com foco em educação sobre vantagens. Direcionamento para canais oficiais quando necessário.'
+      icon: Headphones,
+      title: 'Suporte Contínuo',
+      description: 'Acompanhamento permanente para atualização sobre novas oportunidades e programas.'
     }
   ];
 
-  const statsInfo = [
-    { icon: Star, number: '620+', label: 'Programas Analisados' },
-    { icon: Users, number: '1.200+', label: 'Parcerias Ativas' },
-    { icon: Shield, number: '100%', label: 'Conformidade' },
-    { icon: Timer, number: '24h', label: 'Acesso Digital' }
+  const stats = [
+    { icon: TrendingUp, value: '480+', label: 'Programas Mapeados' },
+    { icon: Users2, value: '850+', label: 'Parcerias Ativas' },
+    { icon: Award, value: '100%', label: 'Transparência' },
+    { icon: Clock, value: 'Real-time', label: 'Atualizações' }
   ];
 
-  const disclaimerItems = [
-    'Atividade exclusivamente consultiva e de orientação educacional',
-    'Não representamos instituições financeiras, bancos ou emissores de cartões',
-    'Não realizamos análise de crédito, concessão de financiamento ou intermediação bancária',
-    'Não comercializamos produtos financeiros ou cartões de qualquer natureza',
-    'Nosso papel limita-se à informação, curadoria e assessoria consultiva',
-    'Nenhuma promessa de aprovação ou garantia de liberação de crédito',
-    'Direcionamos clientes aos canais oficiais das empresas quando necessário',
-    'Contratações são feitas diretamente entre cliente e instituições responsáveis'
+  const disclaimers = [
+    'Atuação exclusivamente consultiva e educacional',
+    'Não representamos bancos ou instituições financeiras',
+    'Não realizamos análise de crédito ou intermediação bancária',
+    'Não comercializamos produtos financeiros ou cartões',
+    'Orientação e curadoria sem promessas de aprovação',
+    'Contratações feitas diretamente com empresas responsáveis'
   ];
 
   return (
@@ -95,16 +93,16 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Benefícios AMX",
-          "description": "Assessoria especializada em programas de vantagens, benefícios exclusivos e maximização de recompensas.",
-          "url": "https://beneficiosamx.com/",
+          "name": "Exclusive Benefícios Mix",
+          "description": "Curadoria especializada em experiências premium e programas de vantagens exclusivas.",
+          "url": "https://exclusivebeneficiosmix.com/",
           "telephone": "(19) 8102-0844",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Av Prfa Izoraida Marques Peres, 401 Quiosq Esp 37 QM0T",
+            "streetAddress": "R Cabreuva 210",
             "addressLocality": "Sorocaba",
             "addressRegion": "SP",
-            "postalCode": "18.047-900",
+            "postalCode": "18.085-340",
             "addressCountry": "BR"
           },
           "priceRange": "$$",
@@ -112,228 +110,274 @@ const Index = () => {
         })
       }} />
 
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBusiness})` }}
-        />
-        <div className="absolute inset-0 gradient-hero-section opacity-90" />
-        
-        <div className="container mx-auto px-4 relative z-10 text-center text-white">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.span 
-              variants={fadeUp}
-              className="inline-block px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 tracking-wider uppercase"
-            >
-              Assessoria em Programas de Vantagens
-            </motion.span>
-            
-            <motion.h1 
-              variants={fadeUp}
-              transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
-            >
-              Maximize Seus{' '}
-              <span className="text-gold-shine">Benefícios</span>
-            </motion.h1>
-            
-            <motion.p 
-              variants={fadeUp}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed font-light"
-            >
-              Orientação profissional para você entender e aproveitar programas de 
-              recompensas, oportunidades exclusivas e vantagens diferenciadas. 
-              Assessoria transparente e ética.
-            </motion.p>
-            
-            <motion.div
-              variants={fadeUp}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <Link to="/contato" className="btn-gold text-base">
-                Solicitar Orientação
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-              <Link to="/sobre" className="btn-primary bg-white/15 backdrop-blur-sm border border-white/25 hover:bg-white/25">
-                Saiba Mais
-              </Link>
-            </motion.div>
-          </motion.div>
+      {/* Hero - Layout Assimétrico */}
+      <section className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${executiveTravel})` }}
+          />
+          <div className="absolute inset-0 gradient-hero-section opacity-95" />
         </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={stagger}
+              className="text-white"
+            >
+              <motion.div 
+                variants={fadeIn}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-8"
+              >
+                <Sparkles className="w-4 h-4" />
+                Experiências Premium
+              </motion.div>
+              
+              <motion.h1 
+                variants={fadeIn}
+                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1]"
+              >
+                Descubra um Novo<br />
+                Padrão de{' '}
+                <span className="text-accent-shine">Vantagens</span>
+              </motion.h1>
+              
+              <motion.p 
+                variants={fadeIn}
+                className="text-lg text-white/75 mb-10 max-w-lg leading-relaxed"
+              >
+                Curadoria especializada para você acessar os melhores programas 
+                de benefícios, experiências diferenciadas e oportunidades exclusivas.
+              </motion.p>
+              
+              <motion.div
+                variants={fadeIn}
+                className="flex flex-col sm:flex-row gap-4"
+              >
+                <Link to="/contato" className="btn-accent">
+                  Agendar Consultoria
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+                <Link to="/sobre" className="btn-primary bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20">
+                  Conhecer Mais
+                </Link>
+              </motion.div>
+            </motion.div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-white/35 rounded-full flex justify-center">
-            <div className="w-1.5 h-2.5 bg-white/70 rounded-full mt-2 animate-bounce" />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, x: 40 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="hidden lg:block"
+            >
+              <div className="relative">
+                <img 
+                  src={loungePremium} 
+                  alt="Experiência Premium" 
+                  className="rounded-3xl shadow-2xl w-full"
+                />
+                <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-xl">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl gradient-accent-warm flex items-center justify-center">
+                      <Award className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Registro Ativo</p>
+                      <p className="font-bold text-primary">73492816</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-20 bg-background">
+      {/* Services - Grid Moderno */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
-            variants={staggerContainer}
+            viewport={{ once: true, margin: "-80px" }}
+            variants={stagger}
+            className="text-center mb-16"
           >
-            <motion.h2 variants={fadeUp} className="section-title">
-              Nossos Serviços
+            <motion.h2 variants={fadeIn} className="section-heading">
+              O Que Oferecemos
             </motion.h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-              {servicesInfo.map((service, i) => (
-                <motion.div
-                  key={service.title}
-                  variants={fadeUp}
-                  transition={{ delay: i * 0.06 }}
-                  className="card-service p-8"
-                >
-                  <div className="w-14 h-14 rounded-lg gradient-gold-accent flex items-center justify-center mb-6 shadow-md">
-                    <service.icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold text-primary mb-4">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    {service.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
+            <motion.div variants={fadeIn} className="divider-elegant mt-6 mb-6" />
+            <motion.p variants={fadeIn} className="section-subheading">
+              Serviços de curadoria desenvolvidos para quem busca excelência em benefícios
+            </motion.p>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-20 gradient-navy">
-        <div className="container mx-auto px-4">
-          <motion.div
+          
+          <motion.div 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={stagger}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {statsInfo.map((stat, i) => (
+            {services.map((service, i) => (
               <motion.div
-                key={stat.label}
-                variants={fadeUp}
-                transition={{ delay: i * 0.08 }}
-                className="text-center text-white"
+                key={service.title}
+                variants={fadeIn}
+                transition={{ delay: i * 0.05 }}
+                className="card-feature"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-white/10 flex items-center justify-center backdrop-blur-sm">
-                  <stat.icon className="w-8 h-8" />
+                <div className="w-14 h-14 rounded-2xl gradient-accent-warm flex items-center justify-center mb-6 shadow-md">
+                  <service.icon className="w-7 h-7 text-white" />
                 </div>
-                <div className="text-4xl md:text-5xl font-bold mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-white/70 font-medium text-sm">{stat.label}</div>
+                <h3 className="text-xl font-bold text-primary mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {service.description}
+                </p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-muted">
+      {/* Stats - Horizontal com Fundo */}
+      <section className="py-20 gradient-emerald">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            {stats.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                variants={fadeIn}
+                transition={{ delay: i * 0.1 }}
+                className="text-center text-white"
+              >
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-sm">
+                  <stat.icon className="w-7 h-7" />
+                </div>
+                <div className="text-3xl md:text-4xl font-bold mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-white/65 text-sm">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* About Preview - Imagem à Direita */}
+      <section className="py-24 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7 }}
             >
-              <img 
-                src={teamUnity} 
-                alt="Equipe Unida" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Expertise que Gera Resultados
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
+                Quem Somos
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+                Especialistas em Curadoria de Benefícios
               </h2>
-              <p className="text-muted-foreground text-base leading-relaxed mb-6">
-                Nossa equipe é especializada em identificar e explicar os 
-                programas de vantagens disponíveis no mercado. Oferecemos 
-                assessoria completa para que você compreenda todas as opções.
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Nossa equipe combina conhecimento profundo do mercado de vantagens com 
+                atendimento humanizado. Identificamos as melhores oportunidades para 
+                cada perfil, sempre com total transparência e ética profissional.
               </p>
-              <ul className="space-y-3 mb-8">
-                {['Análise de programas de recompensas', 'Orientação personalizada', 'Informações sempre atualizadas', 'Acompanhamento contínuo'].map((item) => (
+              <ul className="space-y-4 mb-8">
+                {['Análise detalhada de programas', 'Orientação sem conflito de interesses', 'Atualização constante de oportunidades', 'Acompanhamento personalizado'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <Shield className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground font-medium text-sm">{item}</span>
+                    <div className="w-6 h-6 rounded-full gradient-accent-warm flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3.5 h-3.5 text-white" />
+                    </div>
+                    <span className="text-foreground text-sm font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link to="/sobre" className="btn-primary">
-                Conhecer a Equipe
-                <ArrowRight className="w-5 h-5 ml-2" />
+                Saiba Mais
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 35 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="relative"
+            >
+              <img 
+                src={teamMeeting} 
+                alt="Equipe Especializada" 
+                className="rounded-3xl shadow-xl w-full"
+              />
+              <img 
+                src={businessWork} 
+                alt="Trabalho Profissional" 
+                className="absolute -bottom-8 -left-8 w-48 rounded-2xl shadow-lg border-4 border-background hidden md:block"
+              />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Experiences */}
-      <section className="py-20 bg-card">
+      {/* Experiences - Layout Invertido */}
+      <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7 }}
               className="order-2 lg:order-1"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Experiências Diferenciadas
-              </h2>
-              <p className="text-muted-foreground text-base leading-relaxed mb-6">
-                Descubra como acessar lounges exclusivos, eventos especiais 
-                e muito mais. Nossa orientação ajuda você a entender 
-                como aproveitar benefícios verdadeiramente diferenciados.
-              </p>
-              <Link to="/contato" className="btn-gold">
-                Falar com Especialista
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+              <img 
+                src={loungeElegant} 
+                alt="Lounge Elegante" 
+                className="rounded-3xl shadow-xl w-full"
+              />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: 35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7 }}
               className="order-1 lg:order-2"
             >
-              <img 
-                src={loungeBar} 
-                alt="Espaço Exclusivo" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
+                Experiências
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+                Acesso a Ambientes Exclusivos
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Orientamos você sobre como aproveitar lounges VIP, eventos premium 
+                e experiências diferenciadas que fazem parte dos melhores programas 
+                de benefícios disponíveis.
+              </p>
+              <Link to="/contato" className="btn-accent">
+                Explorar Possibilidades
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Disclaimer */}
-      <section className="py-20 bg-background">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -341,153 +385,180 @@ const Index = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <div className="info-box">
-              <div className="flex items-center gap-3 mb-6">
-                <Lock className="w-8 h-8 text-primary" />
-                <h2 className="text-2xl md:text-3xl font-bold text-primary">
-                  Aviso de Transparência
-                </h2>
+            <div className="info-panel">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-14 h-14 rounded-2xl gradient-emerald flex items-center justify-center">
+                  <ShieldCheck className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-primary">
+                    Aviso Importante
+                  </h2>
+                  <p className="text-muted-foreground text-sm">Transparência em nossa atuação</p>
+                </div>
               </div>
-              <p className="text-foreground font-semibold mb-4 text-base">
-                Sobre nossa atuação:
-              </p>
-              <ul className="space-y-3">
-                {disclaimerItems.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Shield className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground text-sm">{item}</span>
-                  </li>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {disclaimers.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground text-sm">{item}</span>
+                  </div>
                 ))}
-              </ul>
-              <p className="mt-6 text-xs text-muted-foreground">
-                <strong className="text-primary">Registro:</strong> 52738491 | 
-                <strong className="text-primary ml-2">Natureza:</strong> Empresa privada de assessoria consultiva
-              </p>
+              </div>
+              <div className="mt-8 pt-6 border-t border-border/50 flex flex-wrap gap-6 text-sm">
+                <span className="text-muted-foreground">
+                  <strong className="text-primary">Registro:</strong> 73492816
+                </span>
+                <span className="text-muted-foreground">
+                  <strong className="text-primary">Natureza:</strong> Empresa privada de curadoria consultiva
+                </span>
+              </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Articles */}
-      <section className="py-20 bg-muted">
+      {/* Articles - Cards Modernos */}
+      <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="text-center mb-16"
           >
-            <h2 className="section-title">Artigos e Conteúdos</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              {/* Artigo 1 */}
-              <a 
-                href="/artigo1.php" 
-                className="group block bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-              >
-                <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={benefitsHome} 
-                    alt="Guia de Benefícios" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-lg text-primary group-hover:text-primary/80 transition-colors mb-2">
-                    Entendendo Programas de Vantagens
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Saiba como uma orientação adequada pode guiá-lo pelo universo de benefícios exclusivos.
-                  </p>
-                  <span className="text-primary text-sm flex items-center gap-2 group-hover:gap-3 transition-all font-semibold">
-                    Ler mais <ArrowRight className="w-4 h-4" />
-                  </span>
-                </div>
-              </a>
-
-              {/* Artigo 2 */}
-              <a 
-                href="/artigo2.php" 
-                className="group block bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-              >
-                <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={loungeSpace} 
-                    alt="Experiências VIP" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-lg text-primary group-hover:text-primary/80 transition-colors mb-2">
-                    Experiências Exclusivas Disponíveis
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Conheça as melhores oportunidades para elevar sua qualidade de vida com benefícios reais.
-                  </p>
-                  <span className="text-primary text-sm flex items-center gap-2 group-hover:gap-3 transition-all font-semibold">
-                    Ler mais <ArrowRight className="w-4 h-4" />
-                  </span>
-                </div>
-              </a>
-
-              {/* Artigo 3 */}
-              <a 
-                href="/artigo3.php" 
-                className="group block bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
-              >
-                <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={professionalWork} 
-                    alt="Planejamento de Benefícios" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-lg text-primary group-hover:text-primary/80 transition-colors mb-2">
-                    Planejamento Estratégico de Vantagens
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Aprenda a organizar e maximizar o uso dos programas de recompensas disponíveis.
-                  </p>
-                  <span className="text-primary text-sm flex items-center gap-2 group-hover:gap-3 transition-all font-semibold">
-                    Ler mais <ArrowRight className="w-4 h-4" />
-                  </span>
-                </div>
-              </a>
-            </div>
+            <h2 className="section-heading">Conteúdos Exclusivos</h2>
+            <div className="divider-elegant mt-6 mb-6" />
+            <p className="section-subheading">
+              Artigos e guias para você entender melhor o universo dos benefícios
+            </p>
           </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Article 1 */}
+            <motion.a 
+              href="/artigo1.php"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0 }}
+              className="card-elegant group"
+            >
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={loungePremium} 
+                  alt="Guia de Lounges" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-semibold text-accent uppercase tracking-wider">Guia</span>
+                <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
+                  Desvendando o Acesso a Lounges Premium
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  Entenda como funcionam os programas que dão acesso a espaços VIP em aeroportos.
+                </p>
+                <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
+                  Continuar lendo <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </motion.a>
+
+            {/* Article 2 */}
+            <motion.a 
+              href="/artigo2.php"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="card-elegant group"
+            >
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={loungeElegant} 
+                  alt="Experiências Exclusivas" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-semibold text-accent uppercase tracking-wider">Experiências</span>
+                <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
+                  Experiências que Transformam Viagens
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  Descubra como elevar suas experiências de viagem com benefícios diferenciados.
+                </p>
+                <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
+                  Continuar lendo <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </motion.a>
+
+            {/* Article 3 */}
+            <motion.a 
+              href="/artigo3.php"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="card-elegant group"
+            >
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={businessWork} 
+                  alt="Organização de Benefícios" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-semibold text-accent uppercase tracking-wider">Estratégia</span>
+                <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
+                  Organizando Seus Programas de Vantagens
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  Dicas práticas para gerenciar e maximizar seus benefícios de forma inteligente.
+                </p>
+                <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
+                  Continuar lendo <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </motion.a>
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 gradient-navy">
+      {/* CTA Final */}
+      <section className="py-24 gradient-emerald">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto text-white"
+            className="max-w-2xl mx-auto text-white"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Pronto para Maximizar Seus Benefícios?
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Pronto para Começar?
             </h2>
-            <p className="text-white/80 text-base mb-8 leading-relaxed">
-              Entre em contato e descubra como nossa orientação pode ajudá-lo 
-              a aproveitar as melhores oportunidades do mercado.
+            <p className="text-white/75 text-lg mb-10 leading-relaxed">
+              Entre em contato e descubra como nossa curadoria pode transformar 
+              a forma como você aproveita benefícios exclusivos.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/contato" className="btn-gold">
-                Agendar Consulta
-                <ArrowRight className="w-5 h-5 ml-2" />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+              <Link to="/contato" className="btn-accent">
+                Iniciar Consultoria
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
-              <div className="flex items-center gap-6 text-white/70 text-sm">
-                <a href="tel:+5519810200844" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Phone className="w-4 h-4" />
-                  (19) 8102-0844
-                </a>
-                <a href="mailto:contato@beneficiosamx.com" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Mail className="w-4 h-4" />
-                  Email
-                </a>
-              </div>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 text-white/60 text-sm">
+              <a href="tel:+5519810200844" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone className="w-4 h-4" />
+                (19) 8102-0844
+              </a>
+              <a href="mailto:contato@exclusivebeneficiosmix.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail className="w-4 h-4" />
+                Email
+              </a>
             </div>
           </motion.div>
         </div>
