@@ -21,7 +21,7 @@ const TermsConditions = () => {
               <ArrowLeft className="w-4 h-4" /> Voltar ao Início
             </Link>
             <div className="info-panel mb-8">
-              <p><strong>Vigência:</strong> 01 de Janeiro de 2025</p>
+              <p><strong>Vigência:</strong> 14 de Janeiro de 2025</p>
               <p><strong>Registro:</strong> 73492816</p>
             </div>
             <div className="prose prose-lg max-w-none">
