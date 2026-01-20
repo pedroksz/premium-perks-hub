@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Award, Phone, MapPin } from 'lucide-react';
+import { Menu, X, Gem, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
@@ -8,71 +8,65 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/', label: 'Início' },
-    { path: '/sobre', label: 'Sobre Nós' },
-    { path: '/contato', label: 'Contato' },
+    { path: '/', label: 'Home' },
+    { path: '/sobre', label: 'Quem Somos' },
+    { path: '/contato', label: 'Fale Conosco' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <>
-      {/* Barra de Informações */}
-      <div className="gradient-navy text-white py-2 text-sm">
-        <div className="container mx-auto px-4 flex justify-between items-center flex-wrap gap-2">
-          <div className="flex items-center gap-6">
-            <a href="tel:+5519810200844" className="flex items-center gap-2 hover:opacity-75 transition-opacity">
-              <Phone className="w-4 h-4" />
-              <span className="font-medium">(19) 8102-0844</span>
-            </a>
-            <span className="hidden md:flex items-center gap-2 opacity-85">
-              <MapPin className="w-4 h-4" />
-              <span>Sorocaba, São Paulo</span>
-            </span>
-          </div>
-          <div className="text-xs opacity-70 font-light">
-            Atendimento: Seg à Sex
-          </div>
+    <header className="bg-background/80 backdrop-blur-xl fixed w-full top-0 z-50 border-b border-border/30">
+      <div className="container mx-auto px-4">
+        {/* Top Bar */}
+        <div className="flex items-center justify-between py-2 border-b border-border/20 text-sm">
+          <a href="tel:+5519810200844" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <Phone className="w-3.5 h-3.5" />
+            <span>(19) 8102-0844</span>
+          </a>
+          <span className="text-muted-foreground/70 text-xs hidden sm:block">
+            Sorocaba, SP • Atendimento Personalizado
+          </span>
         </div>
-      </div>
 
-      {/* Header Principal */}
-      <header className="bg-card/95 backdrop-blur-lg shadow-lg sticky top-0 z-50 border-b border-border/40">
-        <nav className="container mx-auto px-4 py-4">
+        {/* Main Header */}
+        <nav className="py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-xl gradient-navy flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Award className="w-7 h-7 text-white" />
+              <div className="w-11 h-11 rounded-2xl gradient-emerald flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Gem className="w-6 h-6 text-white" />
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-primary tracking-tight">Benefícios AMX</h1>
-                <p className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase">Assessoria em Vantagens</p>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-primary tracking-tight leading-tight">Exclusive</span>
+                <span className="text-xs text-muted-foreground tracking-widest uppercase">Benefícios Mix</span>
               </div>
             </Link>
 
             {/* Desktop Nav */}
-            <ul className="hidden md:flex items-center gap-8">
+            <ul className="hidden lg:flex items-center gap-10">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`nav-link py-2 text-sm ${isActive(item.path) ? 'text-primary font-semibold' : ''}`}
+                    className={`nav-link-modern ${isActive(item.path) ? 'text-primary font-semibold active' : ''}`}
                   >
                     {item.label}
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link to="/contato" className="btn-gold text-sm px-6 py-2.5">
-                  Agendar Consulta
-                </Link>
-              </li>
             </ul>
+
+            {/* CTA */}
+            <div className="hidden lg:flex items-center gap-4">
+              <Link to="/contato" className="btn-accent">
+                Iniciar Consultoria
+              </Link>
+            </div>
 
             {/* Mobile Toggle */}
             <button
-              className="md:hidden p-2.5 rounded-lg hover:bg-muted transition-colors"
+              className="lg:hidden p-2.5 rounded-xl hover:bg-muted transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Menu"
             >
@@ -87,31 +81,31 @@ const Header = () => {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="md:hidden overflow-hidden"
+                className="lg:hidden overflow-hidden"
               >
-                <ul className="flex flex-col gap-2 py-5 border-t mt-4">
+                <ul className="flex flex-col gap-1 py-6 border-t border-border/30 mt-4">
                   {navItems.map((item) => (
                     <li key={item.path}>
                       <Link
                         to={item.path}
                         onClick={() => setMobileOpen(false)}
-                        className={`block py-3 px-4 rounded-lg transition-colors font-medium ${
+                        className={`block py-3.5 px-5 rounded-xl transition-all font-medium ${
                           isActive(item.path)
                             ? 'bg-primary text-primary-foreground'
-                            : 'hover:bg-muted'
+                            : 'hover:bg-muted text-foreground'
                         }`}
                       >
                         {item.label}
                       </Link>
                     </li>
                   ))}
-                  <li className="pt-2">
+                  <li className="pt-3">
                     <Link
                       to="/contato"
                       onClick={() => setMobileOpen(false)}
-                      className="btn-gold w-full text-center"
+                      className="btn-accent w-full text-center justify-center"
                     >
-                      Agendar Consulta
+                      Iniciar Consultoria
                     </Link>
                   </li>
                 </ul>
@@ -119,8 +113,8 @@ const Header = () => {
             )}
           </AnimatePresence>
         </nav>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
