@@ -22,7 +22,7 @@ const TermsConditions = () => {
             </Link>
             <div className="info-box mb-8">
               <p><strong>Vigência:</strong> 01 de Janeiro de 2025</p>
-              <p><strong>Registro:</strong> 47829156</p>
+              <p><strong>Registro:</strong> 52738491</p>
             </div>
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/30 pb-2 mb-6">1. Natureza dos Serviços</h2>

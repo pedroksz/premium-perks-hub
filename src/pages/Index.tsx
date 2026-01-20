@@ -360,7 +360,7 @@ const Index = () => {
                 ))}
               </ul>
               <p className="mt-6 text-xs text-muted-foreground">
-                <strong className="text-primary">Registro:</strong> 47829156 | 
+                <strong className="text-primary">Registro:</strong> 52738491 | 
                 <strong className="text-primary ml-2">Natureza:</strong> Empresa privada de assessoria consultiva
               </p>
             </div>
