@@ -22,7 +22,7 @@ const TermsConditions = () => {
             </Link>
             <div className="info-panel mb-8">
               <p><strong>Vigência:</strong> 14 de Janeiro de 2025</p>
-              <p><strong>Cadastro:</strong> 38291045</p>
+              <p><strong>Cadastro:</strong> 72849163</p>
             </div>
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6">1. Natureza dos Serviços</h2>
@@ -32,7 +32,7 @@ const TermsConditions = () => {
               </div>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Contato</h2>
               <div className="highlight-panel">
-                <p><strong>Email:</strong> contato@beneficiosamx.com</p>
+                <p><strong>Email:</strong> contato@beneficiospremix.com</p>
                 <p><strong>Telefone:</strong> (62) 9152-9613</p>
                 <p><strong>Endereço:</strong> Av General Couto Magalhaes, 485 - Vila Mauá, Goiânia - GO, 74.323-240</p>
               </div>

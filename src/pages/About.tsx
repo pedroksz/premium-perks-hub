@@ -48,7 +48,7 @@ const About = () => {
     { icon: MapPin, label: 'Endereço', value: 'Av. General Couto Magalhães, 485, Quadra 26 Lote 04, Vila Mauá, Goiânia-GO, CEP 74.323-240' },
     { icon: Phone, label: 'Telefone Comercial', value: '(62) 9152-9613' },
     { icon: Phone, label: 'Telefone Fixo', value: '(11) 1413-9784' },
-    { icon: Mail, label: 'E-mail Institucional', value: 'contato@beneficiosamx.com' },
+    { icon: Mail, label: 'E-mail Institucional', value: 'contato@beneficiospremix.com' },
     { icon: Clock, label: 'Data de Abertura', value: '14/09/2022' },
   ];
 

@@ -55,8 +55,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'contato@beneficiosamx.com',
-      href: 'mailto:contato@beneficiosamx.com'
+      content: 'contato@beneficiospremix.com',
+      href: 'mailto:contato@beneficiospremix.com'
     },
     {
       icon: Clock,

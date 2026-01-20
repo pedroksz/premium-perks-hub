@@ -103,7 +103,7 @@ const Index = () => {
           "@type": "ProfessionalService",
           "name": "Benefícios Premix",
           "description": "Assessoria personalizada para você compreender e aproveitar programas de recompensas, experiências diferenciadas e vantagens exclusivas.",
-          "url": "https://beneficiosamx.com/",
+          "url": "https://beneficiospremix.com/",
           "telephone": "(62) 9152-9613",
           "address": {
             "@type": "PostalAddress",
@@ -452,7 +452,7 @@ const Index = () => {
                 </div>
                 <div>
                   <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">E-mail Institucional</span>
-                  <p className="text-foreground font-medium text-sm mt-1">contato@beneficiosamx.com</p>
+                  <p className="text-foreground font-medium text-sm mt-1">contato@beneficiospremix.com</p>
                 </div>
               </div>
             </div>
@@ -508,7 +508,7 @@ const Index = () => {
                   <strong className="text-primary">CNPJ:</strong> 47.951.436/0001-20
                 </span>
                 <span className="text-muted-foreground">
-                  <strong className="text-primary">Cadastro:</strong> 38291045
+                  <strong className="text-primary">Cadastro:</strong> 72849163
                 </span>
                 <span className="text-muted-foreground">
                   <strong className="text-primary">Conformidade:</strong> Operação privada sem relação com órgãos reguladores do sistema financeiro
@@ -650,7 +650,7 @@ const Index = () => {
                 <Phone className="w-4 h-4" />
                 (62) 9152-9613
               </a>
-              <a href="mailto:contato@beneficiosamx.com" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="mailto:contato@beneficiospremix.com" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
                 Email
               </a>
