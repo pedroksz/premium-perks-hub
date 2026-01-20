@@ -20,12 +20,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         {/* Top Bar */}
         <div className="flex items-center justify-between py-2 border-b border-border/20 text-sm">
-          <a href="tel:+5511141397844" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+          <a href="tel:+5562915296613" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <Phone className="w-3.5 h-3.5" />
-            <span>(11) 1413-9784</span>
+            <span>(62) 9152-9613</span>
           </a>
           <span className="text-muted-foreground/70 text-xs hidden sm:block">
-            Sorocaba, SP • Atendimento Personalizado
+            Vila Mauá, Goiás • Horário Comercial: Segunda à Sexta
           </span>
         </div>
 
@@ -38,8 +38,8 @@ const Header = () => {
                 <Gem className="w-6 h-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-primary tracking-tight leading-tight">Exclusive</span>
-                <span className="text-xs text-muted-foreground tracking-widest uppercase">Benefícios Mix</span>
+                <span className="text-lg font-bold text-primary tracking-tight leading-tight">Benefícios</span>
+                <span className="text-xs text-muted-foreground tracking-widest uppercase">Premix</span>
               </div>
             </Link>
 
@@ -60,7 +60,7 @@ const Header = () => {
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <Link to="/contato" className="btn-accent">
-                Iniciar Consultoria
+                Solicitar Atendimento
               </Link>
             </div>
 
@@ -105,7 +105,7 @@ const Header = () => {
                       onClick={() => setMobileOpen(false)}
                       className="btn-accent w-full text-center justify-center"
                     >
-                      Iniciar Consultoria
+                      Solicitar Atendimento
                     </Link>
                   </li>
                 </ul>

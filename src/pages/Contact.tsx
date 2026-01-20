@@ -6,8 +6,7 @@ import {
   MapPin, 
   Clock, 
   Send,
-  ShieldCheck,
-  ArrowRight
+  ShieldCheck
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -45,19 +44,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Localização',
-      content: 'R Cabreuva 210\nSorocaba, SP\nCEP: 18.085-340'
+      content: 'Av General Couto Magalhaes, 485\nVila Mauá, Goiânia - GO\nCEP: 74.323-240'
     },
     {
       icon: Phone,
       title: 'Telefone',
-      content: '(11) 1413-9784',
-      href: 'tel:+5511141397844'
+      content: '(62) 9152-9613',
+      href: 'tel:+5562915296613'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'contato@exclusivebeneficiosmix.com',
-      href: 'mailto:contato@exclusivebeneficiosmix.com'
+      content: 'contato@beneficiosamx.com',
+      href: 'mailto:contato@beneficiosamx.com'
     },
     {
       icon: Clock,
@@ -251,7 +250,7 @@ const Contact = () => {
                   Importante
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  A Exclusive Benefícios Mix é uma empresa de curadoria consultiva. 
+                  A Benefícios Premix é uma empresa de consultoria informativa. 
                   Não realizamos intermediação financeira ou comercialização de produtos bancários. 
                   Nossa atuação é exclusivamente educacional e orientativa.
                 </p>

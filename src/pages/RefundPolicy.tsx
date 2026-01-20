@@ -22,15 +22,15 @@ const RefundPolicy = () => {
             </Link>
             <div className="info-panel mb-8">
               <p><strong>Vigência:</strong> 14 de Janeiro de 2025</p>
-              <p><strong>Registro:</strong> 73492816</p>
+              <p><strong>Cadastro:</strong> 38291045</p>
             </div>
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6">1. Direito de Arrependimento</h2>
               <p className="text-muted-foreground mb-6">Conforme o Código de Defesa do Consumidor, você tem direito de desistência no prazo de 7 dias corridos após a contratação remota.</p>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Contato</h2>
               <div className="highlight-panel">
-                <p><strong>Email:</strong> contato@exclusivebeneficiosmix.com</p>
-                <p><strong>Telefone:</strong> (11) 1413-9784</p>
+                <p><strong>Email:</strong> contato@beneficiosamx.com</p>
+                <p><strong>Telefone:</strong> (62) 9152-9613</p>
                 <p><strong>Horário:</strong> Segunda a Sexta, 09h às 18h</p>
               </div>
             </div>

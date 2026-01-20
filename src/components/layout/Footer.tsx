@@ -16,16 +16,16 @@ const Footer = () => {
                 <Gem className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold tracking-tight">Exclusive</h3>
-                <p className="text-xs text-white/50 tracking-widest uppercase">Benefícios Mix</p>
+                <h3 className="text-xl font-bold tracking-tight">Benefícios</h3>
+                <p className="text-xs text-white/50 tracking-widest uppercase">Premix</p>
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-xs">
-              Curadoria especializada em experiências premium e programas de 
-              vantagens diferenciadas para clientes selecionados.
+              Assessoria personalizada para você compreender e aproveitar programas de 
+              recompensas e vantagens exclusivas. Orientação ética e transparente.
             </p>
             <p className="text-sm text-white/50">
-              Registro: <span className="text-white/70">73492816</span>
+              Cadastro: <span className="text-white/70">38291045</span>
             </p>
           </div>
 
@@ -74,20 +74,20 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-1 text-white/50" />
                 <span className="text-sm text-white/70 leading-relaxed">
-                  R Cabreuva 210<br />
-                  Sorocaba, SP - 18.085-340
+                  Av General Couto Magalhaes, 485<br />
+                  Vila Mauá, Goiânia - GO, 74.323-240
                 </span>
               </li>
               <li>
-                <a href="tel:+5511141397844" className="flex items-center gap-3 footer-link-modern">
+                <a href="tel:+5562915296613" className="flex items-center gap-3 footer-link-modern">
                   <Phone className="w-4 h-4 text-white/50" />
-                  (11) 1413-9784
+                  (62) 9152-9613
                 </a>
               </li>
               <li>
-                <a href="mailto:contato@exclusivebeneficiosmix.com" className="flex items-center gap-3 footer-link-modern break-all">
+                <a href="mailto:contato@beneficiosamx.com" className="flex items-center gap-3 footer-link-modern break-all">
                   <Mail className="w-4 h-4 flex-shrink-0 text-white/50" />
-                  contato@exclusivebeneficiosmix.com
+                  contato@beneficiosamx.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-white/60 text-sm">
@@ -104,10 +104,10 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/50 text-center md:text-left">
-              © {currentYear} Exclusive Benefícios Mix. Todos os direitos reservados.
+              © {currentYear} Benefícios Premix. Todos os direitos reservados.
             </p>
             <p className="text-xs text-white/40 text-center md:text-right max-w-sm">
-              Empresa de curadoria e orientação. Não atuamos como instituição financeira.
+              Empresa de consultoria e orientação. Não atuamos como instituição financeira.
             </p>
           </div>
         </div>
