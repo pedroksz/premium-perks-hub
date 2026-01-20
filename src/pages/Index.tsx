@@ -19,9 +19,9 @@ import Layout from '@/components/layout/Layout';
 import heroBusiness from '@/assets/hero-business.jpg';
 import teamUnity from '@/assets/team-unity.jpg';
 import loungeBar from '@/assets/lounge-bar.jpg';
-import artigo1Img from '@/assets/artigo1.jpg';
-import artigo2Img from '@/assets/artigo2.jpg';
-import artigo3Img from '@/assets/artigo3.jpg';
+import benefitsHome from '@/assets/benefits-home.jpg';
+import loungeSpace from '@/assets/lounge-space.jpg';
+import professionalWork from '@/assets/professional-work.jpg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -385,7 +385,7 @@ const Index = () => {
               >
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src={artigo1Img} 
+                    src={benefitsHome} 
                     alt="Guia de Benefícios" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
                   />
@@ -410,7 +410,7 @@ const Index = () => {
               >
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src={artigo2Img} 
+                    src={loungeSpace} 
                     alt="Experiências VIP" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
                   />
@@ -435,7 +435,7 @@ const Index = () => {
               >
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src={artigo3Img} 
+                    src={professionalWork} 
                     alt="Planejamento de Benefícios" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
                   />
