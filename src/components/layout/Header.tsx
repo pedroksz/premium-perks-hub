@@ -20,9 +20,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         {/* Top Bar */}
         <div className="flex items-center justify-between py-2 border-b border-border/20 text-sm">
-          <a href="tel:+5519810200844" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+          <a href="tel:+5511141397844" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <Phone className="w-3.5 h-3.5" />
-            <span>(19) 8102-0844</span>
+            <span>(11) 1413-9784</span>
           </a>
           <span className="text-muted-foreground/70 text-xs hidden sm:block">
             Sorocaba, SP • Atendimento Personalizado

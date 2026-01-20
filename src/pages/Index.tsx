@@ -96,7 +96,7 @@ const Index = () => {
           "name": "Exclusive Benefícios Mix",
           "description": "Curadoria especializada em experiências premium e programas de vantagens exclusivas.",
           "url": "https://exclusivebeneficiosmix.com/",
-          "telephone": "(19) 8102-0844",
+          "telephone": "(11) 1413-9784",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "R Cabreuva 210",
@@ -551,9 +551,9 @@ const Index = () => {
               </Link>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-white/60 text-sm">
-              <a href="tel:+5519810200844" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="tel:+5511141397844" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                (19) 8102-0844
+                (11) 1413-9784
               </a>
               <a href="mailto:contato@exclusivebeneficiosmix.com" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
