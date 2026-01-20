@@ -24,7 +24,7 @@ const Footer = () => {
               benefícios diferenciados e oportunidades exclusivas.
             </p>
             <p className="mt-5 text-sm opacity-85">
-              <strong>Registro:</strong> 47829156
+              <strong>Registro:</strong> 52738491
             </p>
           </div>
 
