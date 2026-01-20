@@ -437,7 +437,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Article 1 */}
             <motion.a 
-              href="/artigo1.php"
+              href="/conteudo1.php"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -467,7 +467,7 @@ const Index = () => {
 
             {/* Article 2 */}
             <motion.a 
-              href="/artigo2.php"
+              href="/conteudo2.php"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -497,7 +497,7 @@ const Index = () => {
 
             {/* Article 3 */}
             <motion.a 
-              href="/artigo3.php"
+              href="/conteudo3.php"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
