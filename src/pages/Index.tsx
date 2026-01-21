@@ -46,52 +46,75 @@ const Index = () => {
   const services = [
     {
       icon: Sparkles,
-      title: 'Orientação Didática',
-      description: 'Materiais explicativos detalhados sobre vantagens especiais, acúmulo de pontos e programas diferenciados. Apoio na interpretação de regras e condições de participação.'
+      title: 'Análise de Cartões Amex',
+      description: 'Análises detalhadas e independentes sobre os diferentes cartões American Express disponíveis no mercado brasileiro.'
     },
     {
       icon: Target,
-      title: 'Curadoria Especializada',
-      description: 'Seleção criteriosa de oportunidades premium, parcerias estratégicas e acessos privilegiados. Direcionamento sobre categorias e requisitos de adesão.'
-    },
-    {
-      icon: Users2,
-      title: 'Atendimento Dedicado',
-      description: 'Suporte individualizado para esclarecer dúvidas sobre programas de recompensas, promoções e serviços diferenciados. Comunicação direta e profissional.'
+      title: 'Guia de Benefícios',
+      description: 'Guias completos sobre benefícios exclusivos dos cartões American Express, incluindo programas de recompensas e vantagens.'
     },
     {
       icon: Compass,
-      title: 'Roteiros Exclusivos',
-      description: 'Informações sobre acesso a eventos especiais, salas VIP em aeroportos, experiências gastronômicas e viagens personalizadas com benefícios únicos.'
+      title: 'Programas de Viagem',
+      description: 'Informações sobre programas de viagem, milhas, acesso a salas VIP e outros benefícios relacionados a viagens.'
     },
     {
-      icon: ShieldCheck,
-      title: 'Compromisso Ético',
-      description: 'Atuação puramente consultiva e informativa. Nenhuma intermediação bancária, análise de perfil creditício ou comercialização de produtos financeiros.'
+      icon: Award,
+      title: 'Ofertas e Promoções',
+      description: 'Cobertura editorial sobre ofertas, promoções e campanhas especiais dos cartões American Express.'
     },
     {
       icon: Headphones,
-      title: 'Acompanhamento Contínuo',
-      description: 'Assistência permanente com foco em educação sobre vantagens. Encaminhamento para canais oficiais quando processos formais são necessários.'
+      title: 'Tutoriais e Dicas',
+      description: 'Tutoriais práticos e dicas para maximizar o uso dos benefícios dos cartões American Express.'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Notícias e Atualizações',
+      description: 'Cobertura jornalística sobre novidades, mudanças e atualizações relacionadas aos cartões American Express.'
     }
   ];
 
   const stats = [
-    { icon: TrendingUp, value: '750+', label: 'Programas Catalogados' },
-    { icon: Users2, value: '1.500+', label: 'Acordos Mapeados' },
-    { icon: Award, value: '100%', label: 'Ética Garantida' },
-    { icon: Clock, value: '24h', label: 'Conteúdo Online' }
+    { icon: Users2, value: '847+', label: 'Clientes Cadastrados' },
+    { icon: TrendingUp, value: '50+', label: 'Guias Publicados' },
+    { icon: Award, value: '100%', label: 'Conteúdo Independente' },
+    { icon: Clock, value: '24h', label: 'Acesso Online' }
+  ];
+
+  const myths = [
+    {
+      title: '"São aceitos em poucos lugares"',
+      description: 'Muitas pessoas acreditam que cartões American Express têm baixa aceitação, mas a rede de estabelecimentos credenciados cresceu significativamente nos últimos anos.'
+    },
+    {
+      title: '"Só para pessoas muito ricas"',
+      description: 'Embora alguns cartões sejam premium, a American Express oferece opções para diferentes perfis de renda e necessidades.'
+    },
+    {
+      title: '"Anuidade muito cara"',
+      description: 'Os benefícios oferecidos muitas vezes compensam o custo da anuidade, especialmente para quem utiliza ativamente as vantagens do cartão.'
+    },
+    {
+      title: '"Difícil de conseguir aprovação"',
+      description: 'Embora alguns cartões tenham critérios rigorosos, há opções com diferentes níveis de exigência para aprovação.'
+    },
+    {
+      title: '"Benefícios são complicados"',
+      description: 'Com informação adequada, é possível entender e aproveitar todos os benefícios oferecidos pelos cartões American Express.'
+    }
   ];
 
   const disclaimers = [
-    'Atividade exclusivamente privada, consultiva e de orientação ao consumidor',
-    'Não representamos bancos, emissores de cartões, financeiras ou qualquer instituição regulamentada',
-    'Não efetuamos análises creditícias, concessão de crédito ou intermediação de produtos bancários',
-    'Não emitimos, vendemos ou distribuímos cartões de crédito ou produtos financeiros',
-    'Nosso papel limita-se à educação, curadoria de informações e assessoria consultiva',
+    'Atuamos exclusivamente como portal informativo independente, com conteúdo editorial sobre cartões American Express',
+    'Oferecemos apenas conteúdo informativo e editorial. Não somos afiliados, associados ou representantes da American Express',
+    'Não realizamos intermediação financeira, emissão de cartões ou qualquer tipo de operação bancária',
+    'Todo conteúdo é produzido de forma independente com finalidade exclusivamente informativa e educacional',
+    'Não efetuamos análises creditícias, concessão de crédito ou venda de produtos financeiros',
     'Nenhuma garantia de aprovação, promessa de liberação ou vinculação com processos de crédito',
-    'Quando necessário, direcionamos clientes aos canais oficiais das empresas parceiras',
-    'Decisões de contratação são tomadas diretamente entre o cliente e as instituições responsáveis'
+    'Direcionamos leitores aos canais oficiais quando processos formais são necessários',
+    'Decisões de contratação são tomadas diretamente entre o leitor e as instituições responsáveis'
   ];
 
   return (
@@ -102,7 +125,7 @@ const Index = () => {
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
           "name": "Benefícios Premix",
-          "description": "Assessoria personalizada para você compreender e aproveitar programas de recompensas, experiências diferenciadas e vantagens exclusivas.",
+          "description": "Portal informativo independente com conteúdo editorial sobre cartões American Express, análises detalhadas e guias completos sobre benefícios exclusivos.",
           "url": "https://beneficiospremix.com/",
           "telephone": "(62) 9152-9613",
           "address": {
@@ -141,24 +164,23 @@ const Index = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-8"
               >
                 <Sparkles className="w-4 h-4" />
-                Seu guia para vantagens exclusivas
+                Portal Informativo Independente
               </motion.div>
               
               <motion.h1 
                 variants={fadeIn}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1]"
               >
-                Descubra o Mundo dos{' '}
-                <span className="text-accent-shine">Benefícios Premium</span>
+                Portal Informativo sobre{' '}
+                <span className="text-accent-shine">Cartões American Express</span>
               </motion.h1>
               
               <motion.p 
                 variants={fadeIn}
                 className="text-lg text-white/75 mb-10 max-w-lg leading-relaxed"
               >
-                Assessoria personalizada para você compreender e aproveitar programas de 
-                recompensas, experiências diferenciadas e vantagens exclusivas. Orientação 
-                clara, ética e completamente transparente.
+                Conteúdo editorial independente com informações, análises e guias completos 
+                sobre cartões American Express e seus benefícios exclusivos.
               </motion.p>
               
               <motion.div
@@ -204,7 +226,7 @@ const Index = () => {
             className="text-center mb-16"
           >
             <motion.h2 variants={fadeIn} className="section-heading">
-              O Que Oferecemos
+              Conteúdo Editorial
             </motion.h2>
             <motion.div variants={fadeIn} className="divider-elegant mt-6 mb-6" />
           </motion.div>
@@ -292,18 +314,18 @@ const Index = () => {
               transition={{ duration: 0.7 }}
             >
               <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
-                Quem Somos
+                Nossos Diferenciais
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                Conhecimento que Transforma Oportunidades
+                Conteúdo Independente e Educacional
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Nossa equipe é capacitada para orientar você sobre os diversos programas de 
-                vantagens disponíveis no mercado. Fornecemos suporte completo para que você 
-                entenda todas as possibilidades e benefícios.
+                Produzimos conteúdo editorial independente, sem vínculos com a American Express 
+                ou instituições financeiras. Focamos em educar nossos leitores com informações 
+                claras e acessíveis sobre o universo dos cartões Amex.
               </p>
               <ul className="space-y-4 mb-8">
-                {['Mapeamento de programas de recompensas', 'Assessoria individualizada', 'Conteúdo sempre atualizado', 'Suporte permanente'].map((item) => (
+                {['Conteúdo independente e imparcial', 'Análises detalhadas e completas', 'Foco educacional', 'Informações atualizadas'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full gradient-accent-warm flex items-center justify-center flex-shrink-0">
                       <Check className="w-3.5 h-3.5 text-white" />
@@ -332,18 +354,18 @@ const Index = () => {
               transition={{ duration: 0.7 }}
             >
               <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
-                Experiências
+                Benefícios Amex
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                Acesso a Experiências Diferenciadas
+                Programa Membership Rewards
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Saiba como aproveitar lounges exclusivos, eventos especiais e muito mais. 
-                Nosso direcionamento auxilia você a entender o caminho para vivenciar 
-                benefícios realmente diferenciados.
+                Entenda como funciona o programa de pontos da American Express. Saiba como 
+                aproveitar lounges exclusivos, transferir pontos para milhas aéreas e 
+                maximizar seus benefícios.
               </p>
               <Link to="/contato" className="btn-accent">
-                Conversar com Especialista
+                Saiba Mais
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </motion.div>
@@ -464,12 +486,51 @@ const Index = () => {
                 <div>
                   <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Natureza do Negócio</span>
                   <p className="text-foreground font-medium text-sm mt-1">
-                    Empresa privada de consultoria informativa. Atuamos exclusivamente com orientação e curadoria de programas de benefícios. 
-                    Não realizamos intermediação financeira, análise de crédito ou venda de produtos.
+                    Portal informativo independente sobre cartões American Express. Atuamos exclusivamente com conteúdo editorial e educacional. 
+                    Não somos afiliados à American Express e não realizamos intermediação financeira ou emissão de cartões.
                   </p>
                 </div>
               </div>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Myths Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="section-heading">Mitos Comuns sobre Cartões Amex</h2>
+            <div className="divider-elegant mt-6" />
+          </motion.div>
+
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+          >
+            {myths.map((myth, i) => (
+              <motion.div
+                key={myth.title}
+                variants={fadeIn}
+                transition={{ delay: i * 0.05 }}
+                className="card-feature"
+              >
+                <h3 className="text-lg font-bold text-primary mb-3">
+                  {myth.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {myth.description}
+                </p>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -528,14 +589,14 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="section-heading">Conteúdo Publicado</h2>
+            <h2 className="section-heading">Artigos e Dicas</h2>
             <div className="divider-elegant mt-6 mb-6" />
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Article 1 */}
             <motion.a 
-              href="/conteudo1.php"
+              href="/post1.php"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -545,26 +606,26 @@ const Index = () => {
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={artigo1} 
-                  alt="Guia de Benefícios Premium" 
+                  alt="Guia Completo dos Cartões Amex" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Guia Completo de Vantagens Exclusivas
+                  Guia Completo dos Cartões Amex
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Entenda como uma orientação adequada pode direcionar você pelo universo de benefícios diferenciados.
+                  Conheça todos os cartões American Express disponíveis no Brasil e suas características...
                 </p>
                 <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
-                  Continuar lendo <ArrowRight className="w-4 h-4" />
+                  Leia mais <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
             </motion.a>
 
             {/* Article 2 */}
             <motion.a 
-              href="/conteudo2.php"
+              href="/post2.php"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -574,26 +635,26 @@ const Index = () => {
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={artigo2} 
-                  alt="Mapa de Experiências VIP" 
+                  alt="Programa Membership Rewards" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Mapa de Experiências Diferenciadas
+                  Programa Membership Rewards
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Descubra como localizar e acessar os melhores benefícios que elevam sua qualidade de vida.
+                  Entenda como funciona o programa de pontos da American Express...
                 </p>
                 <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
-                  Continuar lendo <ArrowRight className="w-4 h-4" />
+                  Leia mais <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
             </motion.a>
 
             {/* Article 3 */}
             <motion.a 
-              href="/conteudo3.php"
+              href="/post3.php"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -603,19 +664,19 @@ const Index = () => {
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={artigo3} 
-                  alt="Análise de Programas" 
+                  alt="Benefícios Exclusivos Amex" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Análise de Programas de Recompensas
+                  Benefícios Exclusivos Amex
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Compreenda como especialistas avaliam e otimizam programas premium para melhores resultados.
+                  Descubra todos os benefícios exclusivos dos cartões American Express...
                 </p>
                 <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
-                  Continuar lendo <ArrowRight className="w-4 h-4" />
+                  Leia mais <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
             </motion.a>
@@ -633,15 +694,15 @@ const Index = () => {
             className="max-w-2xl mx-auto text-white"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Pronto para Começar?
+              Fique por Dentro
             </h2>
             <p className="text-white/75 text-lg mb-10 leading-relaxed">
-              Entre em contato e descubra como nossa assessoria pode transformar 
-              a forma como você aproveita benefícios exclusivos.
+              Receba conteúdo exclusivo sobre cartões American Express e benefícios 
+              diretamente no seu e-mail.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
               <Link to="/contato" className="btn-accent">
-                Solicitar Atendimento
+                Inscrever-se
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
