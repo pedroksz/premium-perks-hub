@@ -238,11 +238,16 @@ const Contact = () => {
                   <CheckCircle2 className="w-5 h-5" />
                   Importante
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground mb-3">
                   Somos uma empresa de consultoria educativa e informativa. 
                   Não realizamos intermediação financeira ou oferta de produtos bancários. 
                   Nossa atuação é limitada à orientação sobre benefícios premium.
                 </p>
+                <div className="text-xs text-muted-foreground space-y-1 pt-2 border-t border-primary/10">
+                  <p><strong className="text-primary">CNPJ:</strong> 57.176.088/0001-14</p>
+                  <p><strong className="text-primary">Razão Social:</strong> C S SILVA AUTO PECAS LTDA</p>
+                  <p><strong className="text-primary">Nome Fantasia:</strong> GLOBALPARTS EXPRESS</p>
+                </div>
               </div>
             </motion.div>
           </div>

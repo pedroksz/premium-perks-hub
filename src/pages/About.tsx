@@ -96,7 +96,7 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
                 Quem Somos
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                 A Orientação Premium Elite é uma empresa especializada em orientação consultiva 
                 sobre benefícios premium, programas de vantagens e experiências exclusivas. 
                 Nossa atuação é estritamente educativa e informativa.
@@ -106,11 +106,17 @@ const About = () => {
                 produtos bancários. Nossa missão é ajudar nossos clientes a compreenderem 
                 melhor o universo dos benefícios premium disponíveis no mercado.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Com anos de experiência e uma equipe qualificada, oferecemos suporte 
                 personalizado para que você possa tomar decisões informadas sobre 
                 programas de benefícios e experiências exclusivas.
               </p>
+              <div className="bg-muted rounded-lg p-4 text-sm text-muted-foreground space-y-1">
+                <p><strong className="text-primary">CNPJ:</strong> 57.176.088/0001-14</p>
+                <p><strong className="text-primary">Razão Social:</strong> C S SILVA AUTO PECAS LTDA</p>
+                <p><strong className="text-primary">Nome Fantasia:</strong> GLOBALPARTS EXPRESS</p>
+                <p><strong className="text-primary">Registro:</strong> 24179342</p>
+              </div>
             </motion.div>
           </div>
         </div>

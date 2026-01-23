@@ -23,9 +23,12 @@ const Footer = () => {
               Serviço privado de orientação consultiva sobre benefícios premium, 
               experiências exclusivas e programas de vantagens.
             </p>
-            <p className="mt-4 text-sm text-gold">
-              <strong>Registro:</strong> 24179342
-            </p>
+            <div className="mt-4 text-sm text-white/70 space-y-1">
+              <p><strong className="text-gold">CNPJ:</strong> 57.176.088/0001-14</p>
+              <p><strong className="text-gold">Razão Social:</strong> C S SILVA AUTO PECAS LTDA</p>
+              <p><strong className="text-gold">Nome Fantasia:</strong> GLOBALPARTS EXPRESS</p>
+              <p><strong className="text-gold">Registro:</strong> 24179342</p>
+            </div>
           </div>
 
           {/* Quick Links */}
