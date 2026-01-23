@@ -354,10 +354,21 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm text-muted-foreground">
-                <strong className="text-primary">Registro:</strong> 24179342 | 
-                <strong className="text-primary ml-2">Transparência e conformidade:</strong> Operação privada sem vínculo com órgãos reguladores financeiros
-              </p>
+              <div className="mt-6 pt-4 border-t border-primary/10">
+                <p className="text-sm text-muted-foreground mb-2">
+                  <strong className="text-primary">CNPJ:</strong> 57.176.088/0001-14 | 
+                  <strong className="text-primary ml-2">Registro:</strong> 24179342
+                </p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  <strong className="text-primary">Razão Social:</strong> C S SILVA AUTO PECAS LTDA
+                </p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  <strong className="text-primary">Nome Fantasia:</strong> GLOBALPARTS EXPRESS
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  <strong className="text-primary">Transparência e conformidade:</strong> Operação privada sem vínculo com órgãos reguladores financeiros
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
