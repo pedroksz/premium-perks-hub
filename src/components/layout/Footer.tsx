@@ -94,8 +94,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-sm footer-link break-all">
-                  contato@orientacaopremiumelite.com.br
+                <a href="mailto:contato@beneficioselitedigital.com" className="text-sm footer-link break-all">
+                  contato@beneficioselitedigital.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

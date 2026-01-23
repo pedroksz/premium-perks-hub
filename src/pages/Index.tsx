@@ -498,8 +498,8 @@ const Index = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-white/70 text-xs break-all hover:text-gold transition-colors">
-                  contato@orientacaopremiumelite.com.br
+                <a href="mailto:contato@beneficioselitedigital.com" className="text-white/70 text-xs break-all hover:text-gold transition-colors">
+                  contato@beneficioselitedigital.com
                 </a>
               </div>
             </div>
