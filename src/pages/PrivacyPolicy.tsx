@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6">1. Sobre a Empresa</h2>
-              <p className="text-muted-foreground mb-6">A Benefícios Premix é uma organização privada de consultoria informativa sobre programas de vantagens e benefícios. Não operamos como instituição financeira.</p>
+              <p className="text-muted-foreground mb-6">A GLOBALPARTS EXPRESS (C S SILVA AUTO PECAS LTDA) é uma organização privada de consultoria informativa sobre programas de vantagens e benefícios. Não operamos como instituição financeira.</p>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Dados Coletados</h2>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-6">
                 <li>Nome e email para comunicação</li>

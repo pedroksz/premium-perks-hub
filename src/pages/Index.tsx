@@ -124,7 +124,8 @@ const Index = () => {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Benefícios Premix",
+          "name": "GLOBALPARTS EXPRESS",
+          "legalName": "C S SILVA AUTO PECAS LTDA",
           "description": "Portal informativo independente com conteúdo editorial sobre cartões American Express, análises detalhadas e guias completos sobre benefícios exclusivos.",
           "url": "https://beneficiospremix.com/",
           "telephone": "(62) 9152-9613",
@@ -411,7 +412,7 @@ const Index = () => {
                 </div>
                 <div>
                   <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Razão Social</span>
-                  <p className="text-foreground font-medium text-sm mt-1">IMPERIO DA TOYOTA LTDA</p>
+                  <p className="text-foreground font-medium text-sm mt-1">C S SILVA AUTO PECAS LTDA</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -429,7 +430,7 @@ const Index = () => {
                 </div>
                 <div>
                   <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Nome Fantasia</span>
-                  <p className="text-foreground font-medium text-sm mt-1">Benefícios Premix</p>
+                  <p className="text-foreground font-medium text-sm mt-1">GLOBALPARTS EXPRESS</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

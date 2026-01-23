@@ -28,7 +28,7 @@ const TermsConditions = () => {
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6">1. Natureza dos Serviços</h2>
               <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-5 mb-6">
                 <p className="font-bold text-foreground mb-2">ATENÇÃO:</p>
-                <p className="text-muted-foreground text-sm">A Benefícios Premix presta exclusivamente consultoria informativa. NÃO somos banco, financeira ou entidade regulada.</p>
+                <p className="text-muted-foreground text-sm">A GLOBALPARTS EXPRESS (C S SILVA AUTO PECAS LTDA) presta exclusivamente consultoria informativa. NÃO somos banco, financeira ou entidade regulada.</p>
               </div>
               <h2 className="text-2xl font-bold text-primary border-b-2 border-primary/20 pb-2 mb-6 mt-10">2. Contato</h2>
               <div className="highlight-panel">
