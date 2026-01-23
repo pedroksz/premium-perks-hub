@@ -42,9 +42,9 @@ const About = () => {
   ];
 
   const companyInfo = [
-    { icon: Building2, label: 'Razão Social', value: 'IMPERIO DA TOYOTA LTDA' },
+    { icon: Building2, label: 'Razão Social', value: 'C S SILVA AUTO PECAS LTDA' },
     { icon: FileText, label: 'CNPJ', value: '47.951.436/0001-20' },
-    { icon: Briefcase, label: 'Nome Fantasia', value: 'Benefícios Premix' },
+    { icon: Briefcase, label: 'Nome Fantasia', value: 'GLOBALPARTS EXPRESS' },
     { icon: MapPin, label: 'Endereço', value: 'Av. General Couto Magalhães, 485, Quadra 26 Lote 04, Vila Mauá, Goiânia-GO, CEP 74.323-240' },
     { icon: Phone, label: 'Telefone Comercial', value: '(62) 9152-9613' },
     { icon: Phone, label: 'Telefone Fixo', value: '(11) 1413-9784' },
