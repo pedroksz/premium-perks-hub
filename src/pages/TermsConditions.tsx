@@ -143,7 +143,7 @@ const TermsConditions = () => {
                 Para dúvidas sobre estes termos, entre em contato:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
+                <p><strong>Email:</strong> contato@beneficioselitedigital.com</p>
                 <p><strong>Telefone:</strong> +22602271506</p>
                 <p><strong>Endereço:</strong> Rua Batista Leite, 11 - Sousa, PB - CEP: 58804-230</p>
               </div>

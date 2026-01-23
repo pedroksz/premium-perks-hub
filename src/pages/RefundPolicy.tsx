@@ -86,7 +86,7 @@ const RefundPolicy = () => {
                 Para solicitar reembolso, siga os passos:
               </p>
               <ol className="list-decimal pl-6 text-muted-foreground space-y-3 mb-6">
-                <li>Entre em contato através do email: reembolso@consultoriaelite.com.br</li>
+                <li>Entre em contato através do email: reembolso@beneficioselitedigital.com</li>
                 <li>Informe seus dados cadastrais e número do pedido</li>
                 <li>Descreva o motivo da solicitação</li>
                 <li>Aguarde a análise em até 5 dias úteis</li>
@@ -157,7 +157,7 @@ const RefundPolicy = () => {
                 Para solicitações de reembolso ou dúvidas sobre esta política:
               </p>
               <div className="info-box">
-                <p><strong>Email:</strong> contato@orientacaopremiumelite.com.br</p>
+                <p><strong>Email:</strong> contato@beneficioselitedigital.com</p>
                 <p><strong>Telefone:</strong> +22602271506</p>
                 <p><strong>Horário:</strong> Segunda a Sexta, 9h às 18h</p>
               </div>

@@ -56,8 +56,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'contato@orientacaopremiumelite.com.br',
-      link: 'mailto:contato@orientacaopremiumelite.com.br'
+      content: 'contato@beneficioselitedigital.com',
+      link: 'mailto:contato@beneficioselitedigital.com'
     },
     {
       icon: Clock,
