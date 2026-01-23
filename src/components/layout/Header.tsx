@@ -1,111 +1,117 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Gem, Phone } from 'lucide-react';
+import { Menu, X, Shield, Phone, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/sobre', label: 'Quem Somos' },
-    { path: '/contato', label: 'Fale Conosco' },
+  const navLinks = [
+    { path: '/', label: 'Início' },
+    { path: '/sobre', label: 'Sobre Nós' },
+    { path: '/contato', label: 'Contato' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-background/80 backdrop-blur-xl fixed w-full top-0 z-50 border-b border-border/30">
-      <div className="container mx-auto px-4">
-        {/* Top Bar */}
-        <div className="flex items-center justify-between py-2 border-b border-border/20 text-sm">
-          <a href="tel:+5562915296613" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-            <Phone className="w-3.5 h-3.5" />
-            <span>(62) 9152-9613</span>
-          </a>
-          <span className="text-muted-foreground/70 text-xs hidden sm:block">
-            Vila Mauá, Goiás • Horário Comercial: Segunda à Sexta
-          </span>
+    <>
+      {/* Top Bar */}
+      <div className="gradient-navy text-white py-2 text-sm">
+        <div className="container mx-auto px-4 flex justify-between items-center flex-wrap gap-2">
+          <div className="flex items-center gap-6">
+            <a href="tel:+5522602271506" className="flex items-center gap-2 hover:text-gold transition-colors">
+              <Phone className="w-4 h-4 text-gold" />
+              <span>+22602271506</span>
+            </a>
+            <span className="hidden md:flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-gold" />
+              <span>Sousa, PB - Brasil</span>
+            </span>
+          </div>
+          <div className="flex items-center gap-2 text-xs opacity-80">
+            <span>Atendimento: Seg-Sex 9h-18h</span>
+          </div>
         </div>
+      </div>
 
-        {/* Main Header */}
-        <nav className="py-4">
+      {/* Main Header */}
+      <header className="bg-card shadow-lg sticky top-0 z-50">
+        <nav className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-11 h-11 rounded-2xl gradient-emerald flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <Gem className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-lg gradient-navy flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                <Shield className="w-7 h-7 text-gold" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-primary tracking-tight leading-tight">Benefícios</span>
-                <span className="text-xs text-muted-foreground tracking-widest uppercase">Premix</span>
+              <div>
+                <h1 className="text-xl font-serif font-bold text-primary">Orientação Premium Elite</h1>
+                <p className="text-xs text-muted-foreground">Benefícios Premium</p>
               </div>
             </Link>
 
-            {/* Desktop Nav */}
-            <ul className="hidden lg:flex items-center gap-10">
-              {navItems.map((item) => (
-                <li key={item.path}>
+            {/* Desktop Navigation */}
+            <ul className="hidden md:flex items-center gap-8">
+              {navLinks.map((link) => (
+                <li key={link.path}>
                   <Link
-                    to={item.path}
-                    className={`nav-link-modern ${isActive(item.path) ? 'text-primary font-semibold active' : ''}`}
+                    to={link.path}
+                    className={`nav-link py-2 ${isActive(link.path) ? 'text-primary font-semibold' : ''}`}
                   >
-                    {item.label}
+                    {link.label}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link to="/contato" className="btn-gold text-sm px-6 py-2">
+                  Fale Conosco
+                </Link>
+              </li>
             </ul>
 
-            {/* CTA */}
-            <div className="hidden lg:flex items-center gap-4">
-              <Link to="/contato" className="btn-accent">
-                Solicitar Atendimento
-              </Link>
-            </div>
-
-            {/* Mobile Toggle */}
+            {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2.5 rounded-xl hover:bg-muted transition-colors"
-              onClick={() => setMobileOpen(!mobileOpen)}
+              className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
             >
-              {mobileOpen ? <X className="w-6 h-6 text-primary" /> : <Menu className="w-6 h-6 text-primary" />}
+              {isMenuOpen ? <X className="w-6 h-6 text-primary" /> : <Menu className="w-6 h-6 text-primary" />}
             </button>
           </div>
 
-          {/* Mobile Nav */}
+          {/* Mobile Navigation */}
           <AnimatePresence>
-            {mobileOpen && (
+            {isMenuOpen && (
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="lg:hidden overflow-hidden"
+                className="md:hidden overflow-hidden"
               >
-                <ul className="flex flex-col gap-1 py-6 border-t border-border/30 mt-4">
-                  {navItems.map((item) => (
-                    <li key={item.path}>
+                <ul className="flex flex-col gap-2 py-4 border-t mt-4">
+                  {navLinks.map((link) => (
+                    <li key={link.path}>
                       <Link
-                        to={item.path}
-                        onClick={() => setMobileOpen(false)}
-                        className={`block py-3.5 px-5 rounded-xl transition-all font-medium ${
-                          isActive(item.path)
+                        to={link.path}
+                        onClick={() => setIsMenuOpen(false)}
+                        className={`block py-3 px-4 rounded-lg transition-colors ${
+                          isActive(link.path)
                             ? 'bg-primary text-primary-foreground'
-                            : 'hover:bg-muted text-foreground'
+                            : 'hover:bg-muted'
                         }`}
                       >
-                        {item.label}
+                        {link.label}
                       </Link>
                     </li>
                   ))}
-                  <li className="pt-3">
+                  <li className="pt-2">
                     <Link
                       to="/contato"
-                      onClick={() => setMobileOpen(false)}
-                      className="btn-accent w-full text-center justify-center"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="btn-gold w-full text-center"
                     >
-                      Solicitar Atendimento
+                      Fale Conosco
                     </Link>
                   </li>
                 </ul>
@@ -113,8 +119,8 @@ const Header = () => {
             )}
           </AnimatePresence>
         </nav>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 

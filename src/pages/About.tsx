@@ -7,289 +7,145 @@ import {
   Award, 
   Users, 
   TrendingUp,
-  ArrowRight,
-  Check,
-  Building2,
-  FileText,
-  MapPin,
-  Phone,
-  Mail,
-  Briefcase,
-  Clock,
-  CreditCard
+  ArrowRight 
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import teamCollaboration from '@/assets/team-collaboration.jpg';
-import teamMeeting from '@/assets/team-meeting.jpg';
+import teamPhoto from '@/assets/team-photo.jpg';
 
 const About = () => {
-  const coreValues = [
+  const values = [
     {
       icon: Target,
-      name: 'Missão',
-      content: 'Oferecer assessoria personalizada em programas de benefícios, auxiliando nossos clientes com informações claras e orientação especializada.'
+      title: 'Missão',
+      description: 'Orientar e educar nossos clientes sobre benefícios premium, proporcionando informações claras e transparentes para decisões conscientes.'
     },
     {
       icon: Eye,
-      name: 'Visão',
-      content: 'Ser reconhecida como empresa de referência em consultoria informativa sobre programas de vantagens e recompensas.'
+      title: 'Visão',
+      description: 'Ser referência em consultoria educativa sobre programas de benefícios, reconhecidos pela transparência e qualidade do atendimento.'
     },
     {
       icon: Heart,
-      name: 'Valores',
-      content: 'Transparência nas informações, ética profissional, atendimento personalizado e compromisso com a satisfação do cliente.'
+      title: 'Valores',
+      description: 'Transparência, ética, comprometimento com o cliente, educação financeira e respeito às normas regulatórias.'
     }
   ];
 
-  const companyInfo = [
-    { icon: Building2, label: 'Razão Social', value: 'C S SILVA AUTO PECAS LTDA' },
-    { icon: FileText, label: 'CNPJ', value: '47.951.436/0001-20' },
-    { icon: Briefcase, label: 'Nome Fantasia', value: 'GLOBALPARTS EXPRESS' },
-    { icon: MapPin, label: 'Endereço', value: 'Av. General Couto Magalhães, 485, Quadra 26 Lote 04, Vila Mauá, Goiânia-GO, CEP 74.323-240' },
-    { icon: Phone, label: 'Telefone Comercial', value: '(62) 9152-9613' },
-    { icon: Phone, label: 'Telefone Fixo', value: '(11) 1413-9784' },
-    { icon: Mail, label: 'E-mail Institucional', value: 'contato@beneficiospremix.com' },
-    { icon: Clock, label: 'Data de Abertura', value: '14/09/2022' },
-  ];
-
-  const howItWorks = [
+  const team = [
     {
-      step: '01',
-      title: 'Contato Inicial',
-      description: 'Entre em contato conosco por telefone, e-mail ou formulário. Nossa equipe agendará uma consulta para entender suas necessidades.'
+      name: 'Marina Santos',
+      role: 'Diretora de Consultoria',
+      description: 'Especialista em programas de benefícios premium com mais de 10 anos de experiência no mercado.'
     },
     {
-      step: '02',
-      title: 'Análise de Perfil',
-      description: 'Realizamos uma análise detalhada do seu perfil para identificar os programas de benefícios mais adequados para você.'
+      name: 'Ricardo Oliveira',
+      role: 'Gerente de Atendimento',
+      description: 'Profissional dedicado à excelência no atendimento e satisfação dos clientes.'
     },
     {
-      step: '03',
-      title: 'Apresentação de Opções',
-      description: 'Apresentamos as opções de programas disponíveis no mercado, explicando vantagens, condições e como cada um funciona.'
-    },
-    {
-      step: '04',
-      title: 'Orientação Especializada',
-      description: 'Fornecemos orientação completa para que você tome a melhor decisão. A contratação é feita diretamente com as empresas responsáveis.'
+      name: 'Ana Paula Costa',
+      role: 'Consultora Sênior',
+      description: 'Expert em curadoria de experiências exclusivas e programas de fidelidade.'
     }
   ];
 
   return (
     <Layout>
-      {/* Header */}
-      <section className="gradient-hero-section py-24 pt-40 text-white">
+      {/* Hero Section */}
+      <section className="gradient-hero py-20 text-white">
         <div className="container mx-auto px-4 text-center">
-          <motion.span 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-block text-sm font-semibold uppercase tracking-widest mb-4 text-white/70"
-          >
-            Quem Somos
-          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.05 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-serif font-bold mb-4"
           >
-            Benefícios <span className="text-accent-shine">Premix</span>
+            Sobre a <span className="text-gradient">Orientação Premium Elite</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-white/70 max-w-2xl mx-auto"
+            className="text-lg text-white/80 max-w-2xl mx-auto"
           >
-            Empresa privada de consultoria informativa especializada em 
-            programas de benefícios e vantagens.
+            Conheça nossa equipe de especialistas dedicados a orientar você sobre 
+            benefícios premium e experiências exclusivas.
           </motion.p>
         </div>
       </section>
 
-      {/* Company Info */}
-      <section className="py-24 bg-background">
+      {/* About Intro */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-heading">Dados da Empresa</h2>
-            <div className="divider-elegant mt-6" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto bg-card rounded-3xl p-8 md:p-12 shadow-lg border border-border"
-          >
-            <div className="grid md:grid-cols-2 gap-6">
-              {companyInfo.map((info, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                    <info.icon className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{info.label}</span>
-                    <p className="text-foreground font-medium text-sm mt-1">{info.value}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 pt-8 border-t border-border">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Briefcase className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Natureza do Negócio</span>
-                  <p className="text-foreground font-medium text-sm mt-1">
-                    Empresa privada de consultoria informativa. Atuamos exclusivamente com orientação e curadoria de programas de benefícios. 
-                    Não realizamos intermediação financeira, análise de crédito ou venda de produtos.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* What We Offer */}
-      <section className="py-24 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -35 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative"
             >
               <img 
-                src={teamCollaboration} 
-                alt="Equipe de Consultoria" 
-                className="rounded-3xl shadow-xl w-full"
-              />
-              <img 
-                src={teamMeeting} 
-                alt="Reunião de Consultoria" 
-                className="absolute -bottom-8 -right-8 w-48 rounded-2xl shadow-lg border-4 border-background hidden md:block"
+                src={teamPhoto} 
+                alt="Equipe Orientação Premium Elite" 
+                className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 35 }}
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
-                Nossos Serviços
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                O Que Oferecemos
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                Quem Somos
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-5">
-                <strong>Assessoria profissional em programas de benefícios.</strong> Nossa equipe analisa 
-                seu perfil e identifica as melhores opções de programas de vantagens disponíveis no mercado.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                A Orientação Premium Elite é uma empresa especializada em orientação consultiva 
+                sobre benefícios premium, programas de vantagens e experiências exclusivas. 
+                Nossa atuação é estritamente educativa e informativa.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-5">
-                <strong>Orientação especializada e imparcial.</strong> Fornecemos informações claras sobre 
-                cada programa, explicando como funcionam, quais os requisitos e como você pode se beneficiar.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                Não somos uma instituição financeira e não realizamos intermediação de 
+                produtos bancários. Nossa missão é ajudar nossos clientes a compreenderem 
+                melhor o universo dos benefícios premium disponíveis no mercado.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                <strong>Importante:</strong> Atuamos exclusivamente como consultores. Não somos representantes 
-                de bancos ou instituições financeiras. A contratação de qualquer serviço é feita diretamente 
-                com as empresas responsáveis pelos programas.
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Com anos de experiência e uma equipe qualificada, oferecemos suporte 
+                personalizado para que você possa tomar decisões informadas sobre 
+                programas de benefícios e experiências exclusivas.
               </p>
-              <ul className="space-y-3">
-                {[
-                  'Análise de perfil personalizada',
-                  'Apresentação de opções disponíveis',
-                  'Orientação sobre requisitos e condições',
-                  'Suporte durante todo o processo'
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="text-foreground text-sm font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-24 bg-background">
+      {/* Mission, Vision, Values */}
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <motion.div
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="section-title"
           >
-            <h2 className="section-heading">Como Funciona</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
-              Processo simples e transparente para você receber nossa assessoria
-            </p>
-            <div className="divider-elegant mt-6" />
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {howItWorks.map((step, i) => (
-              <motion.div
-                key={step.step}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center"
-              >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl gradient-accent-warm flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">{step.step}</span>
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-3">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-24 bg-muted">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-heading">Nossos Fundamentos</h2>
-            <div className="divider-elegant mt-6" />
-          </motion.div>
+            Nossos Pilares
+          </motion.h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {coreValues.map((value, i) => (
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            {values.map((value, index) => (
               <motion.div
-                key={value.name}
-                initial={{ opacity: 0, y: 25 }}
+                key={value.title}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="card-feature text-center"
+                transition={{ delay: index * 0.1 }}
+                className="bg-card rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-20 h-20 mx-auto mb-6 rounded-2xl gradient-accent-warm flex items-center justify-center">
-                  <value.icon className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full gradient-gold flex items-center justify-center">
+                  <value.icon className="w-10 h-10 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  {value.name}
+                <h3 className="text-2xl font-serif font-semibold text-primary mb-4">
+                  {value.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {value.content}
+                <p className="text-muted-foreground leading-relaxed">
+                  {value.description}
                 </p>
               </motion.div>
             ))}
@@ -297,75 +153,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Pricing Model */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="text-center mb-12">
-              <h2 className="section-heading">Modelo de Contratação</h2>
-              <div className="divider-elegant mt-6" />
-            </div>
-            
-            <div className="bg-card rounded-3xl p-8 md:p-12 shadow-lg border border-border">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <CreditCard className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-primary mb-2">Como Funciona a Contratação</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Nossa assessoria é oferecida mediante análise do seu perfil. O orçamento é personalizado 
-                    de acordo com a complexidade da orientação necessária e os programas de benefícios envolvidos.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-muted rounded-2xl p-6">
-                  <h4 className="font-semibold text-primary mb-3">O que está incluso:</h4>
-                  <ul className="space-y-2">
-                    {[
-                      'Análise completa do seu perfil',
-                      'Mapeamento de programas compatíveis',
-                      'Orientação detalhada sobre cada opção',
-                      'Suporte durante o processo de decisão'
-                    ].map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Check className="w-4 h-4 text-accent flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="bg-muted rounded-2xl p-6">
-                  <h4 className="font-semibold text-primary mb-3">O que NÃO fazemos:</h4>
-                  <ul className="space-y-2">
-                    {[
-                      'Intermediação financeira',
-                      'Análise de crédito',
-                      'Venda de produtos ou cartões',
-                      'Promessas de aprovação garantida'
-                    ].map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <span className="w-4 h-4 flex items-center justify-center text-red-500 flex-shrink-0">✕</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Why Us */}
-      <section className="py-24 gradient-emerald">
+      {/* Why Choose Us */}
+      <section className="py-20 gradient-navy">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -373,39 +162,34 @@ const About = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center text-white"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Por que Escolher Nossa Assessoria?
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gold">
+              Por que Escolher a Orientação Premium Elite?
             </h2>
-            <p className="text-white/70 leading-relaxed mb-12 max-w-2xl mx-auto">
-              Profissionalismo e transparência em cada etapa do atendimento
+            <p className="text-white/80 text-lg leading-relaxed mb-12">
+              Oferecemos uma abordagem transparente e educativa, focada em ajudar você 
+              a entender e aproveitar os melhores benefícios premium disponíveis.
             </p>
             
-            <div className="grid md:grid-cols-3 gap-10">
+            <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-white/10 flex items-center justify-center">
-                  <Award className="w-8 h-8" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Experiência</h3>
-                <p className="text-white/60 text-sm">
-                  Conhecimento amplo sobre programas de benefícios disponíveis no mercado
+                <Award className="w-12 h-12 text-gold mx-auto mb-4" />
+                <h3 className="font-semibold text-lg mb-2">Expertise</h3>
+                <p className="text-white/70 text-sm">
+                  Anos de experiência em curadoria de benefícios premium
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-white/10 flex items-center justify-center">
-                  <Users className="w-8 h-8" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Atendimento</h3>
-                <p className="text-white/60 text-sm">
-                  Assessoria personalizada adaptada às suas necessidades específicas
+                <Users className="w-12 h-12 text-gold mx-auto mb-4" />
+                <h3 className="font-semibold text-lg mb-2">Atendimento</h3>
+                <p className="text-white/70 text-sm">
+                  Suporte personalizado e humanizado
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-white/10 flex items-center justify-center">
-                  <TrendingUp className="w-8 h-8" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Atualização</h3>
-                <p className="text-white/60 text-sm">
-                  Informações sempre atualizadas sobre novos programas e oportunidades
+                <TrendingUp className="w-12 h-12 text-gold mx-auto mb-4" />
+                <h3 className="font-semibold text-lg mb-2">Atualização</h3>
+                <p className="text-white/70 text-sm">
+                  Informações sempre atualizadas sobre o mercado
                 </p>
               </div>
             </div>
@@ -414,23 +198,23 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-background">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-2xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Entre em Contato
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+              Pronto para Conhecer seus Benefícios?
             </h2>
-            <p className="text-muted-foreground mb-10 leading-relaxed">
-              Estamos prontos para ajudar você a entender as melhores opções de programas de benefícios.
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+              Entre em contato conosco e descubra como podemos ajudá-lo a 
+              compreender o universo dos benefícios premium.
             </p>
-            <Link to="/contato" className="btn-accent">
-              Solicitar Atendimento
-              <ArrowRight className="w-4 h-4 ml-2" />
+            <Link to="/contato" className="btn-gold text-lg">
+              Fale com Nossa Equipe
+              <ArrowRight className="w-5 h-5 ml-2 inline" />
             </Link>
           </motion.div>
         </div>

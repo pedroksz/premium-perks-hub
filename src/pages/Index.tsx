@@ -1,140 +1,112 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
-  Sparkles, 
-  Target, 
-  Users2, 
-  Compass, 
+  GraduationCap, 
+  Gem, 
+  Handshake, 
+  Star, 
   ShieldCheck, 
-  Headphones,
-  TrendingUp,
-  Clock,
+  Users,
   Award,
+  Clock,
+  CheckCircle2,
   ArrowRight,
   Phone,
   Mail,
-  Check,
-  Building2,
-  FileText,
   MapPin
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import loungePremium from '@/assets/lounge-premium.jpg';
-import businessWork from '@/assets/business-work.jpg';
-import loungeElegant from '@/assets/lounge-elegant.jpg';
-import executiveTravel from '@/assets/executive-travel.jpg';
-import travelExperience from '@/assets/travel-experience.jpg';
-import loungeVip from '@/assets/lounge-vip.jpg';
-import artigo1 from '@/assets/artigo1.jpg';
-import artigo2 from '@/assets/artigo2.jpg';
-import artigo3 from '@/assets/artigo3.jpg';
+import heroBanner from '@/assets/hero-banner.jpg';
+import benefitsConcept from '@/assets/benefits-concept.jpg';
+import vipExperience from '@/assets/vip-experience.jpg';
+import artigo1Img from '@/assets/artigo1.jpg';
+import artigo2Img from '@/assets/artigo2.jpg';
+import artigo3Img from '@/assets/artigo3.jpg';
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 25 },
+const fadeUpVariants = {
+  hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 }
 };
 
-const stagger = {
+const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.08 }
+    transition: {
+      staggerChildren: 0.1
+    }
   }
 };
 
 const Index = () => {
   const services = [
     {
-      icon: Sparkles,
-      title: 'Análise de Cartões Amex',
-      description: 'Análises detalhadas e independentes sobre os diferentes cartões American Express disponíveis no mercado brasileiro.'
+      icon: GraduationCap,
+      title: 'Orientação Educativa',
+      description: 'Conteúdo informativo organizado sobre benefícios premium, programas de recompensas e experiências exclusivas. Apoio consultivo para compreensão de vantagens e critérios gerais de elegibilidade.'
     },
     {
-      icon: Target,
-      title: 'Guia de Benefícios',
-      description: 'Guias completos sobre benefícios exclusivos dos cartões American Express, incluindo programas de recompensas e vantagens.'
+      icon: Gem,
+      title: 'Curadoria de Benefícios',
+      description: 'Informações estruturadas sobre programas premium, clubes de benefícios, parcerias comerciais e experiências diferenciadas. Orientação sobre categorias, vantagens e formas de acesso.'
     },
     {
-      icon: Compass,
-      title: 'Programas de Viagem',
-      description: 'Informações sobre programas de viagem, milhas, acesso a salas VIP e outros benefícios relacionados a viagens.'
+      icon: Handshake,
+      title: 'Suporte Consultivo',
+      description: 'Atendimento informativo para esclarecimento de dúvidas sobre programas de vantagens, descontos exclusivos e serviços diferenciados. Comunicação transparente e profissional.'
     },
     {
-      icon: Award,
-      title: 'Ofertas e Promoções',
-      description: 'Cobertura editorial sobre ofertas, promoções e campanhas especiais dos cartões American Express.'
+      icon: Star,
+      title: 'Experiências Exclusivas',
+      description: 'Informações sobre acesso a eventos premium, lounges VIP, experiências gastronômicas, viagens diferenciadas e programas de fidelidade com benefícios especiais.'
     },
     {
-      icon: Headphones,
-      title: 'Tutoriais e Dicas',
-      description: 'Tutoriais práticos e dicas para maximizar o uso dos benefícios dos cartões American Express.'
+      icon: ShieldCheck,
+      title: 'Transparência Total',
+      description: 'Atuação estritamente privada, consultiva e informativa. Sem intermediação financeira, análise de crédito ou oferta de produtos bancários. Comunicação clara e ética.'
     },
     {
-      icon: TrendingUp,
-      title: 'Notícias e Atualizações',
-      description: 'Cobertura jornalística sobre novidades, mudanças e atualizações relacionadas aos cartões American Express.'
+      icon: Users,
+      title: 'Atendimento Organizado',
+      description: 'Suporte informativo estruturado com foco em educação e orientação. Direcionamento aos canais oficiais dos emissores quando necessário para processos contratuais.'
     }
   ];
 
   const stats = [
-    { icon: Users2, value: '847+', label: 'Clientes Cadastrados' },
-    { icon: TrendingUp, value: '50+', label: 'Guias Publicados' },
-    { icon: Award, value: '100%', label: 'Conteúdo Independente' },
-    { icon: Clock, value: '24h', label: 'Acesso Online' }
+    { icon: Award, number: '500+', label: 'Programas Mapeados' },
+    { icon: Handshake, number: '1000+', label: 'Parcerias Informadas' },
+    { icon: ShieldCheck, number: '100%', label: 'Transparência' },
+    { icon: Clock, number: '24/7', label: 'Conteúdo Disponível' }
   ];
 
-  const myths = [
-    {
-      title: '"São aceitos em poucos lugares"',
-      description: 'Muitas pessoas acreditam que cartões American Express têm baixa aceitação, mas a rede de estabelecimentos credenciados cresceu significativamente nos últimos anos.'
-    },
-    {
-      title: '"Só para pessoas muito ricas"',
-      description: 'Embora alguns cartões sejam premium, a American Express oferece opções para diferentes perfis de renda e necessidades.'
-    },
-    {
-      title: '"Anuidade muito cara"',
-      description: 'Os benefícios oferecidos muitas vezes compensam o custo da anuidade, especialmente para quem utiliza ativamente as vantagens do cartão.'
-    },
-    {
-      title: '"Difícil de conseguir aprovação"',
-      description: 'Embora alguns cartões tenham critérios rigorosos, há opções com diferentes níveis de exigência para aprovação.'
-    },
-    {
-      title: '"Benefícios são complicados"',
-      description: 'Com informação adequada, é possível entender e aproveitar todos os benefícios oferecidos pelos cartões American Express.'
-    }
-  ];
-
-  const disclaimers = [
-    'Atuamos exclusivamente como portal informativo independente, com conteúdo editorial sobre cartões American Express',
-    'Oferecemos apenas conteúdo informativo e editorial. Não somos afiliados, associados ou representantes da American Express',
-    'Não realizamos intermediação financeira, emissão de cartões ou qualquer tipo de operação bancária',
-    'Todo conteúdo é produzido de forma independente com finalidade exclusivamente informativa e educacional',
-    'Não efetuamos análises creditícias, concessão de crédito ou venda de produtos financeiros',
-    'Nenhuma garantia de aprovação, promessa de liberação ou vinculação com processos de crédito',
-    'Direcionamos leitores aos canais oficiais quando processos formais são necessários',
-    'Decisões de contratação são tomadas diretamente entre o leitor e as instituições responsáveis'
+  const transparencyItems = [
+    'Serviço estritamente privado, consultivo e informativo',
+    'Não somos instituição financeira, banco, emissor de cartões ou operadora',
+    'Não realizamos intermediação financeira, análise de crédito ou concessão de produtos bancários',
+    'Não emitimos cartões, não contratamos produtos financeiros e não representamos bandeiras ou instituições reguladas',
+    'Atuação limitada à orientação educativa, curadoria informativa e suporte consultivo',
+    'Não há garantias de aprovação, promessas de liberação imediata ou vinculação com processos creditícios',
+    'Usuários podem ser direcionados aos canais oficiais dos emissores para processos contratuais quando necessário',
+    'Todas as decisões e contratações são realizadas diretamente entre usuário e instituições competentes'
   ];
 
   return (
     <Layout>
-      {/* Schema */}
+      {/* Schema.org Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "GLOBALPARTS EXPRESS",
-          "legalName": "C S SILVA AUTO PECAS LTDA",
-          "description": "Portal informativo independente com conteúdo editorial sobre cartões American Express, análises detalhadas e guias completos sobre benefícios exclusivos.",
-          "url": "https://beneficiospremix.com/",
-          "telephone": "(62) 9152-9613",
+          "name": "Orientação Premium Elite",
+          "description": "Orientação consultiva especializada em benefícios premium, programas de vantagens exclusivas e experiências diferenciadas.",
+          "url": "https://beneficioselitedigital.com/",
+          "telephone": "+5522602271506",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Av General Couto Magalhaes, 485, Quadra 26 Lote 04",
-            "addressLocality": "Goiania",
-            "addressRegion": "GO",
-            "postalCode": "74.323-240",
+            "streetAddress": "Rua Batista Leite, 11",
+            "addressLocality": "Sousa",
+            "addressRegion": "PB",
+            "postalCode": "58804-230",
             "addressCountry": "BR"
           },
           "priceRange": "$$",
@@ -142,149 +114,125 @@ const Index = () => {
         })
       }} />
 
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${executiveTravel})` }}
-          />
-          <div className="absolute inset-0 gradient-hero-section opacity-95" />
-        </div>
+      {/* Hero Section */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroBanner})` }}
+        />
+        <div className="absolute inset-0 gradient-hero opacity-90" />
         
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={stagger}
-              className="text-white"
+        <div className="container mx-auto px-4 relative z-10 text-center text-white">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="max-w-4xl mx-auto"
+          >
+            <motion.h1 
+              variants={fadeUpVariants}
+              transition={{ duration: 0.6 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight"
             >
-              <motion.div 
-                variants={fadeIn}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-8"
-              >
-                <Sparkles className="w-4 h-4" />
-                Portal Informativo Independente
-              </motion.div>
-              
-              <motion.h1 
-                variants={fadeIn}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1]"
-              >
-                Portal Informativo sobre{' '}
-                <span className="text-accent-shine">Cartões American Express</span>
-              </motion.h1>
-              
-              <motion.p 
-                variants={fadeIn}
-                className="text-lg text-white/75 mb-10 max-w-lg leading-relaxed"
-              >
-                Conteúdo editorial independente com informações, análises e guias completos 
-                sobre cartões American Express e seus benefícios exclusivos.
-              </motion.p>
-              
-              <motion.div
-                variants={fadeIn}
-                className="flex flex-col sm:flex-row gap-4"
-              >
-                <Link to="/contato" className="btn-accent">
-                  Solicitar Atendimento
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-                <Link to="/sobre" className="btn-primary bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20">
-                  Conhecer Mais
-                </Link>
-              </motion.div>
+              Orientação Especializada em{' '}
+              <span className="text-gradient">Benefícios Premium</span>
+            </motion.h1>
+            
+            <motion.p 
+              variants={fadeUpVariants}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
+            >
+              Suporte informativo especializado para compreender e navegar por programas de 
+              benefícios exclusivos, experiências diferenciadas e vantagens premium. 
+              Atendimento consultivo transparente e conteúdo educativo organizado.
+            </motion.p>
+            
+            <motion.div
+              variants={fadeUpVariants}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
+              <Link to="/contato" className="btn-gold text-lg">
+                Entre em Contato
+                <ArrowRight className="w-5 h-5 ml-2 inline" />
+              </Link>
+              <Link to="/sobre" className="btn-primary bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20">
+                Saiba Mais
+              </Link>
             </motion.div>
+          </motion.div>
+        </div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, x: 40 }}
-              animate={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="hidden lg:block"
-            >
-              <div className="relative">
-                <img 
-                  src={loungePremium} 
-                  alt="Experiência Premium" 
-                  className="rounded-3xl shadow-2xl w-full"
-                />
-              </div>
-            </motion.div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+            <div className="w-1.5 h-3 bg-gold rounded-full mt-2 animate-pulse" />
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-24 bg-background">
+      {/* Services Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={stagger}
-            className="text-center mb-16"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
           >
-            <motion.h2 variants={fadeIn} className="section-heading">
-              Conteúdo Editorial
+            <motion.h2 variants={fadeUpVariants} className="section-title">
+              Nossos Serviços de Orientação
             </motion.h2>
-            <motion.div variants={fadeIn} className="divider-elegant mt-6 mb-6" />
-          </motion.div>
-          
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {services.map((service, i) => (
-              <motion.div
-                key={service.title}
-                variants={fadeIn}
-                transition={{ delay: i * 0.05 }}
-                className="card-feature"
-              >
-                <div className="w-14 h-14 rounded-2xl gradient-accent-warm flex items-center justify-center mb-6 shadow-md">
-                  <service.icon className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {service.description}
-                </p>
-              </motion.div>
-            ))}
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+              {services.map((service, index) => (
+                <motion.div
+                  key={service.title}
+                  variants={fadeUpVariants}
+                  transition={{ delay: index * 0.1 }}
+                  className="card-premium p-8 bg-card"
+                >
+                  <div className="w-16 h-16 rounded-xl gradient-navy flex items-center justify-center mb-6 shadow-lg">
+                    <service.icon className="w-8 h-8 text-gold" />
+                  </div>
+                  <h3 className="text-xl font-serif font-semibold text-primary mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-20 gradient-emerald">
+      {/* Stats Section */}
+      <section className="py-20 gradient-navy">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={stagger}
+            variants={staggerContainer}
             className="grid grid-cols-2 lg:grid-cols-4 gap-8"
           >
-            {stats.map((stat, i) => (
+            {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
-                variants={fadeIn}
-                transition={{ delay: i * 0.1 }}
+                variants={fadeUpVariants}
+                transition={{ delay: index * 0.1 }}
                 className="text-center text-white"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-sm">
-                  <stat.icon className="w-7 h-7" />
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
+                  <stat.icon className="w-8 h-8 text-gold" />
                 </div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">
-                  {stat.value}
+                <div className="text-4xl md:text-5xl font-bold text-gold mb-2 font-serif">
+                  {stat.number}
                 </div>
-                <div className="text-white/65 text-sm">{stat.label}</div>
+                <div className="text-white/80">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -292,252 +240,95 @@ const Index = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-24 bg-muted">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -35 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="relative"
+              transition={{ duration: 0.6 }}
             >
               <img 
-                src={travelExperience} 
-                alt="Viagens e Experiências" 
-                className="rounded-3xl shadow-xl w-full"
+                src={benefitsConcept} 
+                alt="Benefícios Premium" 
+                className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 35 }}
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.6 }}
             >
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
-                Nossos Diferenciais
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                Conteúdo Independente e Educacional
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                Expertise em Benefícios Exclusivos
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Produzimos conteúdo editorial independente, sem vínculos com a American Express 
-                ou instituições financeiras. Focamos em educar nossos leitores com informações 
-                claras e acessíveis sobre o universo dos cartões Amex.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Nossa equipe é especializada em curadoria e orientação sobre os mais diversos 
+                programas de benefícios premium disponíveis no mercado. Oferecemos suporte 
+                consultivo completo para que você compreenda todas as vantagens e oportunidades.
               </p>
-              <ul className="space-y-4 mb-8">
-                {['Conteúdo independente e imparcial', 'Análises detalhadas e completas', 'Foco educacional', 'Informações atualizadas'].map((item) => (
+              <ul className="space-y-3 mb-8">
+                {['Análise de programas de benefícios', 'Orientação personalizada', 'Informações atualizadas', 'Suporte contínuo'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="text-foreground text-sm font-medium">{item}</span>
+                    <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-foreground">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link to="/sobre" className="btn-primary">
-                Conhecer a Equipe
-                <ArrowRight className="w-4 h-4 ml-2" />
+                Conheça Nossa Equipe
+                <ArrowRight className="w-5 h-5 ml-2 inline" />
               </Link>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Experiences */}
-      <section className="py-24 bg-card">
+      {/* Experience Section */}
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -35 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.6 }}
+              className="order-2 lg:order-1"
             >
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-widest mb-4">
-                Benefícios Amex
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-                Programa Membership Rewards
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                Experiências VIP ao Seu Alcance
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Entenda como funciona o programa de pontos da American Express. Saiba como 
-                aproveitar lounges exclusivos, transferir pontos para milhas aéreas e 
-                maximizar seus benefícios.
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Descubra como acessar experiências exclusivas, lounges premium, eventos 
+                especiais e muito mais. Nossa orientação ajuda você a entender o caminho 
+                para aproveitar benefícios verdadeiramente diferenciados.
               </p>
-              <Link to="/contato" className="btn-accent">
-                Saiba Mais
-                <ArrowRight className="w-4 h-4 ml-2" />
+              <Link to="/contato" className="btn-gold">
+                Fale com um Consultor
+                <ArrowRight className="w-5 h-5 ml-2 inline" />
               </Link>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 35 }}
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.6 }}
+              className="order-1 lg:order-2"
             >
               <img 
-                src={loungeVip} 
-                alt="Lounge Exclusivo" 
-                className="rounded-3xl shadow-xl w-full"
+                src={vipExperience} 
+                alt="Experiências VIP" 
+                className="rounded-2xl shadow-2xl w-full"
               />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Company Info */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-heading">Dados da Empresa</h2>
-            <div className="divider-elegant mt-6" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto bg-card rounded-3xl p-8 md:p-12 shadow-lg border border-border"
-          >
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Building2 className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Razão Social</span>
-                  <p className="text-foreground font-medium text-sm mt-1">C S SILVA AUTO PECAS LTDA</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <FileText className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">CNPJ</span>
-                  <p className="text-foreground font-medium text-sm mt-1">47.951.436/0001-20</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Sparkles className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Nome Fantasia</span>
-                  <p className="text-foreground font-medium text-sm mt-1">GLOBALPARTS EXPRESS</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Data de Abertura</span>
-                  <p className="text-foreground font-medium text-sm mt-1">14/09/2022</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 md:col-span-2">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Endereço</span>
-                  <p className="text-foreground font-medium text-sm mt-1">Av. General Couto Magalhães, 485, Quadra 26 Lote 04, Vila Mauá, Goiânia-GO, CEP 74.323-240</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Telefone Comercial</span>
-                  <p className="text-foreground font-medium text-sm mt-1">(62) 9152-9613</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Telefone Fixo</span>
-                  <p className="text-foreground font-medium text-sm mt-1">(11) 1413-9784</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 md:col-span-2">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">E-mail Institucional</span>
-                  <p className="text-foreground font-medium text-sm mt-1">contato@beneficiospremix.com</p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 pt-8 border-t border-border">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl gradient-accent-warm flex items-center justify-center flex-shrink-0">
-                  <Target className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Natureza do Negócio</span>
-                  <p className="text-foreground font-medium text-sm mt-1">
-                    Portal informativo independente sobre cartões American Express. Atuamos exclusivamente com conteúdo editorial e educacional. 
-                    Não somos afiliados à American Express e não realizamos intermediação financeira ou emissão de cartões.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Myths Section */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-heading">Mitos Comuns sobre Cartões Amex</h2>
-            <div className="divider-elegant mt-6" />
-          </motion.div>
-
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
-          >
-            {myths.map((myth, i) => (
-              <motion.div
-                key={myth.title}
-                variants={fadeIn}
-                transition={{ delay: i * 0.05 }}
-                className="card-feature"
-              >
-                <h3 className="text-lg font-bold text-primary mb-3">
-                  {myth.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {myth.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Disclaimer */}
-      <section className="py-24 bg-muted">
+      {/* Transparency Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -545,177 +336,168 @@ const Index = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <div className="info-panel">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 rounded-2xl gradient-emerald flex items-center justify-center">
-                  <ShieldCheck className="w-7 h-7 text-white" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-primary">
-                    Declaração de Conformidade
-                  </h2>
-                  <p className="text-muted-foreground text-sm">Sobre nossos serviços</p>
-                </div>
+            <div className="highlight-box">
+              <div className="flex items-center gap-3 mb-6">
+                <ShieldCheck className="w-8 h-8 text-gold" />
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">
+                  Aviso Legal e Transparência
+                </h2>
               </div>
-              <div className="space-y-3">
-                {disclaimers.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground text-sm">{item}</span>
-                  </div>
+              <p className="text-foreground font-semibold mb-4">
+                Natureza dos Serviços:
+              </p>
+              <ul className="space-y-3">
+                {transparencyItems.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </li>
                 ))}
-              </div>
-              <div className="mt-8 pt-6 border-t border-border/50 flex flex-wrap gap-6 text-sm">
-                <span className="text-muted-foreground">
-                  <strong className="text-primary">CNPJ:</strong> 47.951.436/0001-20
-                </span>
-                <span className="text-muted-foreground">
-                  <strong className="text-primary">Cadastro:</strong> 72849163
-                </span>
-                <span className="text-muted-foreground">
-                  <strong className="text-primary">Conformidade:</strong> Operação privada sem relação com órgãos reguladores do sistema financeiro
-                </span>
-              </div>
+              </ul>
+              <p className="mt-6 text-sm text-muted-foreground">
+                <strong className="text-primary">Registro:</strong> 24179342 | 
+                <strong className="text-primary ml-2">Transparência e conformidade:</strong> Operação privada sem vínculo com órgãos reguladores financeiros
+              </p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Articles */}
-      <section className="py-24 bg-muted">
+      {/* Published Articles Section */}
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
           >
-            <h2 className="section-heading">Artigos e Dicas</h2>
-            <div className="divider-elegant mt-6 mb-6" />
+            <h2 className="section-title">Artigos Publicados</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              {/* Article 1 */}
+              <a 
+                href="/artigo1.php" 
+                className="group block bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={artigo1Img} 
+                    alt="Navegando pelo Mundo dos Benefícios Premium" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
+                    Navegando pelo Mundo dos Benefícios Premium
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Descubra como uma bússola estratégica pode guiar você através do universo de vantagens exclusivas e programas diferenciados.
+                  </p>
+                  <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
+                    Ler mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Article 2 */}
+              <a 
+                href="/artigo2.php" 
+                className="group block bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={artigo2Img} 
+                    alt="Mapeando Destinos de Experiências VIP" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
+                    Mapeando Destinos de Experiências VIP
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Aprenda a identificar e marcar os melhores pontos de acesso a experiências exclusivas que transformam seu estilo de vida.
+                  </p>
+                  <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
+                    Ler mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+
+              {/* Article 3 */}
+              <a 
+                href="/artigo3.php" 
+                className="group block bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={artigo3Img} 
+                    alt="Análise Estratégica de Programas de Vantagens" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif font-semibold text-lg text-primary group-hover:text-gold transition-colors mb-2">
+                    Análise Estratégica de Programas de Vantagens
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Entenda como especialistas avaliam e maximizam o potencial dos programas premium para resultados extraordinários.
+                  </p>
+                  <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all font-medium">
+                    Ler mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+            </div>
           </motion.div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Article 1 */}
-            <motion.a 
-              href="/post1.php"
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0 }}
-              className="card-elegant group"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={artigo1} 
-                  alt="Guia Completo dos Cartões Amex" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Guia Completo dos Cartões Amex
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Conheça todos os cartões American Express disponíveis no Brasil e suas características...
-                </p>
-                <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
-                  Leia mais <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </motion.a>
-
-            {/* Article 2 */}
-            <motion.a 
-              href="/post2.php"
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="card-elegant group"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={artigo2} 
-                  alt="Programa Membership Rewards" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Programa Membership Rewards
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Entenda como funciona o programa de pontos da American Express...
-                </p>
-                <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
-                  Leia mais <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </motion.a>
-
-            {/* Article 3 */}
-            <motion.a 
-              href="/post3.php"
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="card-elegant group"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={artigo3} 
-                  alt="Benefícios Exclusivos Amex" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-bold text-lg text-primary mt-2 mb-3 group-hover:text-primary/80 transition-colors">
-                  Benefícios Exclusivos Amex
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Descubra todos os benefícios exclusivos dos cartões American Express...
-                </p>
-                <span className="text-primary text-sm flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
-                  Leia mais <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </motion.a>
-          </div>
         </div>
       </section>
 
-      {/* CTA Final */}
-      <section className="py-24 gradient-emerald">
-        <div className="container mx-auto px-4 text-center">
+      {/* Contact Section */}
+      <section className="py-20 gradient-navy">
+        <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-2xl mx-auto text-white"
+            className="text-center text-white"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Fique por Dentro
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+              Entre em <span className="text-gold">Contato</span>
             </h2>
-            <p className="text-white/75 text-lg mb-10 leading-relaxed">
-              Receba conteúdo exclusivo sobre cartões American Express e benefícios 
-              diretamente no seu e-mail.
+            <p className="text-white/80 text-lg max-w-2xl mx-auto mb-12">
+              Estamos prontos para ajudá-lo a compreender melhor o universo dos benefícios premium.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-              <Link to="/contato" className="btn-accent">
-                Inscrever-se
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
+            
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
+                <h3 className="font-semibold mb-2">Endereço</h3>
+                <p className="text-white/70 text-sm">
+                  Rua Batista Leite, 11<br />
+                  Sousa, PB - 58804-230
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <Phone className="w-8 h-8 text-gold mx-auto mb-4" />
+                <h3 className="font-semibold mb-2">Telefone</h3>
+                <a href="tel:+5522602271506" className="text-white/70 text-sm hover:text-gold transition-colors">
+                  +22602271506
+                </a>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
+                <h3 className="font-semibold mb-2">Email</h3>
+                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-white/70 text-xs break-all hover:text-gold transition-colors">
+                  contato@orientacaopremiumelite.com.br
+                </a>
+              </div>
             </div>
-            <div className="flex flex-wrap justify-center gap-6 text-white/60 text-sm">
-              <a href="tel:+5562915296613" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Phone className="w-4 h-4" />
-                (62) 9152-9613
-              </a>
-              <a href="mailto:contato@beneficiospremix.com" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Mail className="w-4 h-4" />
-                Email
-              </a>
+
+            <div className="mt-12">
+              <Link to="/contato" className="btn-gold text-lg">
+                Fale Conosco Agora
+                <ArrowRight className="w-5 h-5 ml-2 inline" />
+              </Link>
             </div>
           </motion.div>
         </div>

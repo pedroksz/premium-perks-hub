@@ -1,116 +1,121 @@
 import { Link } from 'react-router-dom';
-import { Gem, Phone, Mail, MapPin, Clock, ArrowUpRight } from 'lucide-react';
+import { Shield, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="gradient-emerald text-white">
-      {/* Main Footer */}
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
-          {/* Brand */}
-          <div className="lg:col-span-4">
+    <footer className="gradient-navy text-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* About Section */}
+          <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-sm">
-                <Gem className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center">
+                <Shield className="w-7 h-7 text-gold" />
               </div>
               <div>
-                <h3 className="text-xl font-bold tracking-tight">Benefícios</h3>
-                <p className="text-xs text-white/50 tracking-widest uppercase">Premix</p>
+                <h3 className="text-xl font-serif font-bold">Orientação Premium Elite</h3>
+                <p className="text-sm text-white/60">Benefícios Premium</p>
               </div>
             </div>
-            <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-xs">
-              Assessoria personalizada para você compreender e aproveitar programas de 
-              recompensas e vantagens exclusivas. Orientação ética e transparente.
+            <p className="text-white/80 text-sm leading-relaxed">
+              Serviço privado de orientação consultiva sobre benefícios premium, 
+              experiências exclusivas e programas de vantagens.
             </p>
-            <p className="text-sm text-white/50">
-              Cadastro: <span className="text-white/70">72849163</span>
+            <p className="mt-4 text-sm text-gold">
+              <strong>Registro:</strong> 24179342
             </p>
           </div>
 
           {/* Quick Links */}
-          <div className="lg:col-span-2">
-            <h4 className="text-sm font-bold mb-6 tracking-wider uppercase text-white/90">Menu</h4>
+          <div>
+            <h4 className="text-lg font-serif font-semibold text-gold mb-6">Navegação</h4>
             <ul className="space-y-3">
-              {[
-                { to: '/', label: 'Home' },
-                { to: '/sobre', label: 'Quem Somos' },
-                { to: '/contato', label: 'Fale Conosco' },
-              ].map((link) => (
-                <li key={link.to}>
-                  <Link to={link.to} className="footer-link-modern flex items-center gap-1.5 group">
-                    {link.label}
-                    <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/" className="footer-link text-sm hover:pl-2 transition-all">
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link to="/sobre" className="footer-link text-sm hover:pl-2 transition-all">
+                  Sobre Nós
+                </Link>
+              </li>
+              <li>
+                <Link to="/contato" className="footer-link text-sm hover:pl-2 transition-all">
+                  Contato
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Legal */}
-          <div className="lg:col-span-2">
-            <h4 className="text-sm font-bold mb-6 tracking-wider uppercase text-white/90">Legal</h4>
+          {/* Legal Links */}
+          <div>
+            <h4 className="text-lg font-serif font-semibold text-gold mb-6">Legal</h4>
             <ul className="space-y-3">
-              {[
-                { to: '/politica-privacidade', label: 'Privacidade' },
-                { to: '/termos-condicoes', label: 'Termos' },
-                { to: '/politica-reembolso', label: 'Reembolso' },
-              ].map((link) => (
-                <li key={link.to}>
-                  <Link to={link.to} className="footer-link-modern flex items-center gap-1.5 group">
-                    {link.label}
-                    <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/politica-privacidade" className="footer-link text-sm hover:pl-2 transition-all">
+                  Política de Privacidade
+                </Link>
+              </li>
+              <li>
+                <Link to="/termos-condicoes" className="footer-link text-sm hover:pl-2 transition-all">
+                  Termos e Condições
+                </Link>
+              </li>
+              <li>
+                <Link to="/politica-reembolso" className="footer-link text-sm hover:pl-2 transition-all">
+                  Política de Reembolso
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div className="lg:col-span-4">
-            <h4 className="text-sm font-bold mb-6 tracking-wider uppercase text-white/90">Contato</h4>
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-serif font-semibold text-gold mb-6">Contato</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-1 text-white/50" />
-                <span className="text-sm text-white/70 leading-relaxed">
-                  Av General Couto Magalhaes, 485<br />
-                  Vila Mauá, Goiânia - GO, 74.323-240
+                <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-white/80">
+                  Rua Batista Leite, 11<br />
+                  Sousa, PB - CEP: 58804-230
                 </span>
               </li>
-              <li>
-                <a href="tel:+5562915296613" className="flex items-center gap-3 footer-link-modern">
-                  <Phone className="w-4 h-4 text-white/50" />
-                  (62) 9152-9613
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
+                <a href="tel:+5522602271506" className="text-sm footer-link">
+                  +22602271506
                 </a>
               </li>
-              <li>
-                <a href="mailto:contato@beneficiospremix.com" className="flex items-center gap-3 footer-link-modern break-all">
-                  <Mail className="w-4 h-4 flex-shrink-0 text-white/50" />
-                  contato@beneficiospremix.com
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-gold flex-shrink-0" />
+                <a href="mailto:contato@orientacaopremiumelite.com.br" className="text-sm footer-link break-all">
+                  contato@orientacaopremiumelite.com.br
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-white/60 text-sm">
-                <Clock className="w-4 h-4 text-white/50" />
-                Segunda a Sexta: 09h - 18h
+              <li className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-gold flex-shrink-0" />
+                <span className="text-sm text-white/80">Seg-Sex: 9h às 18h</span>
               </li>
             </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 py-6">
+        {/* Legal Notice */}
+        <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-white/50 text-center md:text-left">
-              © {currentYear} Benefícios Premix. Todos os direitos reservados.
+            <p className="text-sm text-white/60 text-center md:text-left">
+              © {currentYear} Orientação Premium Elite. Todos os direitos reservados.
             </p>
-            <p className="text-xs text-white/40 text-center md:text-right max-w-sm">
-              Empresa de consultoria e orientação. Não atuamos como instituição financeira.
+            <p className="text-xs text-white/50 text-center md:text-right max-w-xl">
+              Serviço privado e consultivo. Não somos instituição financeira. 
+              Sem intermediação creditícia ou oferta de produtos bancários.
             </p>
           </div>
         </div>
+
       </div>
     </footer>
   );
